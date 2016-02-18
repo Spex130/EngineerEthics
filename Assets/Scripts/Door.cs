@@ -29,13 +29,14 @@ public class Door : MonoBehaviour {
 
 	void OnTriggerExit2D(Collider2D other)
 	{
-		if (other.gameObject.GetType() == typeof(playerChar))
-		{
-			
-			player.touchedDoor = null;
-			player.isTouchingDoor = false;
+		if (other.gameObject.CompareTag("Player"))
+		{ print("EXIT"); }
+
+		player = other.gameObject.GetComponent<playerChar>();
+		//player.touchedDoor = null;
+		player.isTouchingDoor = false;
 			player = null;
-		}
+		
 
 	}
 }
