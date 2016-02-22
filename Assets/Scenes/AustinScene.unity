@@ -128,6 +128,14 @@ Prefab:
       propertyPath: chain
       value: 
       objectReference: {fileID: 1383240068}
+    - target: {fileID: 11438492, guid: bc5e391b977dc134e882afd7dc26d371, type: 2}
+      propertyPath: textBox
+      value: 
+      objectReference: {fileID: 1920407766}
+    - target: {fileID: 11438492, guid: bc5e391b977dc134e882afd7dc26d371, type: 2}
+      propertyPath: isTouchingElevator
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc5e391b977dc134e882afd7dc26d371, type: 2}
   m_IsPrefabParent: 0
@@ -289,6 +297,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1383240067}
   m_Script: {fileID: 11500000, guid: b8f271d6bd51e624d93ee6099dabdebc, type: 3}
+--- !u!114 &1920407766 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11483698, guid: a039eee5c8758d648a8f179742eebeaf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1383240067}
+  m_Script: {fileID: 11500000, guid: 4c8c6dc1e343db64eb37360c75ddff26, type: 3}
 --- !u!114 &1973412923 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11438492, guid: bc5e391b977dc134e882afd7dc26d371,
