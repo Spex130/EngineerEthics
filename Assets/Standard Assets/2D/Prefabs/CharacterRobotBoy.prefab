@@ -192,15 +192,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFacingRight: 1
+  isTouchingElevator: 1
   isTouchingDoor: 0
   isTouchingPerson: 0
+  canMove: 0
   touchedDoor: {fileID: 0}
   chain: {fileID: 0}
+  textBox: {fileID: 0}
   moveSpeed: 5
   stopSpeedDiv: 1.1
-  myAnim: {fileID: 0}
-  myRigidbody2D: {fileID: 0}
-  mySprite: {fileID: 0}
   State: 1
   groundCheck: {fileID: 100004}
   interactIndicator: {fileID: 21207430}

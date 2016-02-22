@@ -4,16 +4,13 @@ using UnityEngine.SceneManagement;
 public class playerChar : MonoBehaviour {
 
 	public bool isFacingRight = true;
-<<<<<<< HEAD
-	public bool isTouchingDoor = false;
-	public bool isTouchingElevator = true;
-	public Door touchedDoor = null;//Tells if we are touching a door or not.
-	public lerpChain chain;
-=======
+
+	public bool isTouchingElevator = false;
+
 	public bool isTouchingDoor = false;//Tells if we are touching a door or not.
 	public bool isTouchingPerson = false;
 	public bool canMove = false;//Whether or not we should be capable of moving.
->>>>>>> origin/master
+
 
 	public Door touchedDoor = null;//If a door is touching us, it will set this variable true for us.
 	public lerpChain chain; //We have a reference to our lerpChain so we can reset the camera position when we enter a door.
@@ -108,14 +105,8 @@ public class playerChar : MonoBehaviour {
 	//It also handles whether or not our INTERACTION INDICATOR should show.
 	public void interactCheck()
 	{
-<<<<<<< HEAD
-		if (Input.GetKeyUp(KeyCode.UpArrow)){
-			if (isTouchingElevator) 
-			{
-				SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
-			}
-=======
-		if(isTouchingDoor || isTouchingPerson)
+
+		if(isTouchingDoor || isTouchingPerson || isTouchingElevator)
 		{
 			interactIndicator.enabled = true;
 		}
@@ -126,7 +117,6 @@ public class playerChar : MonoBehaviour {
 		}
 
 		if (Input.GetKeyUp(KeyCode.UpArrow) && canMove){
->>>>>>> origin/master
 			if (isTouchingDoor)
 			{
 				this.transform.position = new Vector2(touchedDoor.partner.transPoint.transform.position.x, touchedDoor.partner.transPoint.transform.position.y);
@@ -147,6 +137,11 @@ public class playerChar : MonoBehaviour {
 			else if (isTouchingPerson)
 			{
 
+			}
+
+			else if (isTouchingElevator)
+			{
+				SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 			}
 
 			else
