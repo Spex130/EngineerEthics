@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.SceneManagement;
 public class playerChar : MonoBehaviour {
 
 	public bool isFacingRight = true;
 	public bool isTouchingDoor = false;
+	public bool isTouchingElevator = true;
 	public Door touchedDoor = null;//Tells if we are touching a door or not.
 	public lerpChain chain;
 
@@ -79,6 +80,10 @@ public class playerChar : MonoBehaviour {
 	public void interactCheck()
 	{
 		if (Input.GetKeyUp(KeyCode.UpArrow)){
+			if (isTouchingElevator) 
+			{
+				SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
+			}
 			if (isTouchingDoor)
 			{
 				this.transform.position = new Vector2(touchedDoor.partner.transPoint.transform.position.x, touchedDoor.partner.transPoint.transform.position.y);
