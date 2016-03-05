@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFacingRight: 1
-  isTouchingElevator: 1
+  isTouchingElevator: 0
   isTouchingDoor: 0
   isTouchingPerson: 0
   canMove: 0

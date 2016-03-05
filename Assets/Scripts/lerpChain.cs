@@ -31,7 +31,7 @@ public class lerpChain : MonoBehaviour {
 		{
 			//Create a new gameObject, and set its parent to the previous gameobject
 			pointArray[i] = (GameObject)Instantiate(new GameObject(), this.transform.position, this.transform.rotation);
-			//pointArray[i].transform.SetParent(pointArray[i - 1].transform);
+			pointArray[i].transform.SetParent(pointArray[i - 1].transform);
 		}
 
 		//To finish it off, set the camera to the last point.

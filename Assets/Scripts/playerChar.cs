@@ -146,7 +146,7 @@ public class playerChar : MonoBehaviour {
 
 			else
 			{
-				textBox.startConvo();
+				//textBox.startConvo();
 			}
 		}
 	}

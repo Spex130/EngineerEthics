@@ -11,7 +11,7 @@ public class textBoxScript : MonoBehaviour {
 
 	public string[] convArray; //Holds the strings we want to display in the textbox.
 	private char[] charArray; //Holds our strings, converted to characters
-	public int conversationPoint = 0;//Tells us how many nodes into the conversation we are.
+	private int conversationPoint = 0;//Tells us how many nodes into the conversation we are.
 
 	public int lineLength = 25; //Number of characters per line
 	public float kerning = 1f;//Space between characters
@@ -25,15 +25,22 @@ public class textBoxScript : MonoBehaviour {
 	private float resetTimer;
 
 //Keeps track of our cursor so we know where we are in the string.
-	[SerializeField] private int horiIndex = 0;
-	[SerializeField] private int vertIndex = 0;
+	private int horiIndex = 0;
+	private int vertIndex = 0;
 
-	
+	//Branching option variables
+	public bool isQuestion = false;//Tells us whether or not this text snippet has a question at the end.
+	public bool isAskingQuestion = false;//Tells us whether or not we're in question mode
+	public string[] choiceArray; // The strings that make up the answers we can make
+								 //public convoNode currentNode; //This is the node we are currently pulling info from
+
+	public int questionLine = 0; //Used to track which line we are currently making.
+	public int choiceIndex = 0;//Used for indicating what choice we're thinking of making.
 
 //Determines whether or not we should show the blinking line ending.
-	public bool showEndLine = false;
+	private bool showEndLine = false;
 //Determines whether or not we have finished displaying the line
-	public bool isFinishedDisplaying = false;
+	private bool isFinishedDisplaying = false;
 //Determine whether or not we should be able to see the textbox at all.
 	public bool showBox = false;
 //The textbox we want to edit.
@@ -58,6 +65,7 @@ public class textBoxScript : MonoBehaviour {
 
 	}
 
+	//The initialization function for when our program has started running.
 	public void init()
 	{
 		text.text = "";
@@ -69,6 +77,7 @@ public class textBoxScript : MonoBehaviour {
 		prepStrings();
 	}
 
+	//Initialize after the program has started
 	public void reInit()
 	{
 		text.text = "";
@@ -102,18 +111,18 @@ public class textBoxScript : MonoBehaviour {
 	}
 
 
-	public void endConvo()
+	public void endConvo()//Ends the conversation! Use this at the end of EVERYTHING.
 	{
 		showBox = false;
 		disableBox();
 	}
-	public void enableBox()
+	public void enableBox()//This enables the textbox so you can see it.
 	{
 		textbox.enabled = true;
 		text.enabled = true;
 	}
 
-	public void disableBox()
+	public void disableBox()//This disables the textbox so that you can't see it.
 	{
 		textbox.enabled = false;
 		text.enabled = false;
@@ -156,9 +165,16 @@ public class textBoxScript : MonoBehaviour {
 					resetDisplay();
 
 				}
-				else//If we ARE at the end of our conversation, close the box.
+				else//If we ARE at the end of our conversation, close the box. OR move to the question at the end.
 				{
-					endConvo();
+					if (isQuestion)
+					{
+
+					}
+					else
+					{
+						endConvo();
+					}
 				}
 			}
 			else//Otherwise, MAKE THE LINE FINISH DISPLAYING.
@@ -187,6 +203,16 @@ public class textBoxScript : MonoBehaviour {
 		}
 	}
 
+	public void askQuestion()
+	{
+		if (showBox)
+		{//If we're actually active....
+			isAskingQuestion = true;//Set us to Ask mode
+
+
+		}
+	}
+
 
 	public void prepStrings()
 	{
@@ -199,11 +225,13 @@ public class textBoxScript : MonoBehaviour {
 		}
 	}
 
+	//This method acts as an update loop for when the text box should be displaying normal conversation text.
 	public void printLoop()
 	{
-		if (showBox) {
+		if (showBox) {//If we're even active...
 			tinyTimer -= Time.deltaTime * textSpeed;
 
+			//Every time we time down to zero, do the thing.
 			if (tinyTimer <= 0)
 			{
 
@@ -250,4 +278,5 @@ public class textBoxScript : MonoBehaviour {
 			}
 		}
 	}
+
 }
