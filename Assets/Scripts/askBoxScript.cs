@@ -7,11 +7,13 @@ public class askBoxScript : MonoBehaviour {
 	//Visualization variables
 	public GameObject textStartPoint; //Tells where our text will begin generating.
 
+    public convoNode currentNode; //This is the node we are currently pulling info from
+
     public textBoxScript textBoxPartner; //Our askBox's textbox partner to switch between
 
     public string question;//The question we ponder the the answer to.
 	public string[] choiceArray; //Holds the strings we want to display in the textbox.
-	private char[] charArray; //Holds our strings, converted to characters
+	[SerializeField] private char[] charArray; //Holds our strings, converted to characters
 
 	public int lineLength = 25; //Number of characters per line
 	public float kerning = 1f;//Space between characters
@@ -25,9 +27,9 @@ public class askBoxScript : MonoBehaviour {
 	private float resetTimer;
 
 	//Keeps track of our cursor so we know where we are in the string.
-	[SerializeField] private int horiIndex = 0;
-	[SerializeField] private int vertIndex = 0;
-	[SerializeField] private int progressIndex = 0;
+	private int horiIndex = 0;
+	private int vertIndex = 0;
+	private int progressIndex = 0;
 
 	public int choiceID = 0;//How we publically track what choice we're making. This controls where the cursor will be as well.
 
@@ -200,5 +202,15 @@ public class askBoxScript : MonoBehaviour {
 			}
 		}
 	}
+
+    public void prepStrings()
+    {
+
+            //Convert all of the strings of our current conversationPoint to characters
+            charArray = choiceArray[choiceID].ToCharArray();
+            horiIndex = 0;
+            vertIndex = 0;
+
+    }
 
 }

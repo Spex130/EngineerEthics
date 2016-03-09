@@ -39,13 +39,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myType: 1
   nextNodeArray: []
   choiceIndex: 0
   convoTextArray:
   - First off this is a demonstration of our example text.
   - We can actually handle multiple lines of text with little to no problems.
   - We can also exit conversations once they end!
-  endQuestionArray: []
+  question: QUESTION!?
+  endQuestionArray:
+  - ANSWER!
+  - ANSWER!!
+  - Answer.
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

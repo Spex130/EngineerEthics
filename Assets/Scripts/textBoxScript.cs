@@ -34,7 +34,7 @@ public class textBoxScript : MonoBehaviour {
 
 	//Branching option variables
 	public bool isQuestion = false;//Tells us whether or not this text snippet has a question at the end.
-	public bool isAskingQuestion = false;//Tells us whether or not we're in question mode
+
 	public string[] choiceArray; // The strings that make up the answers we can make
 	
 
@@ -148,6 +148,7 @@ public class textBoxScript : MonoBehaviour {
 		prepStrings();
 	}
 
+    //This runs constantly to decide whether or not the graphics should be displayed or not.
 	public void showTextboxCheck()
 	{
 		if (!showBox)
@@ -164,57 +165,77 @@ public class textBoxScript : MonoBehaviour {
 	public void progressConv()
 	{
 		if (showBox) {//If we're actually active....
-			if (horiIndex == charArray.Length)
-			{ //If our line is finished displaying...
-				if (conversationPoint < convArray.Length - 1)
-				{//...And we aren't at the end of our conversation, then do this.
-					resetDisplay();
 
-				}
-				else//If we ARE at the end of our conversation, close the box. OR move to the question at the end.
-				{
-					if (isQuestion)
-					{
+            /*
+            Okay, so if we're actually active, at this point we wanna check what type of node we're handling.
+            At this point, there's two cases. Either [it has text] or [it has no text]
+                Case 1 happens when we're either [both] or [textOnly]
+                Case 2 happens when we're [question]
+            */
 
-					}
-					else
-					{
-						endConvo();
-					}
-				}
-			}
-			else//Otherwise, MAKE THE LINE FINISH DISPLAYING.
-			{
-				while (horiIndex < charArray.Length)
-				{
-					text.text = text.text + charArray[horiIndex];
-					horiIndex++;
-					if (horiIndex % lineLength == 0 && horiIndex != charArray.Length)//Check if we've hit the line length by checking if your horiIndex is divisible by our linelength
-					{
-						switch (charArray[horiIndex])
-						{
+            //Case 1. WE DEFINITELY HAVE TEXT. We'll check if there's a question at the end later.
+            if (currentNode.myType == convoNode.nodeType.textOnly || currentNode.myType == convoNode.nodeType.both)
+            {
+                if (horiIndex == charArray.Length)
+                { //If our line is finished displaying...
+                    if (conversationPoint < convArray.Length - 1)
+                    {//...And we aren't at the end of our conversation, then do this.
+                        resetDisplay();//This moves us to the next text display.
 
-							case ' ':
-								text.text = text.text + "\n"; //We've hit an end, NEXT LINE.
-								vertIndex++;//Move down a line if we've hit the end.
-								break;
-							default:
-								text.text = text.text + "-\n"; //We've hit an end, NEXT LINE.
-								vertIndex++;//Move down a line if we've hit the end.
-								break;
-						}
-					}
-				}
-			}
-		}
+                    }
+                    else//If we ARE at the end of our conversation, close the box. OR move to the question at the end.
+                    {
+                        if (currentNode.myType == convoNode.nodeType.both) //THIS MEANS WE HAVE A QUESTION TO ANSWER. Activate the Askbox.
+                        {
+
+                        }
+                        else //This means we have no questions, and can safely end the conversation once and for all.
+                        {
+                            endConvo();
+                        }
+                    }
+                }
+                else//Otherwise, MAKE THE LINE FINISH DISPLAYING.
+                {
+                    displaySpeedSkip();
+                }
+            }
+
+
+        }
 	}
+
+    //If the player is impatient and wants the text to display instantly isntead of being shown one character at a time, use this to force the whole line to display at once.
+    public void displaySpeedSkip()
+    {
+        while (horiIndex < charArray.Length)
+        {
+            text.text = text.text + charArray[horiIndex];
+            horiIndex++;
+            if (horiIndex % lineLength == 0 && horiIndex != charArray.Length)//Check if we've hit the line length by checking if your horiIndex is divisible by our linelength
+            {
+                switch (charArray[horiIndex])
+                {
+
+                    case ' ':
+                        text.text = text.text + "\n"; //We've hit an end, NEXT LINE.
+                        vertIndex++;//Move down a line if we've hit the end.
+                        break;
+                    default:
+                        text.text = text.text + "-\n"; //We've hit an end, NEXT LINE.
+                        vertIndex++;//Move down a line if we've hit the end.
+                        break;
+                }
+            }
+        }
+    }
 
 	public void askQuestion()
 	{
 		if (showBox)
 		{//If we're actually active....
-			isAskingQuestion = true;//Set us to Ask mode
-
+			
+           
 
 		}
 	}

@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
-public class Elevator : MonoBehaviour {
+public class Elevator : Door {
 
-	public playerChar player;
+    public string sceneName;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 
 	}
 
@@ -15,25 +16,10 @@ public class Elevator : MonoBehaviour {
 
 	}
 
-	void OnTriggerEnter2D(Collider2D other)
-	{
-		if (other.gameObject.CompareTag("Player"))
-		{
-			player = other.gameObject.GetComponent<playerChar>();
-			//player.touchedDoor = this;
-			player.isTouchingElevator = true;
-		}
-	}
 
-	void OnTriggerExit2D(Collider2D other)
-	{
-		if (other.gameObject.GetType() == typeof(playerChar))
-		{
 
-			//player.touchedDoor = null;
-			player.isTouchingElevator = false;
-			player = null;
-		}
-
-	}
+    public override void interact()
+    {
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+    }
 }

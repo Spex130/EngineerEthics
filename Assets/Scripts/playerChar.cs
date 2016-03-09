@@ -119,18 +119,7 @@ public class playerChar : MonoBehaviour {
 		if (Input.GetKeyUp(KeyCode.UpArrow) && canMove){
 			if (isTouchingDoor)
 			{
-				this.transform.position = new Vector2(touchedDoor.partner.transPoint.transform.position.x, touchedDoor.partner.transPoint.transform.position.y);
-				chain.resetLerp();
-				touchedDoor = touchedDoor.partner;
-				RaycastHit2D hit;
-				float distanceToground = 0;
-				if(Physics2D.Raycast(groundCheck.transform.position, Vector2.up, 200.0f))
-				{
-					hit = Physics2D.Raycast(groundCheck.transform.position, Vector2.down, 200.0f);
-                    distanceToground = hit.distance;
-					print(hit.distance);
-				}
-				
+                touchedDoor.interact();
 
 			}
 
@@ -139,10 +128,7 @@ public class playerChar : MonoBehaviour {
 
 			}
 
-			else if (isTouchingElevator)
-			{
-				SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-			}
+
 
 			else
 			{

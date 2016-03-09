@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Door : MonoBehaviour {
+public class Door : MonoBehaviour, interactable {
 
 	public Door partner;
 	public GameObject transPoint;
@@ -39,4 +39,19 @@ public class Door : MonoBehaviour {
 		
 
 	}
+
+    public virtual void interact()
+    {
+        player.transform.position = new Vector2(player.touchedDoor.partner.transPoint.transform.position.x, player.touchedDoor.partner.transPoint.transform.position.y);
+        player.chain.resetLerp();
+        player.touchedDoor = player.touchedDoor.partner;
+        RaycastHit2D hit;
+        float distanceToground = 0;
+        if (Physics2D.Raycast(player.groundCheck.transform.position, Vector2.up, 200.0f))
+        {
+            hit = Physics2D.Raycast(player.groundCheck.transform.position, Vector2.down, 200.0f);
+            distanceToground = hit.distance;
+            print(hit.distance);
+        }
+    }
 }
