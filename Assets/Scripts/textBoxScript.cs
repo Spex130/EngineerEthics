@@ -9,7 +9,11 @@ public class textBoxScript : MonoBehaviour {
 //Visualization variables
 	public GameObject textStartPoint; //Tells where our text will begin generating.
 
-	public string[] convArray; //Holds the strings we want to display in the textbox.
+    public convoNode currentNode; //This is the node we are currently pulling info from
+
+    public askBoxScript askBoxPartner; //Our textBox's askBox partner to switch between
+
+    public string[] convArray; //Holds the strings we want to display in the textbox.
 	private char[] charArray; //Holds our strings, converted to characters
 	private int conversationPoint = 0;//Tells us how many nodes into the conversation we are.
 
@@ -32,7 +36,7 @@ public class textBoxScript : MonoBehaviour {
 	public bool isQuestion = false;//Tells us whether or not this text snippet has a question at the end.
 	public bool isAskingQuestion = false;//Tells us whether or not we're in question mode
 	public string[] choiceArray; // The strings that make up the answers we can make
-								 //public convoNode currentNode; //This is the node we are currently pulling info from
+	
 
 	public int questionLine = 0; //Used to track which line we are currently making.
 	public int choiceIndex = 0;//Used for indicating what choice we're thinking of making.
@@ -68,6 +72,7 @@ public class textBoxScript : MonoBehaviour {
 	//The initialization function for when our program has started running.
 	public void init()
 	{
+        convArray=currentNode.convoTextArray;
 		text.text = "";
 		resetTimer = tinyTimer;
 		resetTextSpeed = textSpeed;
@@ -102,10 +107,11 @@ public class textBoxScript : MonoBehaviour {
 
 
 	//Overloaded enable that allows for new conversations to be loaded in.
-	public void startConvo(string[] newConv)
+	public void startConvo(convoNode newNode)
 	{
+        currentNode = newNode;
 		showBox = true;
-		convArray = newConv;
+		convArray = currentNode.convoTextArray;
 		reInit();
 		enableBox();
 	}

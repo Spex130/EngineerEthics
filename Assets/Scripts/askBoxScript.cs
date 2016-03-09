@@ -7,6 +7,9 @@ public class askBoxScript : MonoBehaviour {
 	//Visualization variables
 	public GameObject textStartPoint; //Tells where our text will begin generating.
 
+    public textBoxScript textBoxPartner; //Our askBox's textbox partner to switch between
+
+    public string question;//The question we ponder the the answer to.
 	public string[] choiceArray; //Holds the strings we want to display in the textbox.
 	private char[] charArray; //Holds our strings, converted to characters
 
@@ -38,8 +41,9 @@ public class askBoxScript : MonoBehaviour {
 	public bool showBox = false;
 	//The textbox we want to edit.
 	public UnityEngine.UI.Image textbox;
-	//Text so we have something to edit
-	public Text text;
+	
+	public Text text;//Text that we use to display our cursor
+    public Text qText;//Text which we use to display our actual QUESTION
 
 	// Use this for initialization
 	void Start () {
@@ -59,6 +63,7 @@ public class askBoxScript : MonoBehaviour {
 	{
 		progressIndex = 0;
 		text.text = "";
+        qText.text = question;
 		tinyTimer = resetTimer;
 		textSpeed = resetTextSpeed;
 		charArray = new char[choiceArray[progressIndex].Length];//We get the length of the string in our current conversationPoint.
@@ -69,7 +74,9 @@ public class askBoxScript : MonoBehaviour {
 
 		textArray = new Text[choiceArray.Length];
 
-		for(int i = 0; i < choiceArray.Length; i++)
+        //Our basic Text is used as a cursor. The rest of the texts are stored in the textArray
+
+		for(int i = 0; i < choiceArray.Length; i++)//Here we instantiate ALL of the new text objects
 		{
 			Text temp = (Text)Instantiate(text, textStartPoint.transform.position, transform.rotation);
 			//temp.text = "TEST";
@@ -174,7 +181,7 @@ public class askBoxScript : MonoBehaviour {
 	public void interactLoop()
 	{
 		if (isFinishedDisplaying) { 
-			text.alignment = TextAnchor.MiddleCenter;
+			text.alignment = TextAnchor.MiddleRight;
 			text.transform.position = new Vector3(textArray[choiceID].transform.position.x - 1, textArray[choiceID].transform.position.y, 0);
 			text.text = "○";
 
@@ -187,7 +194,7 @@ public class askBoxScript : MonoBehaviour {
 			{
 				choiceID--;
 			}
-			if (Input.GetKeyUp(KeyCode.DownArrow) && choiceID < choiceArray.Length)
+			if (Input.GetKeyUp(KeyCode.DownArrow) && choiceID < choiceArray.Length-1)
 			{
 				choiceID++;
 			}
