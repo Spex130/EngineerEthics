@@ -6,14 +6,14 @@ public class askBoxScript : MonoBehaviour {
 
 	//Visualization variables
 	public GameObject textStartPoint; //Tells where our text will begin generating.
-
     public convoNode currentNode; //This is the node we are currently pulling info from
-
     public textBoxScript textBoxPartner; //Our askBox's textbox partner to switch between
+    public playerChar player;
 
     public string question;//The question we ponder the the answer to.
 	public string[] choiceArray; //Holds the strings we want to display in the textbox.
-	[SerializeField] private char[] charArray; //Holds our strings, converted to characters
+
+   private char[] charArray; //Holds our strings, converted to characters
 
 	public int lineLength = 25; //Number of characters per line
 	public float kerning = 1f;//Space between characters
@@ -23,13 +23,13 @@ public class askBoxScript : MonoBehaviour {
 	public float textSpeed = 15f;
 	public float endLineBlinkSpeed = 1f;
 	private float resetTextSpeed;
-	[SerializeField] private float tinyTimer = 1f;
+	private float tinyTimer = 1f;
 	private float resetTimer;
 
 	//Keeps track of our cursor so we know where we are in the string.
 	private int horiIndex = 0;
 	private int vertIndex = 0;
-	private int progressIndex = 0;
+	private int progressIndex = 0;//We use this to check which question we're currently drawing out
 
 	public int choiceID = 0;//How we publically track what choice we're making. This controls where the cursor will be as well.
 
@@ -63,32 +63,40 @@ public class askBoxScript : MonoBehaviour {
 
 	public void init()
 	{
-		progressIndex = 0;
-		text.text = "";
-        qText.text = question;
-		tinyTimer = resetTimer;
-		textSpeed = resetTextSpeed;
-		charArray = new char[choiceArray[progressIndex].Length];//We get the length of the string in our current conversationPoint.
-		isFinishedDisplaying = false;
-		//prepStrings();
-		horiIndex = 0;
-		vertIndex = 0;
+        player = (playerChar)GameObject.FindObjectOfType(typeof(playerChar));//DYNAMICALLY GET OUR CHARACTER ON INIT!
+        if (currentNode.myType != convoNode.nodeType.textOnly)
+        { 
+            progressIndex = 0;
+            choiceID = 0;
+		    text.text = "";
+            qText.text = currentNode.question;
+            choiceArray = currentNode.endQuestionArray;
+		    tinyTimer = resetTimer;
+		    textSpeed = resetTextSpeed;
+		    charArray = new char[choiceArray[progressIndex].Length];//We get the length of the string in our current conversationPoint.
+		    isFinishedDisplaying = false;
+		    //prepStrings();
+		    horiIndex = 0;
+		    vertIndex = 0;
 
-		textArray = new Text[choiceArray.Length];
+		    textArray = new Text[choiceArray.Length];
+            charArray = choiceArray[progressIndex].ToCharArray();
 
-        //Our basic Text is used as a cursor. The rest of the texts are stored in the textArray
+            //Our basic Text is used as a cursor. The rest of the texts are stored in the textArray
 
-		for(int i = 0; i < choiceArray.Length; i++)//Here we instantiate ALL of the new text objects
-		{
-			Text temp = (Text)Instantiate(text, textStartPoint.transform.position, transform.rotation);
-			//temp.text = "TEST";
-			temp.transform.SetParent(textStartPoint.transform, false);
-			temp.alignment = TextAnchor.MiddleLeft;
-			temp.transform.localPosition = new Vector3(0, 0 - (vSpace * i), 0);
-			textArray[i] = temp;
-		}
+            for (int i = 0; i < choiceArray.Length; i++)//Here we instantiate ALL of the new text objects
+		    {
+			    Text temp = (Text)Instantiate(text, textStartPoint.transform.position, transform.rotation);
+			    //temp.text = "TEST";
+			    temp.transform.SetParent(textStartPoint.transform, false);
+			    temp.alignment = TextAnchor.MiddleLeft;
+			    temp.transform.localPosition = new Vector3(0, 0 - (vSpace * i), 0);
+			    textArray[i] = temp;
+		    }
+        }
     }
 
+    //Dynamic function to determine whether or not the askbox should be showing based on a variable.
 	public void showTextboxCheck()
 	{
 		if (!showBox)
@@ -101,17 +109,37 @@ public class askBoxScript : MonoBehaviour {
 		}
 	}
 
-	public void enableBox()//This enables the textbox so you can see it.
+	public void enableBox()//This enables the textbox so you can see it. It also resets the textbox.
 	{
+        
 		textbox.enabled = true;
 		text.enabled = true;
-	}
+        qText.enabled = true;
+
+        for (int i = 0; i < choiceArray.Length; i++)//Here we instantiate ALL of the new text objects
+        {
+            textArray[i].enabled = true;
+        }
+    }
 
 	public void disableBox()//This disables the textbox so that you can't see it.
 	{
 		textbox.enabled = false;
 		text.enabled = false;
-	}
+        qText.enabled = false;
+
+        deleteText();
+    }
+
+    public void activate(convoNode q)
+    {
+        currentNode = q;
+        question = currentNode.question;
+        choiceArray = q.endQuestionArray;
+        init();
+        enableBox();
+        showBox = true;
+    }
 
 	//This method acts as an update loop for when the text box should be displaying normal conversation text.
 	public void printLoop()
@@ -168,21 +196,52 @@ public class askBoxScript : MonoBehaviour {
 	public void makeChoice()
 	{
 		isFinishedDisplaying = false;
-		deleteText();
-		disableBox();
-		showBox = false;
+        //First we check if what our answer even corresponds to even exists.
+        if (currentNode.hasNext && currentNode.nextNodeArray[choiceID] != null)
+        {
+            switch (currentNode.myType)
+            {
 
+                case convoNode.nodeType.textOnly://Switch to Text Mode
+                    textBoxPartner.startConvo(currentNode.nextNodeArray[choiceID]);
+                    disableBox();
+                    break;
+                case convoNode.nodeType.both://Switch to Text Mode
+                    textBoxPartner.startConvo(currentNode.nextNodeArray[choiceID]);
+                    disableBox();
+                    break;
+
+                case convoNode.nodeType.question://Load up and Re-init!
+                    currentNode = currentNode.nextNodeArray[choiceID];
+                    init();
+                    break;
+
+                default:
+                    break;
+            }
+        }
+        else {
+            print("disableBox");
+            disableBox();
+            showBox = false;
+        }
 	}
 
 	public void deleteText(){
-		for(int i = 0; i < textArray.Length; i++){
-			Destroy(textArray[i].gameObject);
-		}
+
+        if (!(textArray == null))
+        {
+            for (int i = 0; i < textArray.Length; i++)
+            {
+                Destroy(textArray[i].gameObject);
+            }
+            textArray = null;
+        }
 	}
 
 	public void interactLoop()
 	{
-		if (isFinishedDisplaying) { 
+		if (isFinishedDisplaying) { //If it's finshed displaying, that means it's time to MAKE A CHOICE.
 			text.alignment = TextAnchor.MiddleRight;
 			text.transform.position = new Vector3(textArray[choiceID].transform.position.x - 1, textArray[choiceID].transform.position.y, 0);
 			text.text = "○";

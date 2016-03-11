@@ -15,6 +15,7 @@ public class convoNode : MonoBehaviour {
 
 
     public convoNode[] nextNodeArray;//The array of other nodes. Meant to make a tree structure out of the nodes.
+    public bool hasNext;//Tells whether or not we are at the end of our path.
     public int choiceIndex = 0;//The ID of the next node we want to hea d toward
     public string[] convoTextArray;//The ENTIRE text you want the character to say
 
@@ -36,6 +37,7 @@ public class convoNode : MonoBehaviour {
     {
         return nextNodeArray[0];
     }
+
 
     //Returns the node requested by the askBox
     public convoNode getNextNode(int index)

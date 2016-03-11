@@ -15,6 +15,7 @@ public class playerChar : MonoBehaviour {
 	public Door touchedDoor = null;//If a door is touching us, it will set this variable true for us.
 	public lerpChain chain; //We have a reference to our lerpChain so we can reset the camera position when we enter a door.
 	public textBoxScript textBox;//This is a reference to the textbox so we can activate dialogue.
+    public askBoxScript askBox;//A public reference to the askBox so we can figure out if the askbox is active
 
 	public float moveSpeed = 5f;//This is how fast we run.
 	public float stopSpeedDiv = 2f;//This is our stopping friction.
@@ -47,12 +48,18 @@ public class playerChar : MonoBehaviour {
 		directionCheck();
 	}
 
-	//Checks whether or not we are moving left or right. Or moving at all.
-	public void moveCheck()
-	{
-		canMove = !textBox.showBox;
+    //Checks whether or not we are moving left or right. Or moving at all.
+    public void moveCheck()
+    {
+        if (textBox.showBox || askBox.showBox)
+        {
+            canMove = false;
+        }
+        else{
+            canMove = true;
+        }
 
-		if (canMove) {
+        if (canMove) {
 			if (Input.GetKey(KeyCode.RightArrow))
 			{
 				State = 2;
@@ -100,41 +107,44 @@ public class playerChar : MonoBehaviour {
 	}
 
 
-	//Checks if we are in range of a door, and if we are in range of a door, transports us using that door.
-	//If we are near a person, it talkes to the person.
-	//It also handles whether or not our INTERACTION INDICATOR should show.
-	public void interactCheck()
-	{
+    //Checks if we are in range of a door, and if we are in range of a door, transports us using that door.
+    //If we are near a person, it talkes to the person.
+    //It also handles whether or not our INTERACTION INDICATOR should show.
+    public void interactCheck()
+    {
 
-		if(isTouchingDoor || isTouchingPerson || isTouchingElevator)
-		{
-			interactIndicator.enabled = true;
-		}
-		else
-		{
-			interactIndicator.enabled = false;
-			touchedDoor = null;
-		}
+        if (isTouchingDoor || isTouchingPerson || isTouchingElevator)
+        {
+            interactIndicator.enabled = true;
+        }
+        else
+        {
+            interactIndicator.enabled = false;
+            touchedDoor = null;
+        }
 
-		if (Input.GetKeyUp(KeyCode.UpArrow) && canMove){
-			if (isTouchingDoor)
-			{
-                touchedDoor.interact();
+        if (canMove) {
+            if (Input.GetKeyUp(KeyCode.UpArrow)) {
+                if (isTouchingDoor)
+                {
+                    touchedDoor.interact();
 
-			}
+                }
 
-			else if (isTouchingPerson)
-			{
+                else if (isTouchingPerson)
+                {
 
-			}
+                }
 
 
 
-			else
-			{
-				//textBox.startConvo();
-			}
-		}
+            }
+
+            else if (Input.GetKeyUp(KeyCode.Space))
+            {
+                textBox.startConvo();
+            }
+        }
 	}
 
 

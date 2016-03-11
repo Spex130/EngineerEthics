@@ -903,7 +903,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1391458390
 RectTransform:
   m_ObjectHideFlags: 0
@@ -969,20 +969,14 @@ MonoBehaviour:
   textStartPoint: {fileID: 828025438}
   currentNode: {fileID: 11417412, guid: 5abf1ee37e121074cae96bc93c0f4fce, type: 2}
   askBoxPartner: {fileID: 1597215906}
-  convArray:
-  - First off this is a demonstration of our example text.
-  - We can actually handle multiple lines of text with little to no problems.
-  - We can also exit conversations once they end!
+  player: {fileID: 0}
+  convArray: []
   lineLength: 35
   kerning: 0.1
   vSpace: 1
   textSpeed: 15
   endLineBlinkSpeed: 1
-  isQuestion: 1
-  choiceArray:
-  - Yes
-  - No
-  - I QUIT.
+  choiceArray: []
   questionLine: 0
   choiceIndex: 0
   showBox: 0
@@ -1039,6 +1033,14 @@ Prefab:
       propertyPath: textBox
       value: 
       objectReference: {fileID: 1391458393}
+    - target: {fileID: 11453056, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: canMove
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453056, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: askBox
+      value: 
+      objectReference: {fileID: 1597215906}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
   m_IsPrefabParent: 0
@@ -1093,21 +1095,17 @@ MonoBehaviour:
   textStartPoint: {fileID: 717126392}
   currentNode: {fileID: 11417412, guid: 5abf1ee37e121074cae96bc93c0f4fce, type: 2}
   textBoxPartner: {fileID: 1391458393}
-  question: HUELOL?
-  choiceArray:
-  - YAS
-  - NAH
-  - WAT
-  charArray: 
+  player: {fileID: 1675471754}
+  question: 
+  choiceArray: []
   lineLength: 25
   kerning: 1
   vSpace: 6
   textSpeed: 15
   endLineBlinkSpeed: 1
-  tinyTimer: 1
   choiceID: 0
   textArray: []
-  showBox: 1
+  showBox: 0
   textbox: {fileID: 1597215907}
   text: {fileID: 729940537}
   qText: {fileID: 1188086817}

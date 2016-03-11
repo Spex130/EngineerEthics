@@ -12,6 +12,8 @@ public class textBoxScript : MonoBehaviour {
     public convoNode currentNode; //This is the node we are currently pulling info from
 
     public askBoxScript askBoxPartner; //Our textBox's askBox partner to switch between
+    public playerChar player;//Our connection to the player in the scene.
+
 
     public string[] convArray; //Holds the strings we want to display in the textbox.
 	private char[] charArray; //Holds our strings, converted to characters
@@ -33,8 +35,6 @@ public class textBoxScript : MonoBehaviour {
 	private int vertIndex = 0;
 
 	//Branching option variables
-	public bool isQuestion = false;//Tells us whether or not this text snippet has a question at the end.
-
 	public string[] choiceArray; // The strings that make up the answers we can make
 	
 
@@ -62,24 +62,35 @@ public class textBoxScript : MonoBehaviour {
 		showTextboxCheck();
 		printLoop();
 
-		if (Input.GetKeyUp(KeyCode.UpArrow))
+		if (Input.GetKeyUp(KeyCode.Space))
 		{
 			progressConv();
 		}
 
 	}
 
-	//The initialization function for when our program has started running.
-	public void init()
-	{
-        convArray=currentNode.convoTextArray;
-		text.text = "";
-		resetTimer = tinyTimer;
-		resetTextSpeed = textSpeed;
-		charArray = new char[convArray[conversationPoint].Length];//We get the length of the string in our current conversationPoint.
-		isFinishedDisplaying = false;
-		conversationPoint = 0;
-		prepStrings();
+    //The initialization function for when our program has started running.
+    public void init()
+    {
+        player = (playerChar)GameObject.FindObjectOfType(typeof(playerChar));//DYNAMICALLY GET OUR CHARACTER ON INIT!
+        if (currentNode.myType != convoNode.nodeType.question) {//Make sure to check whether or not we should even be bothering to set up.
+            convArray = currentNode.convoTextArray;//Load up our text to sidplay from our node.
+            text.text = "";//Make sure our text is empty before we start.
+
+            //We set these next two so that the timers will know what number to reset to.
+            resetTimer = tinyTimer;
+            resetTextSpeed = textSpeed;
+
+            charArray = new char[convArray[conversationPoint].Length];//We get the length of the string in our current conversationPoint.
+            isFinishedDisplaying = false;
+            conversationPoint = 0;//So that we start at the BEGINNING of the convo
+            prepStrings();
+        }
+        else//If it's just a question, immediately activate our Ask Box buddy.
+        {
+            disableBox();
+            //askQuestion(currentNode);
+        }
 	}
 
 	//Initialize after the program has started
@@ -99,21 +110,45 @@ public class textBoxScript : MonoBehaviour {
 	//Makes the box show after resetting it.
 	public void startConvo()
 	{
-		showBox = true;
-		reInit();
-		textbox.enabled = true;
-		text.enabled = true;
+
+        if (askBoxPartner.showBox == false)
+        {
+            if (currentNode.myType != convoNode.nodeType.question)
+            {
+                showBox = true;
+                textbox.enabled = true;
+                text.enabled = true;
+                init();
+            }
+            else
+            {
+                askQuestion(currentNode);
+            }
+        }
 	}
 
 
 	//Overloaded enable that allows for new conversations to be loaded in.
 	public void startConvo(convoNode newNode)
 	{
-        currentNode = newNode;
-		showBox = true;
-		convArray = currentNode.convoTextArray;
-		reInit();
-		enableBox();
+
+        if (askBoxPartner.showBox == false)
+        {
+            if (currentNode.myType == convoNode.nodeType.question)
+            {
+                askQuestion(currentNode);
+
+            }
+            else
+            {
+
+                currentNode = newNode;
+                showBox = true;
+                convArray = currentNode.convoTextArray;
+                init();
+                enableBox();
+            }
+        }
 	}
 
 
@@ -126,12 +161,14 @@ public class textBoxScript : MonoBehaviour {
 	{
 		textbox.enabled = true;
 		text.enabled = true;
+        showBox = true;
 	}
 
 	public void disableBox()//This disables the textbox so that you can't see it.
 	{
 		textbox.enabled = false;
 		text.enabled = false;
+        showBox = false;
 	}
 
 	//Resets the Text so that the next line can display properly.
@@ -151,11 +188,11 @@ public class textBoxScript : MonoBehaviour {
     //This runs constantly to decide whether or not the graphics should be displayed or not.
 	public void showTextboxCheck()
 	{
-		if (!showBox)
+		if (!showBox || askBoxPartner.showBox)
 		{
 			disableBox();
 		}
-		else
+		else if (showBox)
 		{
 			enableBox();
 		}
@@ -187,7 +224,7 @@ public class textBoxScript : MonoBehaviour {
                     {
                         if (currentNode.myType == convoNode.nodeType.both) //THIS MEANS WE HAVE A QUESTION TO ANSWER. Activate the Askbox.
                         {
-
+                            askQuestion(currentNode);
                         }
                         else //This means we have no questions, and can safely end the conversation once and for all.
                         {
@@ -199,6 +236,10 @@ public class textBoxScript : MonoBehaviour {
                 {
                     displaySpeedSkip();
                 }
+            }
+            else//This means the currentNode's type is "question" and we can turn on the AskBox.
+            {
+                askQuestion(currentNode);
             }
 
 
@@ -230,14 +271,11 @@ public class textBoxScript : MonoBehaviour {
         }
     }
 
-	public void askQuestion()
+	public void askQuestion(convoNode q)
 	{
-		if (showBox)
-		{//If we're actually active....
-			
-           
 
-		}
+        askBoxPartner.activate(q);
+        disableBox();
 	}
 
 
@@ -256,6 +294,7 @@ public class textBoxScript : MonoBehaviour {
 	public void printLoop()
 	{
 		if (showBox) {//If we're even active...
+            
 			tinyTimer -= Time.deltaTime * textSpeed;
 
 			//Every time we time down to zero, do the thing.
