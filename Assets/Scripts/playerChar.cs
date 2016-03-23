@@ -39,6 +39,8 @@ public class playerChar : MonoBehaviour {
 		myRigidbody2D = GetComponent<Rigidbody2D>();
 		mySprite = gameObject.GetComponent<SpriteRenderer>();
 		interactIndicator.enabled = false;
+        textBox = (textBoxScript)GameObject.FindObjectOfType(typeof(textBoxScript));//Dynamically get our singular textbox.
+        askBox = (askBoxScript)GameObject.FindObjectOfType(typeof(askBoxScript));//Dynamically get our singular askbox
     }
 	
 	// Update is called once per frame
