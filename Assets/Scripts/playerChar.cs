@@ -13,6 +13,7 @@ public class playerChar : MonoBehaviour {
 
 
 	public Door touchedDoor = null;//If a door is touching us, it will set this variable true for us.
+    public NPC touchedPerson;
 	public lerpChain chain; //We have a reference to our lerpChain so we can reset the camera position when we enter a door.
 	public textBoxScript textBox;//This is a reference to the textbox so we can activate dialogue.
     public askBoxScript askBox;//A public reference to the askBox so we can figure out if the askbox is active
@@ -135,20 +136,30 @@ public class playerChar : MonoBehaviour {
 
                 else if (isTouchingPerson)
                 {
-
+                    touchedPerson.interact();
                 }
 
 
 
             }
 
+            /*
             else if (Input.GetKeyUp(KeyCode.Space))
             {
-                textBox.startConvo();
-            }
+               startConvo();
+            }*/
         }
 	}
 
+    public void startConvo()
+    {
+        textBox.startConvo();
+    }
+
+    public void startConvo(convoNode newNode)
+    {
+        textBox.startConvo(newNode);
+    }
 
 
 }

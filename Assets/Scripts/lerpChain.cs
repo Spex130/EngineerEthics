@@ -17,7 +17,8 @@ public class lerpChain : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		init();
+        player = (playerChar)GameObject.FindObjectOfType(typeof(playerChar));//DYNAMICALLY GET OUR CHARACTER ON INIT!
+        init();
 	}
 
 	public void init()

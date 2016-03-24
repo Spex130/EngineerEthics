@@ -15,7 +15,7 @@ public class NPC : MonoBehaviour, interactable {
     [SerializeField] private Vector2 rightBoundary;//How far right of our origiin we can go.
 
     public bool isFacingRight = true;//Tells us where we're facing.
-
+    public bool activatedTimer = true;
 
     public float timer = 1.5f;
     private float resetTimer;
@@ -35,7 +35,7 @@ public class NPC : MonoBehaviour, interactable {
 
     public virtual void interact()
     {
-
+        player.startConvo(myConvo);   
     }
 
     // Use this for initialization
@@ -52,6 +52,28 @@ public class NPC : MonoBehaviour, interactable {
         timerLoop();
         behaviorLoop();
 	}
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            player = other.gameObject.GetComponent<playerChar>();
+            player.touchedPerson = this;
+            player.isTouchingPerson = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        { print("EXIT"); }
+
+        //player.touchedPerson = null;
+        player.isTouchingPerson = false;
+        player = null;
+
+
+    }
 
     public void timerLoop()
     {
@@ -73,40 +95,53 @@ public class NPC : MonoBehaviour, interactable {
 
     public void behaviorLoop()
     {
-        switch(state)
-        {
-            case NPC.NPCState.Idle:
-                myAnim.SetInteger("AnimState", (int)state);
-                break;
-            case NPC.NPCState.Walking:
-                myAnim.SetInteger("AnimState", (int)state);
-                if (isFacingRight)
+            switch (state)
+            {
+                case NPC.NPCState.Idle:
+                    myAnim.SetInteger("AnimState", (int)state);
+                    break;
+                case NPC.NPCState.Walking:
+                if (true == true) ///if Our player can move we move.
                 {
-                    myRigidbody2D.velocity = new Vector2(1, myRigidbody2D.velocity.y);
-                    mySprite.flipX = false;
-                    if(this.transform.position.x >= rightBoundary.x)
+                    myAnim.SetInteger("AnimState", (int)state);
+
+                    /*
+                        We use the following section to determine if we are moveing left or right, along with whether or not we should turn around.
+                    */
+                    if (isFacingRight)
                     {
-                        myRigidbody2D.velocity = new Vector2(0, myRigidbody2D.velocity.y);
-                        this.transform.position = new Vector2(rightBoundary.x -.01f, this.transform.position.y);
-                        isFacingRight = false;
+                        myRigidbody2D.velocity = new Vector2(1, myRigidbody2D.velocity.y);
+                        mySprite.flipX = false;
+                        if (this.transform.position.x >= rightBoundary.x)
+                        {
+                            myRigidbody2D.velocity = new Vector2(0, myRigidbody2D.velocity.y);
+                            this.transform.position = new Vector2(rightBoundary.x - .01f, this.transform.position.y);
+                            isFacingRight = false;
+                        }
+                    }
+                    else
+                    {
+                        myRigidbody2D.velocity = new Vector2(-1, myRigidbody2D.velocity.y);
+                        mySprite.flipX = true;
+                        if (this.transform.position.x <= leftBoundary.x)
+                        {
+                            myRigidbody2D.velocity = new Vector2(0, myRigidbody2D.velocity.y);
+                            this.transform.position = new Vector2(leftBoundary.x + .01f, this.transform.position.y);
+                            isFacingRight = true;
+                        }
                     }
                 }
-                else
+                /*else//Else we don't move.
                 {
-                    myRigidbody2D.velocity = new Vector2(-1, myRigidbody2D.velocity.y);
-                    mySprite.flipX = true;
-                    if (this.transform.position.x <= leftBoundary.x)
-                    {
-                        myRigidbody2D.velocity = new Vector2(0, myRigidbody2D.velocity.y);
-                        this.transform.position = new Vector2(leftBoundary.x + .01f, this.transform.position.y);
-                        isFacingRight = true;
-                    }
+                    state = NPCState.Idle;
+                }*/
+                    break;
+                default:
+                    break;
                 }
-            break;
-            default:
-                break;
         }
-    }
+       
+    
     public void randomizeBehavior()
     {
         state = (NPCState)Random.Range(0, 2);

@@ -30,15 +30,15 @@ public class Door : MonoBehaviour, interactable {
 	void OnTriggerExit2D(Collider2D other)
 	{
 		if (other.gameObject.CompareTag("Player"))
-		{ print("EXIT"); }
+		{ print("EXIT"); 
 
 		player = other.gameObject.GetComponent<playerChar>();
 		//player.touchedDoor = null;
 		player.isTouchingDoor = false;
 			player = null;
-		
+        }
 
-	}
+    }
 
     public virtual void interact()
     {
