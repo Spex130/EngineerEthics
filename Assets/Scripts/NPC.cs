@@ -4,6 +4,7 @@ using System.Collections;
 public class NPC : MonoBehaviour, interactable {
 
     public convoNode myConvo;// What we say to the player
+    public string name = "defaultName";
     public playerChar player;
     private Animator myAnim;
     private SpriteRenderer mySprite;
