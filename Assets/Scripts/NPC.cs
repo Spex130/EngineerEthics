@@ -62,11 +62,15 @@ public class NPC : MonoBehaviour, interactable {
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
-        { print("EXIT"); }
+        {
+            print("EXIT");
+            //player.touchedPerson = null;
+            player.isTouchingPerson = false;
+            player = null;
 
-        //player.touchedPerson = null;
-        player.isTouchingPerson = false;
-        player = null;
+        }
+
+        
 
 
     }

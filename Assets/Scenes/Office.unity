@@ -1976,7 +1976,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11483698, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
       propertyPath: showBox
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11483698, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
       propertyPath: currentNode
@@ -3132,7 +3132,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 455786, guid: bc5e391b977dc134e882afd7dc26d371, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.33
+      value: 16.48
       objectReference: {fileID: 0}
     - target: {fileID: 455786, guid: bc5e391b977dc134e882afd7dc26d371, type: 2}
       propertyPath: m_LocalPosition.y
