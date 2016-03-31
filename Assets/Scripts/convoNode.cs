@@ -1,35 +1,50 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class convoNode : MonoBehaviour {
 
     /// <summary>
     /// This is a node in a tree structure meant to mostly load info into the textboxes and ask boxes.
-    /// 
-    /// 
     /// </summary>
 
-    public enum nodeType {textOnly, question, both }; // An enum we use to determine how our textboxes should react to us.
     
-    public nodeType myType = nodeType.textOnly;//Our personal version of our Enum to track ourselves with.
+
+    [Tooltip("We use this Enum to set how our TextBox or Askbox react to this ConvoNode loading.")]
+    public nodeType myType = nodeType.textOnly;
+
+    [Tooltip("The ENTIRE text you want the character to say. Each Array entry counts as a box. The display resets for each box.")]
+    public string[] convoTextArray;
+
+    #region Choice Stuff
+    [Tooltip("The question that is asked of us. Is displayed at the top of the askBox when activated.")]
+    public string question;
+
+    [Tooltip("The ID of the next node we want to head toward. Used as the Index for the [endAnswerArray].\n\nIt also is used to activate corresponding entries in [nextNodeArray] and [endEventArray].")]
+    public int choiceIndex = 0;
+
+    [Tooltip("This array provides the text 'answers' to the [question] string")]
+    public string[] endAnswerArray;
 
 
-    [Tooltip("//An array of convoNodes. The order of the convonodes corresponds to the order of the answers in the endQuestionArray. Meant to make a tree structure out of the nodes.")]
+    [Tooltip("Tells whether or not we are a leaf at the end of our path's tree. Leaving this empty means we won't check the [nextNodeArray].")]
+    public bool hasNext;
+    [Tooltip("An array of convoNodes. The order of the convonodes corresponds to the order of the answers in the endAnswerArray. Meant to make a tree structure out of the nodes.\n\nMust be in size ≥ the [endAnswerArray], but null entries are accepted. They simply do nothing when chosen.")]
     public convoNode[] nextNodeArray;
 
-    [Tooltip("Tells whether or not we are a leaf at the end of our path's tree.")]
-    public bool hasNext;
-    public int choiceIndex = 0;//The ID of the next node we want to hea d toward
-    public string[] convoTextArray;//The ENTIRE text you want the character to say
+    [Tooltip("An array of eventScripts. The order of the eventScripts corresponds to the order of the answers in the [endAnswerArray]. Allows for talking to NPCs to change how other NPCs talk to you.\n\nMust be in size ≥ the [endAnswerArray], but null entries are accepted. They simply do nothing when chosen.")]
+    public eventScript[] endEventArray;// The results of the answer you chose for the question.
+    public bool hasEndEvent = false;
 
-    public string question;//The question we ponder the the answer to.
-    public string[] endQuestionArray;//The Answers you want the question to ask at the end.
+    [Tooltip("If [hasEndEvent] is true this eventScript gets called when this convoNode terminates. It gets called whether the convoNode simply reads out text or if it asks you a question.\n\nDo note that Events activated by questions ALSO run, which means you can cause two events to run at the same time.")]
+    public eventScript endEvent;
 
-    public ArrayList[] endBranchArray;// The resulsts of the answer you chose for the question.
+    #endregion
+
     //This arraylist either contains an EVENT, a CONVONODE (which continues the conversation, or NOTHING.
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 	
 	}
 	

@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
+
 public class askBoxScript : MonoBehaviour {
 
 	//Visualization variables
@@ -9,8 +10,9 @@ public class askBoxScript : MonoBehaviour {
     public convoNode currentNode; //This is the node we are currently pulling info from
     public textBoxScript textBoxPartner; //Our askBox's textbox partner to switch between
     public playerChar player;
+    public eventTracker sceneEventTracker;//This is our scene's eventTracker. It gets fed what to do depending on if the convoNode contains an event.
 
-    public string question;//The question we ponder the the answer to.
+    public string question = "defaulttext";//The question we ponder the the answer to.
 	public string[] choiceArray; //Holds the strings we want to display in the textbox.
 
    private char[] charArray; //Holds our strings, converted to characters
@@ -64,35 +66,39 @@ public class askBoxScript : MonoBehaviour {
 	public void init()
 	{
         player = (playerChar)GameObject.FindObjectOfType(typeof(playerChar));//DYNAMICALLY GET OUR CHARACTER ON INIT!
-        if (currentNode.myType != convoNode.nodeType.textOnly)
-        { 
-            progressIndex = 0;
-            choiceID = 0;
-		    text.text = "";
-            qText.text = currentNode.question;
-            choiceArray = currentNode.endQuestionArray;
-		    tinyTimer = resetTimer;
-		    textSpeed = resetTextSpeed;
-		    charArray = new char[choiceArray[progressIndex].Length];//We get the length of the string in our current conversationPoint.
-		    isFinishedDisplaying = false;
-		    //prepStrings();
-		    horiIndex = 0;
-		    vertIndex = 0;
+        sceneEventTracker = (eventTracker)GameObject.FindObjectOfType(typeof(eventTracker));//Dynamically get our eventTracker on INIT.
+        if(currentNode != null)
+        {
+            if (currentNode.myType != nodeType.textOnly)
+            {
+                progressIndex = 0;
+                choiceID = 0;
+                text.text = "";
+                qText.text = currentNode.question;
+                choiceArray = currentNode.endAnswerArray;
+                tinyTimer = resetTimer;
+                textSpeed = resetTextSpeed;
+                charArray = new char[choiceArray[progressIndex].Length];//We get the length of the string in our current conversationPoint.
+                isFinishedDisplaying = false;
+                //prepStrings();
+                horiIndex = 0;
+                vertIndex = 0;
 
-		    textArray = new Text[choiceArray.Length];
-            charArray = choiceArray[progressIndex].ToCharArray();
+                textArray = new Text[choiceArray.Length];
+                charArray = choiceArray[progressIndex].ToCharArray();
 
-            //Our basic Text is used as a cursor. The rest of the texts are stored in the textArray
+                //Our basic Text is used as a cursor. The rest of the texts are stored in the textArray
 
-            for (int i = 0; i < choiceArray.Length; i++)//Here we instantiate ALL of the new text objects
-		    {
-			    Text temp = (Text)Instantiate(text, textStartPoint.transform.position, transform.rotation);
-			    //temp.text = "TEST";
-			    temp.transform.SetParent(textStartPoint.transform, false);
-			    temp.alignment = TextAnchor.MiddleLeft;
-			    temp.transform.localPosition = new Vector3(0, 0 - (vSpace * i), 0);
-			    textArray[i] = temp;
-		    }
+                for (int i = 0; i < choiceArray.Length; i++)//Here we instantiate ALL of the new text objects
+                {
+                    Text temp = (Text)Instantiate(text, textStartPoint.transform.position, transform.rotation);
+                    //temp.text = "TEST";
+                    temp.transform.SetParent(textStartPoint.transform, false);
+                    temp.alignment = TextAnchor.MiddleLeft;
+                    temp.transform.localPosition = new Vector3(0, 0 - (vSpace * i), 0);
+                    textArray[i] = temp;
+                }
+            }
         }
     }
 
@@ -135,7 +141,7 @@ public class askBoxScript : MonoBehaviour {
     {
         currentNode = q;
         question = currentNode.question;
-        choiceArray = q.endQuestionArray;
+        choiceArray = q.endAnswerArray;
         init();
         enableBox();
         showBox = true;
@@ -195,6 +201,19 @@ public class askBoxScript : MonoBehaviour {
 
 	public void makeChoice()
 	{
+        //Part 1: Apply our choice's event to the world, if there is an event to apply.
+        if(!(currentNode.endEventArray[choiceID] == null))//If there's an event to load in the chosen slot...
+        {
+            sceneEventTracker.loadEvent(currentNode.endEventArray[choiceID]);//Load the Event!
+        }
+
+        //Part 2: Check if a universal End Event should be applied
+        if (currentNode.hasEndEvent)
+        {
+            sceneEventTracker.loadEvent(currentNode.endEvent);
+        }
+
+        //Part 3: Check the node to see if any nodes come after it and respond accordingly.
 		isFinishedDisplaying = false;
         //First we check if what our answer even corresponds to even exists.
         if (currentNode.hasNext && currentNode.nextNodeArray[choiceID] != null)
@@ -202,16 +221,16 @@ public class askBoxScript : MonoBehaviour {
             switch (currentNode.myType)
             {
 
-                case convoNode.nodeType.textOnly://Switch to Text Mode
+                case nodeType.textOnly://Switch to Text Mode
                     textBoxPartner.startConvo(currentNode.nextNodeArray[choiceID]);
                     disableBox();
                     break;
-                case convoNode.nodeType.both://Switch to Text Mode
+                case nodeType.both://Switch to Text Mode
                     textBoxPartner.startConvo(currentNode.nextNodeArray[choiceID]);
                     disableBox();
                     break;
 
-                case convoNode.nodeType.question://Load up and Re-init!
+                case nodeType.question://Load up and Re-init!
                     currentNode = currentNode.nextNodeArray[choiceID];
                     init();
                     break;
@@ -221,7 +240,7 @@ public class askBoxScript : MonoBehaviour {
             }
         }
         else {
-            print("disableBox");
+            //print("disableBox");
             disableBox();
             showBox = false;
         }
@@ -244,9 +263,9 @@ public class askBoxScript : MonoBehaviour {
 		if (isFinishedDisplaying) { //If it's finshed displaying, that means it's time to MAKE A CHOICE.
 			text.alignment = TextAnchor.MiddleRight;
 			text.transform.position = new Vector3(textArray[choiceID].transform.position.x - 1, textArray[choiceID].transform.position.y, 0);
-			text.text = "○";
+            text.text = "○  ";
 
-			if (Input.GetKeyUp(KeyCode.Space))
+            if (Input.GetKeyUp(KeyCode.Space))
 			{
 				makeChoice();
 			}

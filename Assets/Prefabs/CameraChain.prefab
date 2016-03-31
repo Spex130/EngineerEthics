@@ -177,7 +177,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2782711, y: 2.4845638, z: 0}
+  m_LocalPosition: {x: -0.22744186, y: -0.16220908, z: 0}
   m_LocalScale: {x: 1.7715329, y: 1.7715304, z: 1}
   m_Children:
   - {fileID: 458788}
@@ -373,15 +373,18 @@ MonoBehaviour:
   currentNode: {fileID: 11417412, guid: 5abf1ee37e121074cae96bc93c0f4fce, type: 2}
   textBoxPartner: {fileID: 11483698}
   player: {fileID: 0}
-  question: 
-  choiceArray: []
+  sceneEventTracker: {fileID: 0}
+  question: WUT
+  choiceArray:
+  - HAI
   lineLength: 25
   kerning: 1
   vSpace: 6
   textSpeed: 15
   endLineBlinkSpeed: 1
   choiceID: 0
-  textArray: []
+  textArray:
+  - {fileID: 0}
   showBox: 0
   textbox: {fileID: 11495572}
   text: {fileID: 11448966}
@@ -448,6 +451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textStartPoint: {fileID: 112992}
   currentNode: {fileID: 11417412, guid: 5abf1ee37e121074cae96bc93c0f4fce, type: 2}
+  sceneEventTracker: {fileID: 0}
   askBoxPartner: {fileID: 11456774}
   player: {fileID: 0}
   convArray: []
@@ -558,6 +562,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0

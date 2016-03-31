@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &191008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 487650}
+  - 114: {fileID: 11400854}
+  m_Layer: 0
+  m_Name: StartingConvo (Page1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &487650
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191008}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.037822, y: 5.8021894, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400854
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 0
+  convoTextArray:
+  - "\u25D9Boss: Scott, I need you to take over Becky\u2019s work today. She\u2019s
+    handling a couple other projects and dealing with a conference a state over."
+  - "Boss: You\u2019re the only other one who\u2019s qualified here to handle it,
+    and I want it done soon."
+  - 'Scott: Yes sir, what project was she working on?'
+  - "Boss: The one from Nalco Company. We\u2019re looking at renovating a waste treatment
+    system for some of the local plants. Apparently the old ones have been struggling
+    to keep up with all the post-treatment disposal."
+  - "Boss: Local communities been raising a stink about it, and you\u2019re the only
+    one here besides Becky who knows anything about these systems."
+  - "\u2642Scott: Two extra years in Environmental Engineering finally paid off."
+  - "\u25D9Scott: I should be able to handle the project sir, did Becky leave anything
+    behind I could look at?"
+  - 'Boss: All her notes and records on the project should be at her desk on the left.
+    If you need anything else just let me know.'
+  - 'Boss: For the most part, I just need you to approve the plan and get it going
+    to production. The project deadline is in about three days so no rush.'
+  - "\u2642Scott: Alright, should be a simple enough job. I still need to finish off
+    the project I was walking on previously. Shouldn\u2019t be too much work. Becky\u2019s
+    a responsible girl, works hard, and is really sweet. I have to do a good job,
+    don\u2019t want to let her down."
+  question: QUESTION!?
+  choiceIndex: 0
+  endAnswerArray: []
+  hasNext: 0
+  nextNodeArray: []
+  endEventArray: []
+  hasEndEvent: 0
+  endEvent: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 191008}
+  m_IsPrefabParent: 1

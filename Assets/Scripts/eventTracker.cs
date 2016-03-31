@@ -14,11 +14,19 @@ using System.Collections;
 
 public class eventTracker : MonoBehaviour {
 
-    //This is the list of LITERALLY EVERYTHING in the scene that can generate a convonode.
+
+    [Tooltip("This is the list of LITERALLY EVERYTHING in the scene that can generate a convonode. If it's an NPC relevant to the plot, put it here.")]
     public NPC[] sceneInteractables;
     public Hashtable hashList;
     //We're going to convert all of the NPCs in the scene into a hashtable with the Keys based on the NPC names.
     //Unfortunately, this means that no NPC can share a name with another NPC. 
+
+    [Tooltip("This is our 'Time Countdown' currency holder. Whenever we do something that costs Time, we remove it from this value.")]
+    public int timeLeft = 60;
+    [Tooltip("This is the eventScript that gets activated when the timer hits 0.")]
+    public eventScript timeEvent;
+    [Tooltip("If the timeLeft variable hits zero while this bool is active, whatever's in our TimeEvent variable ")]
+    public bool timerActivated = false;
 
 	// Use this for initialization
 	void Start () {
@@ -39,16 +47,57 @@ public class eventTracker : MonoBehaviour {
         }           
     }
 
+    //This takes in an event and then applies the changes from that event to every NPC in the scene.
     public void loadEvent(eventScript newEvent)
     {
-        string tempName;
-        for (int i = 0; i < sceneInteractables.Length; i++)
+
+        
+        
+        switch (newEvent.eventType)
         {
-            tempName = sceneInteractables[i].name;//We take the name of our NPC
-            if (newEvent.changeList.Contains(tempName))//If the name is found in the Event's list of NPCs who need stuff changed...
-            {
-                sceneInteractables[i].myConvo = (convoNode)newEvent.changeList[tempName];//...Then we
-            }
+            case eventNodeType.NPCEvent://NPCEvents change the NPC's speeches, and they change the eventTracker's timer settings.
+                string tempName;
+                for (int i = 0; i < sceneInteractables.Length; i++)//We check every NPC in the scene to see if it should be changed.
+                {
+                    tempName = sceneInteractables[i].name;//We take the name of our NPC
+                    if (newEvent.changeList.Contains(tempName))//If the name is found in the Event's list of NPCs who need stuff changed...
+                    {
+                        sceneInteractables[i].myConvo = (convoNode)newEvent.changeList[tempName];//...Then we change that NPC's convoNode.
+                    }
+                }
+                timeLeft += newEvent.adjustAmount;//We add/subtract any minutes the event gives us.
+                if (timeLeft < 0) { timeLeft = 0; }//If the time subtracted was larger than the amount of time we had left, just set it to 0.
+                timerActivated = newEvent.shouldActivateTimer;//Activate the timer, if we're told.
+            break;
+
+            case eventNodeType.TimerEvent://TimerEvents only set up Events for the Timer to run later!
+                timeEvent = newEvent;
+            break;
+
+            default:
+
+            break;
         }
+
+        
+        
+        //After we've done our Timer Math, check if our Event should be run!
+        if (timeLeft <=0 && timerActivated)
+        {
+            timerActivated = false;
+            string tempName;
+                for (int i = 0; i < sceneInteractables.Length; i++)//We check every NPC in the scene to see if it should be changed.
+            {
+                tempName = sceneInteractables[i].name;//We take the name of our NPC
+                if (newEvent.changeList.Contains(tempName))//If the name is found in the Event's list of NPCs who need stuff changed...
+                {
+                    sceneInteractables[i].myConvo = (convoNode)newEvent.changeList[tempName];//...Then we change that NPC's convoNode.
+                }
+            }
+            timeLeft += newEvent.adjustAmount;//We add/subtract any minutes the event gives us.
+            if (timeLeft < 0) { timeLeft = 0; }//If the time subtracted was larger than the amount of time we had left, just set it to 0.
+            timerActivated = newEvent.shouldActivateTimer;//Activate the timer, if we're told.
+        }
+       
     }
 }

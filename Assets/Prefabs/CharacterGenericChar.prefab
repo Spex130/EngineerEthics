@@ -14,7 +14,7 @@ GameObject:
   - 50: {fileID: 5036960}
   - 61: {fileID: 6125270}
   - 114: {fileID: 11438492}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CharacterGenericChar
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 427806}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CeilingCheck
   m_TagString: Untagged
   m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}
@@ -44,7 +44,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 490538}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}
@@ -60,7 +60,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 483744}
   - 212: {fileID: 21228860}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ExclamationPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2782711, y: 2.4845638, z: 0}
+  m_LocalPosition: {x: 15.62, y: -1.78829, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
   - {fileID: 490538}
@@ -192,13 +192,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFacingRight: 1
-  isTouchingElevator: 1
+  isTouchingElevator: 0
   isTouchingDoor: 0
   isTouchingPerson: 0
   canMove: 0
   touchedDoor: {fileID: 0}
+  touchedPerson: {fileID: 0}
   chain: {fileID: 0}
   textBox: {fileID: 0}
+  askBox: {fileID: 0}
   moveSpeed: 5
   stopSpeedDiv: 1.1
   State: 1

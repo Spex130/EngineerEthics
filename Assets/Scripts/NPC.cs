@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class NPC : MonoBehaviour, interactable {
 
     public convoNode myConvo;// What we say to the player
@@ -21,18 +22,12 @@ public class NPC : MonoBehaviour, interactable {
     public float timer = 1.5f;
     private float resetTimer;
     //ENUMS Definitions
-    /// <summary>
-    /// 
-    /// </summary>
-    public enum NPCState { Idle, Walking };
-
-    /// <summary>
-    ///THIS tells us whether or not our origin boundaries should treat the origin point as the left side, center, or right side of the boundary.
-    /// </summary>
-    public enum BoundaryPositionType {LeftSide, Center, RightSide};
+    
 
     public NPCState state;
     public BoundaryPositionType bPos;
+
+    public bool stationaryMode = false;
 
     public virtual void interact()
     {
@@ -78,11 +73,14 @@ public class NPC : MonoBehaviour, interactable {
 
     public void timerLoop()
     {
-        timer -= Time.deltaTime;
-        if (timer <= 0)
+        if (activatedTimer)
         {
-            randomizeBehavior();
-            timer = resetTimer;
+            timer -= Time.deltaTime;
+            if (timer <= 0)
+            {
+                randomizeBehavior();
+                timer = resetTimer;
+            }
         }
     }
 
@@ -98,10 +96,11 @@ public class NPC : MonoBehaviour, interactable {
     {
             switch (state)
             {
-                case NPC.NPCState.Idle:
+                case NPCState.Idle:
                     myAnim.SetInteger("AnimState", (int)state);
+                if (isFacingRight) { mySprite.flipX = false; } else { mySprite.flipX = true; }
                     break;
-                case NPC.NPCState.Walking:
+                case NPCState.Walking:
                 if (true == true) ///if Our player can move we move.
                 {
                     myAnim.SetInteger("AnimState", (int)state);
@@ -137,6 +136,10 @@ public class NPC : MonoBehaviour, interactable {
                     state = NPCState.Idle;
                 }*/
                     break;
+            case NPCState.Inanimate:
+                activatedTimer = false;
+                if (isFacingRight) { mySprite.flipX = false; } else { mySprite.flipX = true; }
+                break;
                 default:
                     break;
                 }

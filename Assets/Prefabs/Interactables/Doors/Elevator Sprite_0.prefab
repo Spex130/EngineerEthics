@@ -58,7 +58,6 @@ MonoBehaviour:
   partner: {fileID: 0}
   transPoint: {fileID: 0}
   player: {fileID: 0}
-  player: {fileID: 0}
   sceneName: Larry'sTestScene
 --- !u!212 &21273556
 SpriteRenderer:
