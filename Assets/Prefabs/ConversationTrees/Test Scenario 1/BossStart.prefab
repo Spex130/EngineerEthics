@@ -41,13 +41,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myType: 0
   convoTextArray:
-  - What're you talking to me for? Get to work!
-  question: QUESTION!?
+  - What're you looking at me for? Get to work?
+  question: Response?
   choiceIndex: 0
-  endAnswerArray: []
-  hasNext: 0
-  nextNodeArray: []
-  endEventArray: []
+  endAnswerArray:
+  - null
+  hasNext: 1
+  nextNodeArray:
+  - {fileID: 0}
+  endEventArray:
+  - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
 --- !u!1001 &100100000

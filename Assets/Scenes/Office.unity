@@ -85,6 +85,118 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &1336350
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1993740971}
+    m_Modifications:
+    - target: {fileID: 11442716, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: convoTextArray.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11442716, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: endAnswerArray.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 416048, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4.037822
+      objectReference: {fileID: 0}
+    - target: {fileID: 416048, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 5.8021894
+      objectReference: {fileID: 0}
+    - target: {fileID: 416048, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416048, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416048, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416048, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416048, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 416048, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11486070, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: nextNodeArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 277048280}
+    - target: {fileID: 11442716, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: endAnswerArray.Array.data[0]
+      value: null
+      objectReference: {fileID: 0}
+    - target: {fileID: 11442716, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: convoTextArray.Array.data[0]
+      value: "Becky: W-wait, I mean I don\u2019t understand what you\u2019re talking
+        about."
+      objectReference: {fileID: 0}
+    - target: {fileID: 11442716, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: convoTextArray.Array.data[2]
+      value: 'Becky: Okay, fine what do you want?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11442716, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: convoTextArray.Array.data[3]
+      value: "\u2640Scott: Answers. I\u2019ll decide from there. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 11442716, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: convoTextArray.Array.data[4]
+      value: "\u25D9Becky: Hey, wai-*Click*"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11442716, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: convoTextArray.Array.data[5]
+      value: "\u2642Scott: Yeah, this is bad. I need to talk to Boss."
+      objectReference: {fileID: 0}
+    - target: {fileID: 11442716, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: myType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11442716, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: endAnswerArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11442716, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: convoTextArray.Array.data[1]
+      value: "Scott: Becky, let\u2019s not play this game. You should know I have
+        evidence. What I do with it is up to you."
+      objectReference: {fileID: 0}
+    - target: {fileID: 11442716, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: endAnswerArray.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11442716, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: endAnswerArray.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11442716, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: endAnswerArray.Array.data[4]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11442716, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: endAnswerArray.Array.data[5]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 157076, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+      propertyPath: m_Name
+      value: 'Unfin - Boss: He can be informed of treachery now.'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &3179837
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,6 +433,12 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &83516395 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11433672, guid: d1f4ef7c8cc842e42af367e2b11d4b0c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1766907013}
+  m_Script: {fileID: 11500000, guid: 8846c2e0412e93e4b8d8d6d63a26e3a4, type: 3}
 --- !u!1 &176889337
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,74 +623,81 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1993740971}
     m_Modifications:
-    - target: {fileID: 11486950, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
-      propertyPath: endAnswerArray.Array.size
-      value: 2
+    - target: {fileID: 11497260, guid: 544a21cc41be48347b433566352ad48d, type: 2}
+      propertyPath: convoTextArray.Array.size
+      value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
+    - target: {fileID: 449296, guid: 544a21cc41be48347b433566352ad48d, type: 2}
       propertyPath: m_LocalPosition.x
       value: 4.037822
       objectReference: {fileID: 0}
-    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
+    - target: {fileID: 449296, guid: 544a21cc41be48347b433566352ad48d, type: 2}
       propertyPath: m_LocalPosition.y
       value: 5.8021894
       objectReference: {fileID: 0}
-    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
+    - target: {fileID: 449296, guid: 544a21cc41be48347b433566352ad48d, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
+    - target: {fileID: 449296, guid: 544a21cc41be48347b433566352ad48d, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
+    - target: {fileID: 449296, guid: 544a21cc41be48347b433566352ad48d, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
+    - target: {fileID: 449296, guid: 544a21cc41be48347b433566352ad48d, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
+    - target: {fileID: 449296, guid: 544a21cc41be48347b433566352ad48d, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
+    - target: {fileID: 449296, guid: 544a21cc41be48347b433566352ad48d, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 127792, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
-      propertyPath: m_Name
-      value: ThomasStart
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486950, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
-      propertyPath: myType
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486950, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
-      propertyPath: question
-      value: Response?
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486950, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
-      propertyPath: choiceIndex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11486950, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
+    - target: {fileID: 11497260, guid: 544a21cc41be48347b433566352ad48d, type: 2}
       propertyPath: convoTextArray.Array.data[0]
-      value: 'Thomas: Hey Scott, did you hear about what''s been going on?'
+      value: 'Scott: Why the Environment department? Did something happen? '
       objectReference: {fileID: 0}
-    - target: {fileID: 11486950, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
-      propertyPath: endAnswerArray.Array.data[0]
-      value: Try to casually get information on what Becky was working on over the
-        past three months.
+    - target: {fileID: 11497260, guid: 544a21cc41be48347b433566352ad48d, type: 2}
+      propertyPath: convoTextArray.Array.data[5]
+      value: 'Scott: Alright, I''ll see you later.'
       objectReference: {fileID: 0}
-    - target: {fileID: 11486950, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
-      propertyPath: endAnswerArray.Array.data[1]
-      value: "Simply talk  and figure out what\u2019s going on at the workplace."
+    - target: {fileID: 11497260, guid: 544a21cc41be48347b433566352ad48d, type: 2}
+      propertyPath: convoTextArray.Array.data[1]
+      value: "Thomas: Huh, you don\u2019t know? I guess you\u2019ve been busy. There\u2019s
+        been talk about how some of the people down in Environment have been getting
+        all high-and-mighty lately with their projects. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497260, guid: 544a21cc41be48347b433566352ad48d, type: 2}
+      propertyPath: convoTextArray.Array.data[2]
+      value: "Scott: They keep saying that their stuff is going to change the industry
+        because some big shot clients wanted new products. Personally, I think they\u2019re
+        full of crap. Becky might be the only one who\u2019s actually doing something.
+        Rest barely work half the time."
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497260, guid: 544a21cc41be48347b433566352ad48d, type: 2}
+      propertyPath: convoTextArray.Array.data[3]
+      value: 'Scott: Well, Becky left her project notes. Maybe I can look to see what''s
+        up?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497260, guid: 544a21cc41be48347b433566352ad48d, type: 2}
+      propertyPath: convoTextArray.Array.data[4]
+      value: 'Thomas: Well, have fun with that. I''ve got some things to finish.'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 544a21cc41be48347b433566352ad48d, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &277048280 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11442716, guid: 0e384efd748364f4da3161ba86082a52,
+    type: 2}
+  m_PrefabInternal: {fileID: 1336350}
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
 --- !u!1 &280943403
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,7 +794,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 430986, guid: 94970da532d248e4daba407c3bb3a56e, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 430986, guid: 94970da532d248e4daba407c3bb3a56e, type: 2}
       propertyPath: m_LocalScale.x
@@ -857,6 +982,12 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &417445118 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11482624, guid: 544a21cc41be48347b433566352ad48d,
+    type: 2}
+  m_PrefabInternal: {fileID: 266381112}
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
 --- !u!1001 &430739769
 Prefab:
   m_ObjectHideFlags: 0
@@ -906,6 +1037,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1993740971}
     m_Modifications:
+    - target: {fileID: 11490842, guid: 0c71ca6c8b8356b439eba485a76acb5a, type: 2}
+      propertyPath: sceneInteractables.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 451794, guid: 0c71ca6c8b8356b439eba485a76acb5a, type: 2}
       propertyPath: m_LocalPosition.x
       value: 6.3436594
@@ -950,6 +1085,10 @@ Prefab:
       propertyPath: sceneInteractables.Array.data[2]
       value: 
       objectReference: {fileID: 1591259113}
+    - target: {fileID: 11490842, guid: 0c71ca6c8b8356b439eba485a76acb5a, type: 2}
+      propertyPath: sceneInteractables.Array.data[3]
+      value: 
+      objectReference: {fileID: 83516395}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c71ca6c8b8356b439eba485a76acb5a, type: 2}
   m_IsPrefabParent: 0
@@ -1179,8 +1318,7 @@ Prefab:
     - target: {fileID: 11473240, guid: 826fab9755878cb488f799bc4f60cd61, type: 2}
       propertyPath: myConvo
       value: 
-      objectReference: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238,
-        type: 2}
+      objectReference: {fileID: 1688371916}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 826fab9755878cb488f799bc4f60cd61, type: 2}
   m_IsPrefabParent: 0
@@ -1641,48 +1779,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 758048773}
   m_Script: {fileID: 11500000, guid: b8f271d6bd51e624d93ee6099dabdebc, type: 3}
---- !u!1001 &704191968
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1993740971}
-    m_Modifications:
-    - target: {fileID: 441956, guid: 85a440e70c5642144b2251f90ff8c7d5, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 12.9236765
-      objectReference: {fileID: 0}
-    - target: {fileID: 441956, guid: 85a440e70c5642144b2251f90ff8c7d5, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 2.356516
-      objectReference: {fileID: 0}
-    - target: {fileID: 441956, guid: 85a440e70c5642144b2251f90ff8c7d5, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441956, guid: 85a440e70c5642144b2251f90ff8c7d5, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441956, guid: 85a440e70c5642144b2251f90ff8c7d5, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441956, guid: 85a440e70c5642144b2251f90ff8c7d5, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441956, guid: 85a440e70c5642144b2251f90ff8c7d5, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 441956, guid: 85a440e70c5642144b2251f90ff8c7d5, type: 2}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 85a440e70c5642144b2251f90ff8c7d5, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &709226671
 GameObject:
   m_ObjectHideFlags: 0
@@ -1847,7 +1943,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 417406, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11456774, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
       propertyPath: currentNode
@@ -1897,7 +1993,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11448966, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
       propertyPath: m_FontData.m_FontSize
-      value: 50
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 11456774, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
       propertyPath: lineLength
@@ -1905,7 +2001,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11456774, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
       propertyPath: textSpeed
-      value: 200
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 11448966, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
       propertyPath: m_Text
@@ -2039,250 +2135,12 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
---- !u!1001 &909944967
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 943789506}
-    m_Modifications:
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: endAnswerArray.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -8.885855
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 3.4456735
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 122064, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_Name
-      value: DeskNode
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: myType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[0]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: endAnswerArray.Array.data[1]
-      value: Rummage through Becky's stuff in general.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: endAnswerArray.Array.data[2]
-      value: Pick up the notes, but don't read them.
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &943789506 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 441956, guid: 85a440e70c5642144b2251f90ff8c7d5, type: 2}
-  m_PrefabInternal: {fileID: 704191968}
---- !u!1001 &950016790
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2088442194}
-    m_Modifications:
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: nextNodeArray.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: endAnswerArray.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 122064, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_Name
-      value: ThomasResponse1b
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: myType
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[0]
-      value: "Scott: Nope, but I don\u2019t have time right now. Gotta get to work
-        on Becky\u2019s project. Boss passed it off to me."
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: endAnswerArray.Array.data[1]
-      value: "(LIE) *sigh* If only that were true. Becky pretty much abandoned the
-        project to me. I\u2019m basically cleaning up her mess."
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: endAnswerArray.Array.data[2]
-      value: Pick up the notes, but don't read them.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[1]
-      value: "Thomas: I\u2019d normally say that sucks, but Becky probably already
-        had most of it done. She\u2019s always working stupidly hard."
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[2]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[3]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[4]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[5]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[6]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[7]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[8]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[9]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: question
-      value: Response?
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: endAnswerArray.Array.data[0]
-      value: "You know anything about what she\u2019s been doing? Kinda going in blind
-        here."
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: hasNext
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-  m_IsPrefabParent: 0
 --- !u!114 &966956548 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11483698, guid: a039eee5c8758d648a8f179742eebeaf,
     type: 2}
   m_PrefabInternal: {fileID: 758048773}
   m_Script: {fileID: 11500000, guid: 4c8c6dc1e343db64eb37360c75ddff26, type: 3}
---- !u!1001 &1005975854
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1993740971}
-    m_Modifications:
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 4.037822
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 5.8021894
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1030057524
 Prefab:
   m_ObjectHideFlags: 0
@@ -2380,8 +2238,54 @@ Prefab:
       propertyPath: activatedTimer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11403352, guid: e58ef116d1287bf41b847ab54c758b3d, type: 2}
+      propertyPath: myConvo
+      value: 
+      objectReference: {fileID: 417445118}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e58ef116d1287bf41b847ab54c758b3d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1124704165
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1993740971}
+    m_Modifications:
+    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4.037822
+      objectReference: {fileID: 0}
+    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 5.8021894
+      objectReference: {fileID: 0}
+    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1205682359
 Prefab:
@@ -2953,135 +2857,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1001 &1520093556
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2088442194}
-    m_Modifications:
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: nextNodeArray.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: endAnswerArray.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 122064, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_Name
-      value: ThomasResponse1a
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: myType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[0]
-      value: "Thomas: A bit from what she\u2019s mentioned. I talked to her around
-        two weeks ago about it. She\u2019s been trying to work out a new system for
-        the chemical disposal at a treatment plant. Been complaining a bit about how
-        she couldn\u2019t find a way to actually stay within budget of the project,
-        but I\u2019m pretty sure she took care of that given how high her spirits
-        have been."
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: endAnswerArray.Array.data[1]
-      value: "(LIE) *sigh* If only that were true. Becky pretty much abandoned the
-        project to me. I\u2019m basically cleaning up her mess."
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: endAnswerArray.Array.data[2]
-      value: Pick up the notes, but don't read them.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[1]
-      value: 'Scott: Oh, I see. Thanks.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[2]
-      value: 'Thomas: No problem.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[3]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[4]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[5]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[6]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[7]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[8]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[9]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: question
-      value: Response?
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: endAnswerArray.Array.data[0]
-      value: "You know anything about what she\u2019s been doing? Kinda going in blind
-        here."
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: hasNext
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1531539224
 GameObject:
   m_ObjectHideFlags: 0
@@ -3163,7 +2938,7 @@ Transform:
   m_PrefabInternal: {fileID: 574172275}
 --- !u!4 &1631142612 stripped
 Transform:
-  m_PrefabParentObject: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
+  m_PrefabParentObject: {fileID: 449296, guid: 544a21cc41be48347b433566352ad48d, type: 2}
   m_PrefabInternal: {fileID: 266381112}
 --- !u!1001 &1651363029
 Prefab:
@@ -3202,7 +2977,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 430986, guid: 94970da532d248e4daba407c3bb3a56e, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 430986, guid: 94970da532d248e4daba407c3bb3a56e, type: 2}
       propertyPath: m_LocalScale.x
@@ -3217,50 +2992,14 @@ Prefab:
   m_IsPrefabParent: 0
 --- !u!4 &1675884179 stripped
 Transform:
-  m_PrefabParentObject: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-  m_PrefabInternal: {fileID: 1005975854}
---- !u!1001 &1679196030
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1993740971}
-    m_Modifications:
-    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 4.037822
-      objectReference: {fileID: 0}
-    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 5.8021894
-      objectReference: {fileID: 0}
-    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
-  m_IsPrefabParent: 0
+  m_PrefabParentObject: {fileID: 416048, guid: 0e384efd748364f4da3161ba86082a52, type: 2}
+  m_PrefabInternal: {fileID: 1336350}
+--- !u!114 &1688371916 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11443964, guid: 0e384efd748364f4da3161ba86082a52,
+    type: 2}
+  m_PrefabInternal: {fileID: 1336350}
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
 --- !u!1 &1692626148
 GameObject:
   m_ObjectHideFlags: 0
@@ -3324,6 +3063,56 @@ SpriteRenderer:
 Transform:
   m_PrefabParentObject: {fileID: 482574, guid: b2806622847968e4996fb507f1e5483b, type: 2}
   m_PrefabInternal: {fileID: 2027391112}
+--- !u!1001 &1766907013
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1993740971}
+    m_Modifications:
+    - target: {fileID: 492924, guid: d1f4ef7c8cc842e42af367e2b11d4b0c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 16.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 492924, guid: d1f4ef7c8cc842e42af367e2b11d4b0c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.0974562
+      objectReference: {fileID: 0}
+    - target: {fileID: 492924, guid: d1f4ef7c8cc842e42af367e2b11d4b0c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 492924, guid: d1f4ef7c8cc842e42af367e2b11d4b0c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 492924, guid: d1f4ef7c8cc842e42af367e2b11d4b0c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 492924, guid: d1f4ef7c8cc842e42af367e2b11d4b0c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 492924, guid: d1f4ef7c8cc842e42af367e2b11d4b0c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 492924, guid: d1f4ef7c8cc842e42af367e2b11d4b0c, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 111414, guid: d1f4ef7c8cc842e42af367e2b11d4b0c, type: 2}
+      propertyPath: m_Name
+      value: Scott'sDesk
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1f4ef7c8cc842e42af367e2b11d4b0c, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1766907014 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 492924, guid: d1f4ef7c8cc842e42af367e2b11d4b0c, type: 2}
+  m_PrefabInternal: {fileID: 1766907013}
 --- !u!114 &1788847970 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11446052, guid: 1ca5808ee83917f4399872e98103cb7d,
@@ -3343,7 +3132,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 455786, guid: bc5e391b977dc134e882afd7dc26d371, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 15.62
+      value: -7.33
       objectReference: {fileID: 0}
     - target: {fileID: 455786, guid: bc5e391b977dc134e882afd7dc26d371, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3371,7 +3160,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 455786, guid: bc5e391b977dc134e882afd7dc26d371, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11438492, guid: bc5e391b977dc134e882afd7dc26d371, type: 2}
       propertyPath: chain
@@ -3600,8 +3389,8 @@ Transform:
   - {fileID: 1723854293}
   - {fileID: 1675884179}
   - {fileID: 2124843349}
-  - {fileID: 943789506}
   - {fileID: 1631142612}
+  - {fileID: 1766907014}
   m_Father: {fileID: 0}
   m_RootOrder: 7
 --- !u!1001 &2027391112
@@ -3646,136 +3435,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b2806622847968e4996fb507f1e5483b, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &2088442193
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1631142612}
-    m_Modifications:
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: nextNodeArray.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: endAnswerArray.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 122064, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: m_Name
-      value: ThomasResponse1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: myType
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[0]
-      value: "Scott: Nope, but I don\u2019t have time right now. Gotta get to work
-        on Becky\u2019s project. Boss passed it off to me."
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: endAnswerArray.Array.data[1]
-      value: "(LIE) *sigh* If only that were true. Becky pretty much abandoned the
-        project to me. I\u2019m basically cleaning up her mess."
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: endAnswerArray.Array.data[2]
-      value: Pick up the notes, but don't read them.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[1]
-      value: "Thomas: I\u2019d normally say that sucks, but Becky probably already
-        had most of it done. She\u2019s always working stupidly hard."
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[2]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[3]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[4]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[5]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[6]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[7]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[8]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: convoTextArray.Array.data[9]
-      value: You've already visited here.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: question
-      value: Response?
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: endAnswerArray.Array.data[0]
-      value: "You know anything about what she\u2019s been doing? Kinda going in blind
-        here."
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411902, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-      propertyPath: hasNext
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &2088442194 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 441668, guid: c81cec196f2a85e44ba099c1224fa238, type: 2}
-  m_PrefabInternal: {fileID: 2088442193}
 --- !u!1 &2099334032
 GameObject:
   m_ObjectHideFlags: 0
@@ -3896,7 +3555,7 @@ SpriteRenderer:
 --- !u!4 &2124843349 stripped
 Transform:
   m_PrefabParentObject: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
-  m_PrefabInternal: {fileID: 1679196030}
+  m_PrefabInternal: {fileID: 1124704165}
 --- !u!1 &2141735886
 GameObject:
   m_ObjectHideFlags: 0

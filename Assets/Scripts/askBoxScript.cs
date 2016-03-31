@@ -43,6 +43,7 @@ public class askBoxScript : MonoBehaviour {
 	private bool isFinishedDisplaying = false;
 	//Determine whether or not we should be able to see the textbox at all.
 	public bool showBox = false;
+
 	//The textbox we want to edit.
 	public UnityEngine.UI.Image textbox;
 	
@@ -121,10 +122,27 @@ public class askBoxScript : MonoBehaviour {
 		textbox.enabled = true;
 		text.enabled = true;
         qText.enabled = true;
+        showBox = true;
+        if(textArray.Length < choiceArray.Length) {
 
+            deleteText();
+            textArray = new Text[choiceArray.Length];
+        }
         for (int i = 0; i < choiceArray.Length; i++)//Here we instantiate ALL of the new text objects
         {
-            textArray[i].enabled = true;
+            if (textArray[i] != null)
+            {
+                textArray[i].enabled = true;
+            }
+            else
+            {
+                Text temp = (Text)Instantiate(text, textStartPoint.transform.position, transform.rotation);
+                //temp.text = "TEST";
+                temp.transform.SetParent(textStartPoint.transform, false);
+                temp.alignment = TextAnchor.MiddleLeft;
+                temp.transform.localPosition = new Vector3(0, 0 - (vSpace * i), 0);
+                textArray[i] = temp;
+            }
         }
     }
 
@@ -133,7 +151,7 @@ public class askBoxScript : MonoBehaviour {
 		textbox.enabled = false;
 		text.enabled = false;
         qText.enabled = false;
-
+        showBox = false;
         deleteText();
     }
 
@@ -199,12 +217,14 @@ public class askBoxScript : MonoBehaviour {
 		}
 	}
 
-	public void makeChoice()
-	{
+    public void makeChoice()
+    {
         //Part 1: Apply our choice's event to the world, if there is an event to apply.
-        if(!(currentNode.endEventArray[choiceID] == null))//If there's an event to load in the chosen slot...
-        {
-            sceneEventTracker.loadEvent(currentNode.endEventArray[choiceID]);//Load the Event!
+        if(currentNode.endEventArray.Length >= currentNode.endAnswerArray.Length) { 
+            if (!(currentNode.endEventArray[choiceID] == null))//If there's an event to load in the chosen slot...
+            {
+                sceneEventTracker.loadEvent(currentNode.endEventArray[choiceID]);//Load the Event!
+            }
         }
 
         //Part 2: Check if a universal End Event should be applied
@@ -221,18 +241,20 @@ public class askBoxScript : MonoBehaviour {
             switch (currentNode.myType)
             {
 
-                case nodeType.textOnly://Switch to Text Mode
-                    textBoxPartner.startConvo(currentNode.nextNodeArray[choiceID]);
+                case
+                nodeType.textOnly://Switch to Text Mode
                     disableBox();
+                    textBoxPartner.startConvo(currentNode.nextNodeArray[choiceID]);
                     break;
                 case nodeType.both://Switch to Text Mode
-                    textBoxPartner.startConvo(currentNode.nextNodeArray[choiceID]);
                     disableBox();
+                    textBoxPartner.startConvo(currentNode.nextNodeArray[choiceID]);
+                    
                     break;
 
                 case nodeType.question://Load up and Re-init!
-                    currentNode = currentNode.nextNodeArray[choiceID];
-                    init();
+                    activate(currentNode.nextNodeArray[choiceID]);
+                    
                     break;
 
                 default:

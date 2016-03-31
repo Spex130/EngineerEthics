@@ -1,0 +1,1028 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &101574
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 499208}
+  - 114: {fileID: 11417578}
+  m_Layer: 0
+  m_Name: 'Convo3: Inform her the pr...'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &104606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 453746}
+  - 114: {fileID: 11413714}
+  m_Layer: 0
+  m_Name: DeskResponse1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &115364
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 485628}
+  - 114: {fileID: 11476828}
+  m_Layer: 0
+  m_Name: 'Event: Becky''s sold out. Take it to the Boss.'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &116738
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 445998}
+  - 114: {fileID: 11443994}
+  m_Layer: 0
+  m_Name: 'ScottDesk: Call Becky - She''s not suspicious'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &120760
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 490466}
+  - 114: {fileID: 11486070}
+  m_Layer: 0
+  m_Name: 'Convo1: Ask her directly if she falsified...'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &121134
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 476034}
+  - 114: {fileID: 11430296}
+  m_Layer: 0
+  m_Name: 'Event: You can call Becky now.'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &132146
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 422148}
+  - 114: {fileID: 11420800}
+  m_Layer: 0
+  m_Name: DeskResponse3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &137494
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 429930}
+  - 114: {fileID: 11444656}
+  m_Layer: 0
+  m_Name: 'BeckyDesk: We''re done here. (1)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &143694
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 424806}
+  - 114: {fileID: 11442716}
+  m_Layer: 0
+  m_Name: 'Convo1b: Don''t you dare...'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &145678
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 485854}
+  - 114: {fileID: 11484924}
+  m_Layer: 0
+  m_Name: DeskResponse2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &157076
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 465420}
+  - 114: {fileID: 11460034}
+  m_Layer: 0
+  m_Name: 'Boss: He can be informed of treachery now.'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &161842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 416048}
+  - 114: {fileID: 11443964}
+  m_Layer: 0
+  m_Name: BeckyStartNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &172222
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 491634}
+  - 114: {fileID: 11445092}
+  m_Layer: 0
+  m_Name: 'ScottDesk: Call Becky - She''s SUPER suspicious'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &184138
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 466564}
+  - 114: {fileID: 11430448}
+  m_Layer: 0
+  m_Name: 'Event: Becky''s suspicious now.'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &189724
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 416700}
+  - 114: {fileID: 11496126}
+  m_Layer: 0
+  m_Name: 'Convo3: Inform her the pr...'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &192888
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 469408}
+  - 114: {fileID: 11435284}
+  m_Layer: 0
+  m_Name: 'Convo2: Casually ask for....'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &195580
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 402968}
+  - 114: {fileID: 11470978}
+  m_Layer: 0
+  m_Name: 'BeckyDesk: We''re done here.'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &402968
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195580}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.885855, y: 3.4456735, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 476034}
+  m_RootOrder: 0
+--- !u!4 &416048
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161842}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.037822, y: 5.8021894, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 453746}
+  - {fileID: 485854}
+  - {fileID: 422148}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &416700
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189724}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491634}
+  m_RootOrder: 2
+--- !u!4 &422148
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132146}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 476034}
+  m_Father: {fileID: 416048}
+  m_RootOrder: 2
+--- !u!4 &424806
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 143694}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 485628}
+  m_Father: {fileID: 490466}
+  m_RootOrder: 0
+--- !u!4 &429930
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137494}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.885855, y: 3.4456735, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 466564}
+  m_RootOrder: 0
+--- !u!4 &445998
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116738}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.885855, y: 3.4456735, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 499208}
+  m_Father: {fileID: 476034}
+  m_RootOrder: 1
+--- !u!4 &453746
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104606}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 466564}
+  m_Father: {fileID: 416048}
+  m_RootOrder: 0
+--- !u!4 &465420
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.885855, y: 3.4456735, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 485628}
+  m_RootOrder: 0
+--- !u!4 &466564
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184138}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.885855, y: -3.4456735, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 429930}
+  - {fileID: 491634}
+  m_Father: {fileID: 453746}
+  m_RootOrder: 0
+--- !u!4 &469408
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192888}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491634}
+  m_RootOrder: 1
+--- !u!4 &476034
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 121134}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.885855, y: -3.4456735, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 402968}
+  - {fileID: 445998}
+  m_Father: {fileID: 422148}
+  m_RootOrder: 0
+--- !u!4 &485628
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115364}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.885855, y: -3.4456735, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 465420}
+  m_Father: {fileID: 424806}
+  m_RootOrder: 0
+--- !u!4 &485854
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145678}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 416048}
+  m_RootOrder: 1
+--- !u!4 &490466
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120760}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 424806}
+  m_Father: {fileID: 491634}
+  m_RootOrder: 0
+--- !u!4 &491634
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172222}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.885855, y: 3.4456735, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 490466}
+  - {fileID: 469408}
+  - {fileID: 416700}
+  m_Father: {fileID: 466564}
+  m_RootOrder: 1
+--- !u!4 &499208
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 101574}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 445998}
+  m_RootOrder: 0
+--- !u!114 &11413714
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 0
+  convoTextArray:
+  - "\u2642Scott: Alright, I have Becky\u2019s notes. Let\u2019s see what she\u2019s
+    done"
+  - "\u2642Scott: \u2026huh that\u2019s an interesting approach. Excess metals are
+    one of the most common problems in waste disposal, but she\u2019s proposing that
+    it won\u2019t be a concern with the latest revolutionary process. "
+  - "\u2642Scott: \u2026I haven\u2019t heard anything about any new breakthroughs
+    in treatment processes. Something like that would have made news in the community
+    at least. Where did she get this from?"
+  - "\u2642Scott: All of this literally can\u2019t be true. These results don\u2019t
+    make sense! Becky\u2019s been faking it! Maybe I can check with her on this before
+    she can\u2019t be reached? Maybe I can talk to someone else in the office?"
+  question: Response?
+  choiceIndex: 0
+  endAnswerArray:
+  - null
+  hasNext: 0
+  nextNodeArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  endEventArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hasEndEvent: 1
+  endEvent: {fileID: 11430448}
+--- !u!114 &11417578
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 101574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 0
+  convoTextArray:
+  - "\u25D9Scott: Just wanted to let you know everything is going smoothly. No problems
+    whatsoever, and everything should be approved by tomorrow."
+  - "Becky: O-Oh that\u2019s really good! Fantastic! I can\u2019t wait to come back
+    and see. Thanks Scott!"
+  - 'Scott: Anytime! Have a good trip! '
+  question: What should I ask?
+  choiceIndex: 0
+  endAnswerArray:
+  - null
+  hasNext: 0
+  nextNodeArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  endEventArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hasEndEvent: 0
+  endEvent: {fileID: 0}
+--- !u!114 &11420800
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 0
+  convoTextArray:
+  - "\u2642Scott: I\u2019ll take a look at Becky\u2019s notes later. I have three
+    days, and I have other work I need to take care of for now. Shouldn\u2019t take
+    me too long to finish Becky\u2019s project though."
+  - "\u2642Scott: Though, I could probably check with her before she leaves, just
+    as a formality. I should call her at some point. "
+  question: Response?
+  choiceIndex: 0
+  endAnswerArray:
+  - null
+  hasNext: 0
+  nextNodeArray:
+  - {fileID: 0}
+  endEventArray:
+  - {fileID: 0}
+  hasEndEvent: 1
+  endEvent: {fileID: 11430296}
+--- !u!114 &11430296
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 121134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 613f4ae8ac2a8914f889e30c4ffaa5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  keyList:
+  - Becky
+  - ScottDesk
+  valueList:
+  - {fileID: 11470978}
+  - {fileID: 11443994}
+  eventType: 0
+  adjustAmount: 0
+  shouldActivateTimer: 0
+--- !u!114 &11430448
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 613f4ae8ac2a8914f889e30c4ffaa5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  keyList:
+  - Becky
+  - ScottDesk
+  valueList:
+  - {fileID: 11444656}
+  - {fileID: 11445092}
+  eventType: 0
+  adjustAmount: 0
+  shouldActivateTimer: 0
+--- !u!114 &11435284
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 2
+  convoTextArray:
+  - 'Scott: I was just wondering if you could help clarify some parts of your project.'
+  - 'Becky: O-Oh. Uh, sure! I can do that.'
+  question: What should I ask?
+  choiceIndex: 0
+  endAnswerArray:
+  - "Could you explain the whole \u201Crevolutionary\u201D process?"
+  - How did you manage to get the costs so low?
+  hasNext: 0
+  nextNodeArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  endEventArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hasEndEvent: 0
+  endEvent: {fileID: 0}
+--- !u!114 &11442716
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 143694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 2
+  convoTextArray:
+  - 'Scott: I was just wondering if you could help clarify some parts of your project.'
+  - 'Becky: O-Oh. Uh, sure! I can do that.'
+  question: What should I ask?
+  choiceIndex: 0
+  endAnswerArray:
+  - "Becky: W-wait, I mean I don\u2019t understand what you\u2019re talking about."
+  - "Scott: Becky, let\u2019s not play this game. You should know I have evidence.
+    What I do with it is up to you."
+  - 'Becky: Okay, fine what do you want?'
+  - "\u2640Scott: Answers. I\u2019ll decide from there. "
+  - "\u25D9Becky: Hey, wai-*Click*"
+  - "\u2642Scott: Yeah, this is bad. I need to talk to Boss."
+  hasNext: 0
+  nextNodeArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  endEventArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hasEndEvent: 0
+  endEvent: {fileID: 0}
+--- !u!114 &11443964
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 2
+  convoTextArray:
+  - This is Becky's desk. Boss said I can find everything here.
+  question: What should I do?
+  choiceIndex: 0
+  endAnswerArray:
+  - Pick up and read her notes.
+  - Rummage through Becky's stuff in general.
+  - Pick up the notes, but don't read them.
+  - Nothing. Leave.
+  hasNext: 1
+  nextNodeArray:
+  - {fileID: 11413714}
+  - {fileID: 11484924}
+  - {fileID: 11420800}
+  - {fileID: 0}
+  endEventArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hasEndEvent: 0
+  endEvent: {fileID: 0}
+--- !u!114 &11443994
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 2
+  convoTextArray:
+  - "\u2642Scott: I need to talk to Becky. *calls*"
+  - "Becky: Hello, this is Becky speaking. May I ask who\u2019s calling?"
+  - 'Scott: Hey Becky, this is Scott from work. I was calling to talk to you about
+    the project you were working on. '
+  - 'Becky: Ohh! Um-m w-well what do you need from me?'
+  - "\u2642Scott: ...She sounds somewhat panicky."
+  question: What should I do?
+  choiceIndex: 0
+  endAnswerArray:
+  - Inform her the project is progressing smoothly
+  hasNext: 1
+  nextNodeArray:
+  - {fileID: 11417578}
+  endEventArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hasEndEvent: 0
+  endEvent: {fileID: 0}
+--- !u!114 &11444656
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 0
+  convoTextArray:
+  - You've already visited here.
+  question: What should I do?
+  choiceIndex: 0
+  endAnswerArray:
+  - Pick up and read her notes.
+  hasNext: 0
+  nextNodeArray: []
+  endEventArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hasEndEvent: 0
+  endEvent: {fileID: 0}
+--- !u!114 &11445092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 2
+  convoTextArray:
+  - "\u2642Scott: I need to talk to Becky. *calls*"
+  - "Becky: Hello, this is Becky speaking. May I ask who\u2019s calling?"
+  - 'Scott: Hey Becky, this is Scott from work. I was calling to talk to you about
+    the project you were working on. '
+  - 'Becky: Ohh! Um-m w-well what do you need from me?'
+  - "\u2642Scott: ...She sounds somewhat panicky."
+  question: What should I do?
+  choiceIndex: 0
+  endAnswerArray:
+  - Ask her directly if she falsified information on the project
+  - Casually ask for an explanation on parts of the project
+  - Inform her the project is progressing smoothly
+  - Blackmail Becky
+  - Offer to help Becky
+  hasNext: 1
+  nextNodeArray:
+  - {fileID: 11486070}
+  - {fileID: 11435284}
+  - {fileID: 11496126}
+  - {fileID: 0}
+  - {fileID: 0}
+  endEventArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hasEndEvent: 0
+  endEvent: {fileID: 0}
+--- !u!114 &11460034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 0
+  convoTextArray:
+  - You've already visited here.
+  question: What should I do?
+  choiceIndex: 0
+  endAnswerArray:
+  - Pick up and read her notes.
+  hasNext: 0
+  nextNodeArray: []
+  endEventArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hasEndEvent: 0
+  endEvent: {fileID: 0}
+--- !u!114 &11470978
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 0
+  convoTextArray:
+  - You've already visited here.
+  question: What should I do?
+  choiceIndex: 0
+  endAnswerArray:
+  - Pick up and read her notes.
+  hasNext: 0
+  nextNodeArray: []
+  endEventArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hasEndEvent: 0
+  endEvent: {fileID: 0}
+--- !u!114 &11476828
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 613f4ae8ac2a8914f889e30c4ffaa5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  keyList:
+  - 
+  - 
+  valueList:
+  - {fileID: 0}
+  - {fileID: 0}
+  eventType: 0
+  adjustAmount: 0
+  shouldActivateTimer: 0
+--- !u!114 &11484924
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 0
+  convoTextArray:
+  - "Scott: I know I shouldn\u2019t\u2026but this is a prime opportunity to learn
+    more about her. No one will ever know\u2026 "
+  - "\u2642Scott: Desk drawer, oh little puppy dog keychain. Animal lover, so cute.
+    Let\u2019s see what else is here. Poetry book, business cards, password info?
+    Huh guess she can\u2019t remember the new password standards."
+  question: Response?
+  choiceIndex: 0
+  endAnswerArray:
+  - null
+  hasNext: 0
+  nextNodeArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  endEventArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hasEndEvent: 0
+  endEvent: {fileID: 0}
+--- !u!114 &11486070
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 2
+  convoTextArray:
+  - 'Scott: Did you falsify the info on the waste treatment project?'
+  - 'Becky: W-what are you saying!? Are you accusing me of something!?'
+  - "Scott: Yes, I\u2019ve looked at your notes and found evidence that you intentionally
+    promised an undeliverable system for your own benefit and gain."
+  - "Becky: I-I\u2019ve done nothing of the sort! How could you say I\u2019ve done
+    something that ridiculous!? The boss will hear that you\u2019re harassing me!"
+  question: Alright, how should I handle this?
+  choiceIndex: 0
+  endAnswerArray:
+  - "Scott: Don\u2019t you dare unless you want everyone else to know what you\u2019ve
+    been doing."
+  - "Scott: Look, I just want to understand why you\u2019re doing this. You\u2019ve
+    always been a hard worker so why take a shortcut this time?"
+  hasNext: 0
+  nextNodeArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  endEventArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hasEndEvent: 0
+  endEvent: {fileID: 0}
+--- !u!114 &11496126
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 0
+  convoTextArray:
+  - "\u25D9Scott: Just wanted to let you know everything is going smoothly. No problems
+    whatsoever, and everything should be approved by tomorrow."
+  - "Becky: O-Oh that\u2019s really good! Fantastic! I can\u2019t wait to come back
+    and see. Thanks Scott!"
+  - 'Scott: Anytime! Have a good trip! '
+  question: What should I ask?
+  choiceIndex: 0
+  endAnswerArray:
+  - null
+  hasNext: 0
+  nextNodeArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  endEventArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hasEndEvent: 0
+  endEvent: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 161842}
+  m_IsPrefabParent: 1

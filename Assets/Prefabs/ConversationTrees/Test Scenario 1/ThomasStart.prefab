@@ -1,0 +1,518 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &110026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 454656}
+  - 114: {fileID: 11472450}
+  m_Layer: 0
+  m_Name: ThomasResponse1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &132754
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 449296}
+  - 114: {fileID: 11482624}
+  m_Layer: 0
+  m_Name: ThomasStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &153386
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 461456}
+  - 114: {fileID: 11456158}
+  m_Layer: 0
+  m_Name: ThomasResponse2a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &188704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 440630}
+  - 114: {fileID: 11484856}
+  m_Layer: 0
+  m_Name: ThomasResponse2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &190142
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 482212}
+  - 114: {fileID: 11497260}
+  m_Layer: 0
+  m_Name: ThomasResponse2b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &191854
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 406592}
+  - 114: {fileID: 11496806}
+  m_Layer: 0
+  m_Name: ThomasResponse1a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &191946
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 414648}
+  - 114: {fileID: 11423104}
+  m_Layer: 0
+  m_Name: ThomasResponse1b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &199812
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 415050}
+  - 114: {fileID: 11469852}
+  m_Layer: 0
+  m_Name: ThomasResponse2c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &406592
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191854}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 454656}
+  m_RootOrder: 0
+--- !u!4 &414648
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191946}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 454656}
+  m_RootOrder: 1
+--- !u!4 &415050
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 199812}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 440630}
+  m_RootOrder: 2
+--- !u!4 &440630
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 188704}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 461456}
+  - {fileID: 482212}
+  - {fileID: 415050}
+  m_Father: {fileID: 449296}
+  m_RootOrder: 1
+--- !u!4 &449296
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132754}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.037822, y: 5.8021894, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 454656}
+  - {fileID: 440630}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &454656
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110026}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 406592}
+  - {fileID: 414648}
+  m_Father: {fileID: 449296}
+  m_RootOrder: 0
+--- !u!4 &461456
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153386}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 440630}
+  m_RootOrder: 0
+--- !u!4 &482212
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190142}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 440630}
+  m_RootOrder: 1
+--- !u!114 &11423104
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 0
+  convoTextArray:
+  - "Thomas: What!? Dude, that\u2019s awful! Explains why she practically begged to
+    get sent on that conference trip. Thought she was finished with her work."
+  - "\u2642Scott: If you never lie, everyone will believe you when you do\u2026"
+  question: Response?
+  choiceIndex: 0
+  endAnswerArray: []
+  hasNext: 1
+  nextNodeArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  endEventArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hasEndEvent: 0
+  endEvent: {fileID: 0}
+--- !u!114 &11456158
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 0
+  convoTextArray:
+  - "Thomas: I don\u2019t know. I mean it\u2019s just a bunch of rumors. Stuff like
+    the company is getting bought out, or our competitors are making deals with our
+    guys to sabotage us. You know, paranoid stuff like that."
+  - 'Scott: Man, that''s crazy.'
+  - 'Thomas: I know, right?'
+  question: Response?
+  choiceIndex: 0
+  endAnswerArray:
+  - null
+  hasNext: 0
+  nextNodeArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  endEventArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hasEndEvent: 0
+  endEvent: {fileID: 0}
+--- !u!114 &11469852
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 199812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 0
+  convoTextArray:
+  - 'Thomas: Pretty much. Nothing concrete, but I keep hearing people talk about some
+    no-name company scouting out our guys and trying to set up meetings with them.
+    Probably just some recruitment scam.'
+  - 'Scott: Yeah, probably.'
+  question: Response?
+  choiceIndex: 0
+  endAnswerArray:
+  - "You know anything about what she\u2019s been doing? Kinda going in blind here."
+  - "(LIE) *sigh* If only that were true. Becky pretty much abandoned the project
+    to me. I\u2019m basically cleaning up her mess."
+  hasNext: 1
+  nextNodeArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  endEventArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hasEndEvent: 0
+  endEvent: {fileID: 0}
+--- !u!114 &11472450
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 2
+  convoTextArray:
+  - "Scott: Nope, but I don\u2019t have time right now. Gotta get to work on Becky\u2019s
+    project. Boss passed it off to me."
+  - "Thomas: I\u2019d normally say that sucks, but Becky probably already had most
+    of it done. She\u2019s always working stupidly hard."
+  question: Response?
+  choiceIndex: 0
+  endAnswerArray:
+  - "You know anything about what she\u2019s been doing? Kinda going in blind here."
+  - "(LIE) *sigh* If only that were true. Becky pretty much abandoned the project
+    to me. I\u2019m basically cleaning up her mess."
+  hasNext: 1
+  nextNodeArray:
+  - {fileID: 11496806}
+  - {fileID: 11423104}
+  endEventArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hasEndEvent: 0
+  endEvent: {fileID: 0}
+--- !u!114 &11482624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 2
+  convoTextArray:
+  - 'Thomas: Hey Scott, did you hear about what''s been going on?'
+  question: Response?
+  choiceIndex: 0
+  endAnswerArray:
+  - Try to casually get information on what Becky was working on over the past three
+    months.
+  - "Simply talk  and figure out what\u2019s going on at the workplace."
+  hasNext: 1
+  nextNodeArray:
+  - {fileID: 11472450}
+  - {fileID: 11484856}
+  endEventArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  hasEndEvent: 0
+  endEvent: {fileID: 0}
+--- !u!114 &11484856
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 188704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 2
+  convoTextArray:
+  - "Scott: I\u2019ve only heard snippets here and there. Couple names being thrown
+    around but didn\u2019t pay too much attention."
+  - "Thomas: Yea, people are saying there\u2019s been some shady stuff going on with
+    the Environment department. Backroom dealings and stuff."
+  question: Response?
+  choiceIndex: 0
+  endAnswerArray:
+  - "What? You gotta be kidding. We\u2019re just engineers. We deal with technical
+    stuff, none of that company spying stuff."
+  - Why the Environment department? Did something happen?
+  - "Backroom dealings? Like you scratch my back I\u2019ll scratch yours?"
+  hasNext: 1
+  nextNodeArray:
+  - {fileID: 11456158}
+  - {fileID: 11497260}
+  - {fileID: 11497260}
+  endEventArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hasEndEvent: 0
+  endEvent: {fileID: 0}
+--- !u!114 &11496806
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 0
+  convoTextArray:
+  - "Thomas: A bit from what she\u2019s mentioned. I talked to her around two weeks
+    ago about it. She\u2019s been trying to work out a new system for the chemical
+    disposal at a treatment plant. Been complaining a bit about how she couldn\u2019t
+    find a way to actually stay within budget of the project, but I\u2019m pretty
+    sure she took care of that given how high her spirits have been."
+  - 'Scott: Oh, I see. Thanks.'
+  - 'Thomas: No problem.'
+  question: Response?
+  choiceIndex: 0
+  endAnswerArray:
+  - Null
+  - Null
+  hasNext: 0
+  nextNodeArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  endEventArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hasEndEvent: 0
+  endEvent: {fileID: 0}
+--- !u!114 &11497260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myType: 0
+  convoTextArray:
+  - "Why the Environment department? Did something happen? Thomas: Huh, you don\u2019t
+    know? I guess you\u2019ve been busy. There\u2019s been talk about how some of
+    the people down in Environment have been getting all high-and-mighty lately with
+    their projects. "
+  - "They keep saying that their stuff is going to change the industry because some
+    big shot clients wanted new products. Personally, I think they\u2019re full of
+    crap. Becky might be the only one who\u2019s actually doing something. Rest barely
+    work half the time."
+  - 'Scott: Well, Becky left her project notes. Maybe I can look to see what''s up?'
+  - 'Thomas: Well, have fun with that. I''ve got some things to finish.'
+  - 'Scott: Alright, I''ll see you later.'
+  question: Response?
+  choiceIndex: 0
+  endAnswerArray:
+  - "You know anything about what she\u2019s been doing? Kinda going in blind here."
+  - "(LIE) *sigh* If only that were true. Becky pretty much abandoned the project
+    to me. I\u2019m basically cleaning up her mess."
+  hasNext: 1
+  nextNodeArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  endEventArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  hasEndEvent: 0
+  endEvent: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 132754}
+  m_IsPrefabParent: 1
