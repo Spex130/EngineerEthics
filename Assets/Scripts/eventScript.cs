@@ -8,9 +8,9 @@ public class eventScript : MonoBehaviour {
 
     //Keylist and ValueList correspond to each other, and should obviously share the same length.
 
-    [Tooltip("Represents the names of the NPCs we want changed.\n\nIDs correspond to [valueList]'s so the sizes for both should match.")]
+    [Tooltip("Used in NPCEvents and AddQuestionEvents. Represents the names of the NPCs we want changed.\n\nIDs correspond to [valueList]'s so the sizes for both should match.")]
     public string[] keyList;
-    [Tooltip("Represents the convoNode we want to give the NPC when this event is run through the eventTracker.\n\nIDs correspond to [keyList]'s so the sizes for both should match.")]
+    [Tooltip("Used in NPCEvents. Represents the convoNode we want to give the NPC when this event is run through the eventTracker.\n\nIDs correspond to [keyList]'s so the sizes for both should match.")]
     public convoNode[] valueList;
 
     //This hashtable contains a list of all the NPCs we want changed with this event.
@@ -19,12 +19,20 @@ public class eventScript : MonoBehaviour {
     [Tooltip("Tells the eventTracker how to react to this node.\n\nDo note that NPCEvents still pass in Time variables, and they take effect immediately.\n\nTimerEvents deal only with passing in the EventNode itself. The eventTracker will activate this by itself later..")]
     public eventNodeType eventType = eventNodeType.NPCEvent;
 
-    [Tooltip("How much to add or remove from the eventTracker's timer.")]
+
+    //TimerEvent variables
+    [Tooltip("Used in TimerEvents & NPCEvents. How much to add or remove from the eventTracker's timer.")]
     public int adjustAmount = 0;
 
-    [Tooltip("Tells whether or not the Timer should be activated.")]
+    [Tooltip("Used in TimerEvents & NPCEvents. Tells whether or not the Timer should be activated.")]
     public bool shouldActivateTimer = false;
 
+    //AddQuestionEvent variables
+    [Tooltip("Used in AddQuestionEvents. A list of questions to be added to the convoNodes of the NPCs listed in [keyList]. Also matches IDs with events stored in [eventsToAdd].\n\nMust match the size of the [keyList].")]
+    public string[] questionsToAdd;
+
+    [Tooltip("Used in AddQuestionEvents. A list of events to be added to the convoNodes of the NPCs listed in [keyList].\n\nMatches IDs with strings stored in [questionsToAdd], which in turn matches IDs with the NPCs in [keyList].\n\nMust match the size of the [keyList].")]
+    public eventScript[] eventsToAdd;
 
 	// Use this for initialization
 	void Start () {

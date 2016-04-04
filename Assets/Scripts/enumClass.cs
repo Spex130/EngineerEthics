@@ -12,11 +12,17 @@ using System.Collections;
     
     //THIS tells us whether or not our NPC's origin boundaries should treat the origin point as the left side, center, or right side of the boundary.
     public enum BoundaryPositionType { LeftSide, Center, RightSide };
-    #endregion
+#endregion
 
-    #region eventScript Enums
-    //Defines the type of Event. NPCEvents change around convoNodes of events. TimerEvents add a (poitive or negative) integer to the eventTracker's timer stat. They can also tell whether or not to activate TimerMode for the evenetTracker.
-    public enum eventNodeType {NPCEvent, TimerEvent};
+#region eventScript Enums
+    /*
+        Defines the type of Event. 
+        NPCEvents change around convoNodes of events.
+        TimerEvents add a (poitive or negative) integer to the eventTracker's timer stat. They can also tell whether or not to activate TimerMode for the evenetTracker.
+        AddAnswerEvents add a specific answer to an NPC's convoNode
+        MultiEvents can call multiple event types using Booleans.
+    */
+    public enum eventNodeType {NPCEvent, TimerEvent, AddAnswerEvent, multiEvent};
 
     #endregion
 

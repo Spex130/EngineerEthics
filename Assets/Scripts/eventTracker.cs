@@ -72,6 +72,13 @@ public class eventTracker : MonoBehaviour {
 
             case eventNodeType.TimerEvent://TimerEvents only set up Events for the Timer to run later!
                 timeEvent = newEvent;
+                timeLeft += newEvent.adjustAmount;//We add/subtract any minutes the event gives us.
+                if (timeLeft < 0) { timeLeft = 0; }//If the time subtracted was larger than the amount of time we had left, just set it to 0.
+                timerActivated = newEvent.shouldActivateTimer;//Activate the timer, if we're told.
+                break;
+
+            case eventNodeType.AddAnswerEvent:
+
             break;
 
             default:

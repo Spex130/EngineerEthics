@@ -65,4 +65,48 @@ public class convoNode : MonoBehaviour {
     {
         return nextNodeArray[index];
     }
+
+    //This allows us to dynamically add in answers from other places, which means less complexity for us to deal with.
+    public void addQuestion(string answer, eventScript newEvent)
+    {
+        string[] tempAnswer = new string[endAnswerArray.Length + 1];//Make a temp array, since we can't resize arrays.
+        for (int i = 0; i < endAnswerArray.Length; i++)
+        {
+            tempAnswer[i] = endAnswerArray[i];//Add everything in.
+        }
+        endAnswerArray = tempAnswer;//Set the old to the new.
+        endAnswerArray[endAnswerArray.Length] = answer;//Add in our new Answer
+
+        //Repeat
+        eventScript[] tempEvent = new eventScript[endEventArray.Length];
+        for (int i = 0; i < endEventArray.Length; i++)
+        {
+            tempEvent[i] = endEventArray[i];
+        }
+        endEventArray = tempEvent;
+        endEventArray[endEventArray.Length] = newEvent;
+
+
+    }
+
+    public void addQuestion(string answer)//Adds an Answer to the array without making it link to an event.
+    {
+        string[] tempAnswer = new string[endAnswerArray.Length + 1];//Make a temp array, since we can't resize arrays.
+        for (int i = 0; i < endAnswerArray.Length; i++)
+        {
+            tempAnswer[i] = endAnswerArray[i];//Add everything in.
+        }
+        endAnswerArray = tempAnswer;//Set the old to the new.
+        endAnswerArray[endAnswerArray.Length] = answer;//Add in our new Answer
+
+        //We still have to resize the array anyways though.
+        eventScript[] tempEvent = new eventScript[endEventArray.Length];
+        for (int i = 0; i < endEventArray.Length; i++)
+        {
+            tempEvent[i] = endEventArray[i];
+        }
+        endEventArray = tempEvent;
+
+
+    }
 }
