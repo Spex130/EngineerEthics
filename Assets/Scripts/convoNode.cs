@@ -67,7 +67,7 @@ public class convoNode : MonoBehaviour {
     }
 
     //This allows us to dynamically add in answers from other places, which means less complexity for us to deal with.
-    public void addQuestion(string answer, eventScript newEvent)
+    public void addAnswer(string answer, eventScript newEvent)
     {
         string[] tempAnswer = new string[endAnswerArray.Length + 1];//Make a temp array, since we can't resize arrays.
         for (int i = 0; i < endAnswerArray.Length; i++)
@@ -75,7 +75,7 @@ public class convoNode : MonoBehaviour {
             tempAnswer[i] = endAnswerArray[i];//Add everything in.
         }
         endAnswerArray = tempAnswer;//Set the old to the new.
-        endAnswerArray[endAnswerArray.Length] = answer;//Add in our new Answer
+        endAnswerArray[endAnswerArray.Length-1] = answer;//Add in our new Answer
 
         //Repeat
         eventScript[] tempEvent = new eventScript[endEventArray.Length];
@@ -84,12 +84,12 @@ public class convoNode : MonoBehaviour {
             tempEvent[i] = endEventArray[i];
         }
         endEventArray = tempEvent;
-        endEventArray[endEventArray.Length] = newEvent;
+        endEventArray[endEventArray.Length-1] = newEvent;
 
 
     }
 
-    public void addQuestion(string answer)//Adds an Answer to the array without making it link to an event.
+    public void addAnswer(string answer)//Adds an Answer to the array without making it link to an event.
     {
         string[] tempAnswer = new string[endAnswerArray.Length + 1];//Make a temp array, since we can't resize arrays.
         for (int i = 0; i < endAnswerArray.Length; i++)
@@ -97,7 +97,7 @@ public class convoNode : MonoBehaviour {
             tempAnswer[i] = endAnswerArray[i];//Add everything in.
         }
         endAnswerArray = tempAnswer;//Set the old to the new.
-        endAnswerArray[endAnswerArray.Length] = answer;//Add in our new Answer
+        endAnswerArray[endAnswerArray.Length-1] = answer;//Add in our new Answer
 
         //We still have to resize the array anyways though.
         eventScript[] tempEvent = new eventScript[endEventArray.Length];

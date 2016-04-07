@@ -15,14 +15,15 @@ using System.Collections;
 #endregion
 
 #region eventScript Enums
-    /*
-        Defines the type of Event. 
-        NPCEvents change around convoNodes of events.
-        TimerEvents add a (poitive or negative) integer to the eventTracker's timer stat. They can also tell whether or not to activate TimerMode for the evenetTracker.
-        AddAnswerEvents add a specific answer to an NPC's convoNode
-        MultiEvents can call multiple event types using Booleans.
-    */
-    public enum eventNodeType {NPCEvent, TimerEvent, AddAnswerEvent, multiEvent};
+/*
+    Defines the type of Event. 
+    NPCEvents change around convoNodes of events.
+    TimerEvents add a (poitive or negative) integer to the eventTracker's timer stat. They can also tell whether or not to activate TimerMode for the evenetTracker.
+    AddAnswerEvents add a specific answer to an NPC's convoNode
+    AddAnswerEvents add a specific answer to an NPC's convoNode, then prevents itself from being able to add anymore Answer Events.
+    MultiEvents can call multiple event types using Booleans.
+*/
+public enum eventNodeType {NPCEvent, TimerEvent, AddAnswerEvent, AddAnswerOneshotEvent, MultiEvent};
 
     #endregion
 
