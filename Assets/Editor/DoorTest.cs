@@ -3,20 +3,15 @@ using UnityEditor;
 using NUnit.Framework;
 
 public class DoorTest {
-	[SetUp]
-	public void Init(){
-		playerChar theChar = new playerChar ();
-		Door testDoor = new Door ();
 
-	}
     [Test]
     public void EditorTest()
     {
         //Arrange
-
-		playerChar theChar = new playerChar ();
-		Door testDoor = new Door ();
-		Door testPart = new Door ();
+		GameObject Holder = new GameObject();
+		playerChar theChar = Holder.AddComponent<playerChar> ();
+		Door testDoor = Holder.AddComponent<Door> ();
+		Door testPart =  Holder.AddComponent<Door> ();
 		testDoor.partner = testPart;
         //Act
         //Try to rename the GameObject

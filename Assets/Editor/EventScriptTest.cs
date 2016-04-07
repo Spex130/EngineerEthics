@@ -9,7 +9,8 @@ public class EventScriptTest {
     public void EditorTest()
     {
         //Arrange
-        var evScript = new eventScript();
+		GameObject eventObject = new GameObject();
+		eventScript evScript = eventObject.AddComponent<eventScript> ();
 
         //Act
         //Try to rename the GameObject
@@ -21,7 +22,8 @@ public class EventScriptTest {
         Assert.AreEqual(newGameObjectName, evScript.keyList);
     }
 	public void hashTableTest(){
-		eventScript evScript = new eventScript();
+		GameObject eventObject = new GameObject();
+		eventScript evScript = eventObject.AddComponent<eventScript> ();
 		Hashtable aList = new Hashtable();
 		evScript.changeList = aList;
 		evScript.populateHashtable ();
@@ -29,7 +31,8 @@ public class EventScriptTest {
 	}
 	public void actuallyFilledHashTableTest(){
 
-		eventScript evScript = new eventScript();
+		GameObject eventObject = new GameObject();
+		eventScript evScript = eventObject.AddComponent<eventScript> ();
 		Hashtable aList = new Hashtable();
 		evScript.changeList = aList;
 

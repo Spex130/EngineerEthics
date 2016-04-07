@@ -8,16 +8,17 @@ public class ElevatorTest {
     public void EditorTest()
     {
         //Arrange
-        var gameObject = new Elevator();
+		GameObject Elevator = new GameObject();
+		Elevator elevatorscript = Elevator.AddComponent<Elevator> ();
         //Act
         //Try to rename the GameObject
         var newGameObjectName = "Larry'sTestScene";
 
-        gameObject.sceneName = newGameObjectName;
+        elevatorscript.sceneName = newGameObjectName;
 
         //Assert
         //The object has a new name
-        Assert.AreEqual(newGameObjectName, gameObject.sceneName);
+        Assert.AreEqual(newGameObjectName, elevatorscript.sceneName);
     }
 
 
