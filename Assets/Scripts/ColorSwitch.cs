@@ -22,8 +22,8 @@ public class ColorSwitch : MonoBehaviour {
 			foreach (Texture2D texture in theTextures) {
 				Texture2D newTexture = ChangeTexture (texture);
 				theTextures [i] = newTexture;
-				//byte[] bytes = newTexture.EncodeToPNG ();
-				//File.WriteAllBytes (Application.dataPath + "/Saved" +i+".png", bytes);
+			//	byte[] bytes = newTexture.EncodeToPNG ();
+			//  File.WriteAllBytes (Application.dataPath + "/Saved" +i+".png", bytes);
 				i++;
 			}
 			//Switches to prebuilt animation
@@ -59,6 +59,7 @@ public class ColorSwitch : MonoBehaviour {
 			int y = 0;
 			while (y < newTexture.height)
 			{
+				//Debug.Log(theTexture.GetPixel(x,y));
 				if (theTexture.GetPixel (x, y) == new Color32 (255, 0, 255, 255)) 
 				{
 					//Inner color

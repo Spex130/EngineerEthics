@@ -33,7 +33,6 @@ public class EventTrackerTests {
 		eventTracker trackerScript = tracker.AddComponent<eventTracker> ();
 		trackerScript.sceneInteractables = new NPC[3];
 		trackerScript.hashList = new System.Collections.Hashtable ();
-		Hashtable atable =  new System.Collections.Hashtable ();
 		//Act
 		//Try to rename the GameObject
 		for (int i = 0; i < 3; i++) {
@@ -54,7 +53,6 @@ public class EventTrackerTests {
 		eventTracker trackerScript = tracker.AddComponent<eventTracker> ();
 		trackerScript.sceneInteractables = new NPC[3];
 		trackerScript.hashList = new System.Collections.Hashtable ();
-		Hashtable atable =  new System.Collections.Hashtable ();
 		//Act
 		//Try to rename the GameObject
 		for (int i = 0; i < 3; i++) {
