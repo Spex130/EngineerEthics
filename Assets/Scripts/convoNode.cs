@@ -67,7 +67,7 @@ public class convoNode : MonoBehaviour {
     }
 
     //This allows us to dynamically add in answers from other places, which means less complexity for us to deal with.
-    public void addAnswer(string answer, eventScript newEvent)
+    public void addQuestion(string answer, eventScript newEvent)
     {
         string[] tempAnswer = new string[endAnswerArray.Length + 1];//Make a temp array, since we can't resize arrays.
         for (int i = 0; i < endAnswerArray.Length; i++)
@@ -89,7 +89,7 @@ public class convoNode : MonoBehaviour {
 
     }
 
-    public void addAnswer(string answer)//Adds an Answer to the array without making it link to an event.
+    public void addQuestion(string answer)//Adds an Answer to the array without making it link to an event.
     {
         string[] tempAnswer = new string[endAnswerArray.Length + 1];//Make a temp array, since we can't resize arrays.
         for (int i = 0; i < endAnswerArray.Length; i++)

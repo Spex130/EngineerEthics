@@ -17,7 +17,7 @@ public class eventTracker : MonoBehaviour {
 
     [Tooltip("This is the list of LITERALLY EVERYTHING in the scene that can generate a convonode. If it's an NPC relevant to the plot, put it here.")]
     public NPC[] sceneInteractables;
-    public Hashtable NPCHashList;
+    public Hashtable hashList;
     //We're going to convert all of the NPCs in the scene into a hashtable with the Keys based on the NPC names.
     //Unfortunately, this means that no NPC can share a name with another NPC. 
 
@@ -40,13 +40,13 @@ public class eventTracker : MonoBehaviour {
 
     public void populateHashtable()
     {
-        if (NPCHashList == null)
+        if (hashList == null)
         {
-            NPCHashList = new Hashtable();
+            hashList = new Hashtable();
         }
         for (int i = 0; i < sceneInteractables.Length; i++)
         {
-            NPCHashList.Add(sceneInteractables[i].name, sceneInteractables[i]);
+            hashList.Add(sceneInteractables[i].name, sceneInteractables[i]);
             //We add in each NPC to the list so it can be searched for by name later.
         }           
     }
@@ -82,7 +82,7 @@ public class eventTracker : MonoBehaviour {
                 timerActivated = newEvent.shouldActivateTimer;//Activate the timer, if we're told.
                 break;
 
-            case eventNodeType.AddAnswerEvent:
+            case eventNodeType.addQuestionEvent:
 
                 //If our keyList has Names AND all of its associated Arrays are of proper length, then do the checks.
                 if (newEvent.keyList.Length > 0 && newEvent.answersToAdd.Length >= newEvent.keyList.Length && newEvent.eventsToAdd.Length >= newEvent.keyList.Length)
@@ -90,18 +90,18 @@ public class eventTracker : MonoBehaviour {
                     for (int i = 0; i < newEvent.keyList.Length; i++)//We check every NPC in the scene to see if it should be changed.
                     {
                         print(i);
-                        if (NPCHashList.ContainsKey(newEvent.keyList[i]))//If the name in our keyList (which can contain multiples of the same name) is in the scene, add the answer to that node.
+                        if (hashList.ContainsKey(newEvent.keyList[i]))//If the name in our keyList (which can contain multiples of the same name) is in the scene, add the answer to that node.
                         {
-                            tempNPC = (NPC)(NPCHashList[newEvent.keyList[i]]);//Make a TempNPC so we can edit it.
+                            tempNPC = (NPC)(hashList[newEvent.keyList[i]]);//Make a TempNPC so we can edit it.
                             if (newEvent.eventsToAdd[i] == null) //If there's not a corresponding event to our answer, just add the answer.
                             {
-                                tempNPC.myConvo.addAnswer(newEvent.answersToAdd[i]);
+                                tempNPC.myConvo.addQuestion(newEvent.answersToAdd[i]);
                             }
                             else
                             {
-                                tempNPC.myConvo.addAnswer(newEvent.answersToAdd[i], newEvent.eventsToAdd[i]);//Otherwise add the answer and the event.
+                                tempNPC.myConvo.addQuestion(newEvent.answersToAdd[i], newEvent.eventsToAdd[i]);//Otherwise add the answer and the event.
                             }
-                            NPCHashList[newEvent.keyList[i]] = tempNPC;//Then we make sure to put the tempNode back where it came from.
+                            hashList[newEvent.keyList[i]] = tempNPC;//Then we make sure to put the tempNode back where it came from.
                         }
                     }
                     timeLeft += newEvent.adjustAmount;//We add/subtract any minutes the event gives us.
@@ -114,25 +114,25 @@ public class eventTracker : MonoBehaviour {
                 }
                 break;
 
-            case eventNodeType.AddAnswerOneshotEvent:
+            case eventNodeType.addQuestionOneshotEvent:
                 //If our keyList has Names AND all of its associated Arrays are of proper length, then do the checks.
                 if (newEvent.keyList.Length > 0 && newEvent.answersToAdd.Length >= newEvent.keyList.Length && newEvent.eventsToAdd.Length >= newEvent.keyList.Length)
                 {
                     for (int i = 0; i < newEvent.keyList.Length; i++)//We check every NPC in the scene to see if it should be changed.
                     {
                         print(i);
-                        if (NPCHashList.ContainsKey(newEvent.keyList[i]))//If the name in our keyList (which can contain multiples of the same name) is in the scene, add the answer to that node.
+                        if (hashList.ContainsKey(newEvent.keyList[i]))//If the name in our keyList (which can contain multiples of the same name) is in the scene, add the answer to that node.
                         {
-                            tempNPC = (NPC)(NPCHashList[newEvent.keyList[i]]);//Make a TempNPC so we can edit it.
+                            tempNPC = (NPC)(hashList[newEvent.keyList[i]]);//Make a TempNPC so we can edit it.
                             if (newEvent.eventsToAdd[i] == null) //If there's not a corresponding event to our answer, just add the answer.
                             {
-                                tempNPC.myConvo.addAnswer(newEvent.answersToAdd[i]);
+                                tempNPC.myConvo.addQuestion(newEvent.answersToAdd[i]);
                             }
                             else
                             {
-                                tempNPC.myConvo.addAnswer(newEvent.answersToAdd[i], newEvent.eventsToAdd[i]);//Otherwise add the answer and the event.
+                                tempNPC.myConvo.addQuestion(newEvent.answersToAdd[i], newEvent.eventsToAdd[i]);//Otherwise add the answer and the event.
                             }
-                            NPCHashList[newEvent.keyList[i]] = tempNPC;//Then we make sure to put the tempNode back where it came from.
+                            hashList[newEvent.keyList[i]] = tempNPC;//Then we make sure to put the tempNode back where it came from.
                         }
                     }
                 }
