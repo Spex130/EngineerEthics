@@ -98,7 +98,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 455786, guid: bc5e391b977dc134e882afd7dc26d371, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -7.11
+      value: -6.88
       objectReference: {fileID: 0}
     - target: {fileID: 455786, guid: bc5e391b977dc134e882afd7dc26d371, type: 2}
       propertyPath: m_LocalPosition.z
@@ -152,6 +152,10 @@ Prefab:
       propertyPath: State
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9531522, guid: bc5e391b977dc134e882afd7dc26d371, type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7b1f223257657fc4bacda62996f1de36, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc5e391b977dc134e882afd7dc26d371, type: 2}
   m_IsPrefabParent: 0
@@ -353,10 +357,10 @@ MonoBehaviour:
   player: {fileID: 1973412923}
   SelectedColor: {fileID: 391238471}
   theTextures:
-  - {fileID: 2800000, guid: 29f0de3c96a0b7b4e993f2b66ed2df71, type: 3}
-  - {fileID: 2800000, guid: 02d49ae1bca2013448cd773092d4c328, type: 3}
-  - {fileID: 2800000, guid: d02e9f39ee6371e4b9d2f19117b0779d, type: 3}
-  - {fileID: 2800000, guid: d8d01751925feaf44a077add7e6c8d8f, type: 3}
+  - {fileID: 2800000, guid: b338009e532c15b4481eeab0132a8eb8, type: 3}
+  - {fileID: 2800000, guid: c114f3b7b21d21f4788246937877fa3b, type: 3}
+  - {fileID: 2800000, guid: accb94d0a727b0f4cb00d235a77a10cf, type: 3}
+  - {fileID: 2800000, guid: 3a2213ed84ea05a429f231aa0fe5b23b, type: 3}
   SkinNumber: 2
   MainColor:
     serializedVersion: 2
