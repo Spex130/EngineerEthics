@@ -241,7 +241,7 @@ MonoBehaviour:
   answersToAdd:
   - I'M NEW.
   eventsToAdd:
-  - {fileID: 0}
+  - {fileID: 2058639390}
 --- !u!4 &301907976
 Transform:
   m_ObjectHideFlags: 0
@@ -282,6 +282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  oneShotCheck: 0
   myType: 0
   convoTextArray:
   - If you talk to me, the other node gets a line added.
@@ -406,6 +407,14 @@ Prefab:
       propertyPath: name
       value: TestNPC1
       objectReference: {fileID: 0}
+    - target: {fileID: 11427078, guid: fde0c33f08fed6a48b6490ad269ff1a4, type: 2}
+      propertyPath: activatedTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11427078, guid: fde0c33f08fed6a48b6490ad269ff1a4, type: 2}
+      propertyPath: state
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fde0c33f08fed6a48b6490ad269ff1a4, type: 2}
   m_IsPrefabParent: 0
@@ -455,16 +464,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  oneShotCheck: 0
   myType: 1
-  convoTextArray:
-  - These are the words I say by default.
+  convoTextArray: []
   question: LOOK AT THESE WORDS.
   choiceIndex: 0
   endAnswerArray:
   - Okay.
+  - Yes
+  - No
   hasNext: 0
-  nextNodeArray: []
-  endEventArray: []
+  nextNodeArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  endEventArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
 --- !u!1001 &758048773
@@ -579,6 +596,63 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &763063551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 115324, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 763063553}
+  - 114: {fileID: 763063552}
+  m_Layer: 0
+  m_Name: TempConvo3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &763063552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 763063551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oneShotCheck: 0
+  myType: 0
+  convoTextArray:
+  - Hi
+  - Hello
+  - This is new.
+  question: null
+  choiceIndex: 0
+  endAnswerArray:
+  - Okay.
+  - Yes
+  - No
+  hasNext: 0
+  nextNodeArray: []
+  endEventArray: []
+  hasEndEvent: 0
+  endEvent: {fileID: 0}
+--- !u!4 &763063553
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 486148, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 763063551}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.037822, y: 5.8021894, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1993740971}
+  m_RootOrder: 5
 --- !u!114 &966956548 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11483698, guid: a039eee5c8758d648a8f179742eebeaf,
@@ -751,5 +825,58 @@ Transform:
   - {fileID: 459771236}
   - {fileID: 720030545}
   - {fileID: 1766907014}
+  - {fileID: 763063553}
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!1 &2058639389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 156984, guid: 815a0d9e1c388874b86efd2b7dcac91e, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2058639391}
+  - 114: {fileID: 2058639390}
+  m_Layer: 0
+  m_Name: TextEventTHing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2058639390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11411552, guid: 815a0d9e1c388874b86efd2b7dcac91e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2058639389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 613f4ae8ac2a8914f889e30c4ffaa5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: AddLineEvent
+  keyList:
+  - TestNPC2
+  - TestNPC1
+  valueList:
+  - {fileID: 763063552}
+  - {fileID: 763063552}
+  eventType: 0
+  adjustAmount: 0
+  shouldActivateTimer: 0
+  answersToAdd: []
+  eventsToAdd: []
+--- !u!4 &2058639391
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 495418, guid: 815a0d9e1c388874b86efd2b7dcac91e, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2058639389}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.9236765, y: 2.356516, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6

@@ -23,7 +23,7 @@ using System.Collections;
     addQuestionEvents add a specific answer to an NPC's convoNode, then prevents itself from being able to add anymore Answer Events.
     MultiEvents can call multiple event types using Booleans.
 */
-public enum eventNodeType {NPCEvent, TimerEvent, addQuestionEvent, addQuestionOneshotEvent, MultiEvent};
+public enum eventNodeType {NPCEvent, TimerEvent, addQuestionEvent, addQuestionOneshotEvent, MultiEvent, EndEvent};
 
     #endregion
 

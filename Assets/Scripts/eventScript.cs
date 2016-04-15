@@ -34,6 +34,15 @@ public class eventScript : MonoBehaviour {
     [Tooltip("Used in addQuestionEvents. A list of events to be added to the convoNodes of the NPCs listed in [keyList].\n\nMatches IDs with strings stored in [answersToAdd], which in turn matches IDs with the NPCs in [keyList].\n\nMust match the size of the [keyList].")]
     public eventScript[] eventsToAdd;
 
+    [Tooltip("Used in addQuestionEvents. A list of convoNodes to be added to the convoNodes of the NPCs listed in [keyList].\n\nMatches IDs with strings stored in [answersToAdd], which in turn matches IDs with the NPCs in [keyList].\n\nMust match the size of the [keyList].\n\nThis makes Answers continue to more conversations.")]
+    public convoNode[] nextNodesToAdd;
+
+    //MultiEvent Variables.
+    public bool Multi_NPCEvent;
+    public bool Multi_TimerEvent;
+    public bool Multi_AddQuestionEvent;
+    public bool Multi_AddQuestionOneShotEvent;
+
 	// Use this for initialization
 	void Start () {
         populateHashtable();
@@ -65,6 +74,7 @@ public class eventScript : MonoBehaviour {
         {
             answersToAdd[i] = null;
             eventsToAdd[i] = null;
+            nextNodesToAdd[i] = null;
         }
     }
 

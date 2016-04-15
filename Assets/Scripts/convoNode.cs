@@ -8,7 +8,8 @@ public class convoNode : MonoBehaviour {
     /// This is a node in a tree structure meant to mostly load info into the textboxes and ask boxes.
     /// </summary>
 
-    
+       [Tooltip("If this boolean is true, events won't be able to add its changes to other convoNodes.")]
+    public bool oneShotCheck = false;
 
     [Tooltip("We use this Enum to set how our TextBox or Askbox react to this ConvoNode loading.")]
     public nodeType myType = nodeType.textOnly;
@@ -75,17 +76,52 @@ public class convoNode : MonoBehaviour {
             tempAnswer[i] = endAnswerArray[i];//Add everything in.
         }
         endAnswerArray = tempAnswer;//Set the old to the new.
-        endAnswerArray[endAnswerArray.Length-1] = answer;//Add in our new Answer
 
-        //Repeat
-        eventScript[] tempEvent = new eventScript[endEventArray.Length];
+        if (endAnswerArray.Length != 0)
+        {
+            endAnswerArray[endAnswerArray.Length - 1] = answer;//Add in our new Answer
+        }
+        //Repeatthe process for the Event array.
+        eventScript[] tempEvent = new eventScript[endEventArray.Length + 1];
         for (int i = 0; i < endEventArray.Length; i++)
         {
             tempEvent[i] = endEventArray[i];
         }
-        endEventArray = tempEvent;
-        endEventArray[endEventArray.Length-1] = newEvent;
 
+        endEventArray = tempEvent;
+        if (endEventArray.Length != 0)
+        {
+            endEventArray[endEventArray.Length - 1] = newEvent;
+        }
+
+    }
+
+    //Overload for Answer/Convonode permutation
+    public void addQuestion(string answer, convoNode newConvoNode)
+    {
+        string[] tempAnswer = new string[endAnswerArray.Length + 1];//Make a temp array, since we can't resize arrays.
+        for (int i = 0; i < endAnswerArray.Length; i++)
+        {
+            tempAnswer[i] = endAnswerArray[i];//Add everything in.
+        }
+        endAnswerArray = tempAnswer;//Set the old to the new.
+
+        if (endAnswerArray.Length != 0)
+        {
+            endAnswerArray[endAnswerArray.Length - 1] = answer;//Add in our new Answer
+        }
+        //Repeatthe process for the nextNode array.
+        convoNode[] tempConvo = new convoNode[nextNodeArray.Length + 1];
+        for (int i = 0; i < endEventArray.Length; i++)
+        {
+            tempConvo[i] = nextNodeArray[i];
+        }
+
+        nextNodeArray = tempConvo;
+        if (endEventArray.Length != 0)
+        {
+            nextNodeArray[endEventArray.Length - 1] = newConvoNode;
+        }
 
     }
 
@@ -109,4 +145,52 @@ public class convoNode : MonoBehaviour {
 
 
     }
+
+    //In case we seriously need to add ALL THREE.
+    public void addQuestion(string answer, eventScript newEvent, convoNode newConvoNode)
+    {
+        string[] tempAnswer = new string[endAnswerArray.Length + 1];//Make a temp array, since we can't resize arrays.
+        for (int i = 0; i < endAnswerArray.Length; i++)
+        {
+            tempAnswer[i] = endAnswerArray[i];//Add everything in.
+        }
+        endAnswerArray = tempAnswer;//Set the old to the new.
+
+        if (endAnswerArray.Length != 0)
+        {
+            endAnswerArray[endAnswerArray.Length - 1] = answer;//Add in our new Answer
+        }
+
+
+        //Repeatthe process for the Event array.
+        eventScript[] tempEvent = new eventScript[endEventArray.Length + 1];
+        for (int i = 0; i < endEventArray.Length; i++)
+        {
+            tempEvent[i] = endEventArray[i];
+        }
+
+        endEventArray = tempEvent;
+        if (endEventArray.Length != 0)
+        {
+            endEventArray[endEventArray.Length - 1] = newEvent;
+        }
+
+
+
+        //Repeatthe process for the nextNode array.
+        convoNode[] tempConvo = new convoNode[nextNodeArray.Length + 1];
+        for (int i = 0; i < nextNodeArray.Length; i++)
+        {
+            print("triple check number: " + i);
+            tempConvo[i] = nextNodeArray[i];
+        }
+
+        nextNodeArray = tempConvo;
+        if (nextNodeArray.Length != 0)
+        {
+            nextNodeArray[nextNodeArray.Length - 1] = newConvoNode;
+        }
+
+    }
+
 }

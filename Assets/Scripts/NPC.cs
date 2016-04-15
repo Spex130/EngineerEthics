@@ -63,10 +63,12 @@ public class NPC : MonoBehaviour, interactable {
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            print("EXIT");
-            //player.touchedPerson = null;
-            player.isTouchingPerson = false;
-            player = null;
+            if (player != null)
+            {
+                //player.touchedPerson = null;
+                player.isTouchingPerson = false;
+                player = null;
+            }
 
         }
 
