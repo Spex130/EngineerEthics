@@ -39,8 +39,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c1b0956473b55c46829890d1010d07f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oneShotCheck: 0
-  myType: 0
+  myType: 2
   convoTextArray: []
   question: null
   choiceIndex: 0

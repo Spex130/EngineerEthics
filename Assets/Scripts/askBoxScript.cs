@@ -148,21 +148,17 @@ public class askBoxScript : MonoBehaviour {
 
 	public void disableBox()//This disables the textbox so that you can't see it.
 	{
-		//if (showBox) {
-			textbox.enabled = false;
-			text.enabled = false;
-			qText.enabled = false;
-			showBox = false;
-			deleteText();
-		//}
-
+		textbox.enabled = false;
+		text.enabled = false;
+        qText.enabled = false;
+        showBox = false;
+        deleteText();
     }
 
     public void activate(convoNode q)
     {
         currentNode = q;
         question = currentNode.question;
-		deleteText ();
         choiceArray = q.endAnswerArray;
         init();
         enableBox();
