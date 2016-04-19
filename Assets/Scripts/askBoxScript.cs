@@ -15,7 +15,7 @@ public class askBoxScript : MonoBehaviour {
     public string question = "defaulttext";//The question we ponder the the answer to.
 	public string[] choiceArray; //Holds the strings we want to display in the textbox.
 
-   private char[] charArray; //Holds our strings, converted to characters
+    [SerializeField]private char[] charArray; //Holds our strings, converted to characters
 
 	public int lineLength = 25; //Number of characters per line
 	public float kerning = 1f;//Space between characters
@@ -85,20 +85,8 @@ public class askBoxScript : MonoBehaviour {
                 horiIndex = 0;
                 vertIndex = 0;
 
-                textArray = new Text[choiceArray.Length];
-                charArray = choiceArray[progressIndex].ToCharArray();
-
-                //Our basic Text is used as a cursor. The rest of the texts are stored in the textArray
-
-                for (int i = 0; i < choiceArray.Length; i++)//Here we instantiate ALL of the new text objects
-                {
-                    Text temp = (Text)Instantiate(text, textStartPoint.transform.position, transform.rotation);
-                    //temp.text = "TEST";
-                    temp.transform.SetParent(textStartPoint.transform, false);
-                    temp.alignment = TextAnchor.MiddleLeft;
-                    temp.transform.localPosition = new Vector3(0, 0 - (vSpace * i), 0);
-                    textArray[i] = temp;
-                }
+                deleteText();
+                createTextObjects();
             }
         }
     }
@@ -123,7 +111,10 @@ public class askBoxScript : MonoBehaviour {
 		text.enabled = true;
         qText.enabled = true;
         showBox = true;
-        if(textArray.Length < choiceArray.Length) {
+       
+        if (choiceArray == null) { choiceArray = new string[1]; }
+        if (textArray == null) { textArray = new Text[1]; createTextObjects();}
+        if (textArray.Length < choiceArray.Length) {
 
             deleteText();
             textArray = new Text[choiceArray.Length];
@@ -143,6 +134,25 @@ public class askBoxScript : MonoBehaviour {
                 temp.transform.localPosition = new Vector3(0, 0 - (vSpace * i), 0);
                 textArray[i] = temp;
             }
+        }
+    }
+
+    public void createTextObjects()
+    {
+        progressIndex = 0;
+        textArray = new Text[choiceArray.Length];
+        charArray = choiceArray[progressIndex].ToCharArray();
+
+        //Our basic Text is used as a cursor. The rest of the texts are stored in the textArray
+
+        for (int i = 0; i < choiceArray.Length; i++)//Here we instantiate ALL of the new text objects
+        {
+            Text temp = (Text)Instantiate(text, textStartPoint.transform.position, transform.rotation);
+            //temp.text = "TEST";
+            temp.transform.SetParent(textStartPoint.transform, false);
+            temp.alignment = TextAnchor.MiddleLeft;
+            temp.transform.localPosition = new Vector3(0, 0 - (vSpace * i), 0);
+            textArray[i] = temp;
         }
     }
 
@@ -166,7 +176,7 @@ public class askBoxScript : MonoBehaviour {
         choiceArray = q.endAnswerArray;
         init();
         enableBox();
-        showBox = true;
+        
     }
 
 	//This method acts as an update loop for when the text box should be displaying normal conversation text.
@@ -242,11 +252,10 @@ public class askBoxScript : MonoBehaviour {
         //First we check if what our answer even corresponds to even exists.
         if (currentNode.hasNext && currentNode.nextNodeArray[choiceID] != null)
         {
-            switch (currentNode.myType)
+            switch (currentNode.nextNodeArray[choiceID].myType)
             {
 
-                case
-                nodeType.textOnly://Switch to Text Mode
+                case nodeType.textOnly://Switch to Text Mode
                     disableBox();
                     textBoxPartner.startConvo(currentNode.nextNodeArray[choiceID]);
                     break;
@@ -257,8 +266,8 @@ public class askBoxScript : MonoBehaviour {
                     break;
 
                 case nodeType.question://Load up and Re-init!
+                    disableBox();
                     activate(currentNode.nextNodeArray[choiceID]);
-                    
                     break;
 
                 default:
@@ -268,7 +277,6 @@ public class askBoxScript : MonoBehaviour {
         else {
             //print("disableBox");
             disableBox();
-            showBox = false;
         }
 	}
 
@@ -278,7 +286,10 @@ public class askBoxScript : MonoBehaviour {
         {
             for (int i = 0; i < textArray.Length; i++)
             {
-                Destroy(textArray[i].gameObject);
+                if (textArray[i] != null)
+                {
+                    Destroy(textArray[i].gameObject);
+                }
             }
             textArray = null;
         }

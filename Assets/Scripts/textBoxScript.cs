@@ -315,7 +315,8 @@ public class textBoxScript : MonoBehaviour {
         isSkipping = false;
         isFinishedDisplaying = true;
         textSpeed = endLineBlinkSpeed;
-        showEndLine = !showEndLine;
+        showEndLine = true;
+        text.text = text.text + " ■";
     }
 
 	public void askQuestion(convoNode q)
