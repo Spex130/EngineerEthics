@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.UI;
 
 public class convoNode : MonoBehaviour {
 
@@ -39,6 +39,9 @@ public class convoNode : MonoBehaviour {
 
     [Tooltip("If [hasEndEvent] is true this eventScript gets called when this convoNode terminates. It gets called whether the convoNode simply reads out text or if it asks you a question.\n\nDo note that Events activated by questions ALSO run, which means you can cause two events to run at the same time.")]
     public eventScript endEvent;
+    
+    
+    public Sprite NPCFace;
 
     #endregion
 
@@ -46,12 +49,12 @@ public class convoNode : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-	
+	    
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+	    
 	}
 
     //Returns the default next node

@@ -132,6 +132,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 1
   endEvent: {fileID: 2009246138}
+  NPCFace: {fileID: 0}
 --- !u!4 &2020672
 Transform:
   m_ObjectHideFlags: 0
@@ -332,6 +333,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 21300000, guid: d5639f31ad3b379469401a800bbd2f2d, type: 3}
 --- !u!1 &41494386
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,6 +402,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 1
   endEvent: {fileID: 1662985134}
+  NPCFace: {fileID: 0}
 --- !u!1 &46682047
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,6 +518,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!1 &60767882
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,6 +579,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!1 &68867882
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,6 +711,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 21300000, guid: d5639f31ad3b379469401a800bbd2f2d, type: 3}
 --- !u!1 &133721414
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,6 +763,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!4 &133721416
 Transform:
   m_ObjectHideFlags: 0
@@ -946,6 +953,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 617070414}
   m_RootOrder: 40
+--- !u!224 &251072760 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 22455632, guid: d1f4ef7c8cc842e42af367e2b11d4b0c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1766907013}
 --- !u!1 &262223190
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,6 +1105,46 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11482624, guid: 544a21cc41be48347b433566352ad48d, type: 2}
+      propertyPath: NPCFace
+      value: 
+      objectReference: {fileID: 21300000, guid: d5639f31ad3b379469401a800bbd2f2d,
+        type: 3}
+    - target: {fileID: 11472450, guid: 544a21cc41be48347b433566352ad48d, type: 2}
+      propertyPath: NPCFace
+      value: 
+      objectReference: {fileID: 21300000, guid: d5639f31ad3b379469401a800bbd2f2d,
+        type: 3}
+    - target: {fileID: 11484856, guid: 544a21cc41be48347b433566352ad48d, type: 2}
+      propertyPath: NPCFace
+      value: 
+      objectReference: {fileID: 21300000, guid: d5639f31ad3b379469401a800bbd2f2d,
+        type: 3}
+    - target: {fileID: 11496806, guid: 544a21cc41be48347b433566352ad48d, type: 2}
+      propertyPath: NPCFace
+      value: 
+      objectReference: {fileID: 21300000, guid: d5639f31ad3b379469401a800bbd2f2d,
+        type: 3}
+    - target: {fileID: 11423104, guid: 544a21cc41be48347b433566352ad48d, type: 2}
+      propertyPath: NPCFace
+      value: 
+      objectReference: {fileID: 21300000, guid: d5639f31ad3b379469401a800bbd2f2d,
+        type: 3}
+    - target: {fileID: 11456158, guid: 544a21cc41be48347b433566352ad48d, type: 2}
+      propertyPath: NPCFace
+      value: 
+      objectReference: {fileID: 21300000, guid: d5639f31ad3b379469401a800bbd2f2d,
+        type: 3}
+    - target: {fileID: 11497260, guid: 544a21cc41be48347b433566352ad48d, type: 2}
+      propertyPath: NPCFace
+      value: 
+      objectReference: {fileID: 21300000, guid: d5639f31ad3b379469401a800bbd2f2d,
+        type: 3}
+    - target: {fileID: 11469852, guid: 544a21cc41be48347b433566352ad48d, type: 2}
+      propertyPath: NPCFace
+      value: 
+      objectReference: {fileID: 21300000, guid: d5639f31ad3b379469401a800bbd2f2d,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 544a21cc41be48347b433566352ad48d, type: 2}
   m_IsPrefabParent: 0
@@ -1133,6 +1185,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 1
   endEvent: {fileID: 1861687860}
+  NPCFace: {fileID: 0}
 --- !u!1 &280943403
 GameObject:
   m_ObjectHideFlags: 0
@@ -1366,6 +1419,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!1 &364608415
 GameObject:
   m_ObjectHideFlags: 0
@@ -1485,6 +1539,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!114 &405585043 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11422532, guid: d1f4ef7c8cc842e42af367e2b11d4b0c,
@@ -2435,6 +2490,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 1
   endEvent: {fileID: 1933847619}
+  NPCFace: {fileID: 0}
 --- !u!114 &655619766 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11491834, guid: a039eee5c8758d648a8f179742eebeaf,
@@ -2505,6 +2561,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!1 &709226671
 GameObject:
   m_ObjectHideFlags: 0
@@ -2756,6 +2813,14 @@ Prefab:
       value: 
       objectReference: {fileID: 12800000, guid: b9d116e8bfaa20c45b74149d4bc332d7,
         type: 3}
+    - target: {fileID: 11483698, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
+      propertyPath: NPCFace
+      value: 
+      objectReference: {fileID: 1701593682}
+    - target: {fileID: 22491994, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -57
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
   m_IsPrefabParent: 0
@@ -2875,6 +2940,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!1 &801652863
 GameObject:
   m_ObjectHideFlags: 0
@@ -2996,6 +3062,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!1 &913700251
 GameObject:
   m_ObjectHideFlags: 0
@@ -3170,6 +3237,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 21300000, guid: d5639f31ad3b379469401a800bbd2f2d, type: 3}
 --- !u!1 &1036984233
 GameObject:
   m_ObjectHideFlags: 0
@@ -3233,6 +3301,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!1 &1057538058
 GameObject:
   m_ObjectHideFlags: 0
@@ -3299,6 +3368,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!1001 &1084158193
 Prefab:
   m_ObjectHideFlags: 0
@@ -3405,6 +3475,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!4 &1114627501
 Transform:
   m_ObjectHideFlags: 0
@@ -3485,6 +3556,11 @@ Prefab:
       propertyPath: myType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11486950, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
+      propertyPath: NPCFace
+      value: 
+      objectReference: {fileID: 21300000, guid: 37df695915e9b4049b09676780acec4d,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
   m_IsPrefabParent: 0
@@ -3625,6 +3701,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!1 &1244313351
 GameObject:
   m_ObjectHideFlags: 0
@@ -3800,6 +3877,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 21300000, guid: d5639f31ad3b379469401a800bbd2f2d, type: 3}
 --- !u!4 &1296386276 stripped
 Transform:
   m_PrefabParentObject: {fileID: 445524, guid: f4c2e47654e6a6047be302e238151aaf, type: 2}
@@ -3874,6 +3952,40 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 21300000, guid: d5639f31ad3b379469401a800bbd2f2d, type: 3}
+--- !u!1 &1339824517
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1339824518}
+  m_Layer: 5
+  m_Name: FaceStartPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1339824518
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1339824517}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1701593681}
+  m_Father: {fileID: 1437248345}
+  m_RootOrder: 1
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -68, y: 7}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1355415447
 GameObject:
   m_ObjectHideFlags: 0
@@ -3990,6 +4102,73 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &1404653965
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1404653966}
+  - 222: {fileID: 1404653968}
+  - 114: {fileID: 1404653967}
+  m_Layer: 5
+  m_Name: M2Face
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1404653966
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404653965}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 251072760}
+  m_RootOrder: 1
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1404653967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404653965}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 4efdca26504dabc4f909dc711e6fa896, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1404653968
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404653965}
 --- !u!1 &1409913163
 GameObject:
   m_ObjectHideFlags: 0
@@ -4035,6 +4214,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!4 &1409913165
 Transform:
   m_ObjectHideFlags: 0
@@ -4106,6 +4286,11 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!224 &1437248345 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 22407980, guid: a039eee5c8758d648a8f179742eebeaf,
+    type: 2}
+  m_PrefabInternal: {fileID: 758048773}
 --- !u!1001 &1447155456
 Prefab:
   m_ObjectHideFlags: 0
@@ -4216,6 +4401,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!1 &1496527570
 GameObject:
   m_ObjectHideFlags: 0
@@ -4512,6 +4698,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 21300000, guid: d5639f31ad3b379469401a800bbd2f2d, type: 3}
 --- !u!4 &1584906755
 Transform:
   m_ObjectHideFlags: 0
@@ -4603,6 +4790,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 1
   endEvent: {fileID: 1933847619}
+  NPCFace: {fileID: 21300000, guid: 37df695915e9b4049b09676780acec4d, type: 3}
 --- !u!1001 &1651363029
 Prefab:
   m_ObjectHideFlags: 0
@@ -4800,6 +4988,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 1
   endEvent: {fileID: 2088315949}
+  NPCFace: {fileID: 0}
 --- !u!114 &1688371916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4836,6 +5025,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!1 &1692626148
 GameObject:
   m_ObjectHideFlags: 0
@@ -4895,6 +5085,73 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &1701593680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1701593681}
+  - 222: {fileID: 1701593683}
+  - 114: {fileID: 1701593682}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1701593681
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1701593680}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1339824518}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 20, y: 10}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1701593682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1701593680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: c9286f13485cfa543843c4594c350ece, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1701593683
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1701593680}
 --- !u!1 &1711795943
 GameObject:
   m_ObjectHideFlags: 0
@@ -4952,6 +5209,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 21300000, guid: d5639f31ad3b379469401a800bbd2f2d, type: 3}
 --- !u!1 &1717657864
 GameObject:
   m_ObjectHideFlags: 0
@@ -5028,6 +5286,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!4 &1723854293 stripped
 Transform:
   m_PrefabParentObject: {fileID: 482574, guid: b2806622847968e4996fb507f1e5483b, type: 2}
@@ -5153,6 +5412,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!114 &1788847970 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11446052, guid: 1ca5808ee83917f4399872e98103cb7d,
@@ -5283,6 +5543,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!1 &1861687858
 GameObject:
   m_ObjectHideFlags: 0
@@ -5403,6 +5664,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!1 &1933847617
 GameObject:
   m_ObjectHideFlags: 0
@@ -5858,6 +6120,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!1 &2040125195
 GameObject:
   m_ObjectHideFlags: 0
@@ -5929,6 +6192,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 21300000, guid: 37df695915e9b4049b09676780acec4d, type: 3}
 --- !u!1 &2052736099
 GameObject:
   m_ObjectHideFlags: 0
@@ -5994,6 +6258,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!1 &2088315947
 GameObject:
   m_ObjectHideFlags: 0
@@ -6241,6 +6506,7 @@ MonoBehaviour:
   - {fileID: 0}
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!1 &2141735886
 GameObject:
   m_ObjectHideFlags: 0

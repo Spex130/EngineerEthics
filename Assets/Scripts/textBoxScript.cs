@@ -56,7 +56,9 @@ public class textBoxScript : MonoBehaviour {
 	public UnityEngine.UI.Image textbox;
 //Text so we have something to edit
 	public Text text;
-
+    //NPC Face that we show during conversation
+    public Image NPCFace;
+    
 	// Use this for initialization
 	void Start () {
 		init();
@@ -89,24 +91,41 @@ public class textBoxScript : MonoBehaviour {
         if (currentNode !=null)
         {
             if (currentNode.myType != nodeType.question) {//Make sure to check whether or not we should even be bothering to set up.
-            convArray = currentNode.convoTextArray;//Load up our text to sidplay from our node.
-            text.text = "";//Make sure our text is empty before we start.
-            charArray = new char[convArray[conversationPoint].Length];//We get the length of the string in our current conversationPoint.
-
-            prepStrings();
-        }
-        else//If it's just a question, immediately activate our Ask Box buddy.
-        {
-            disableBox();
-            askQuestion(currentNode);
-        }
+                convArray = currentNode.convoTextArray;//Load up our text to sidplay from our node.
+                text.text = "";//Make sure our text is empty before we start.
+                charArray = new char[convArray[conversationPoint].Length];//We get the length of the string in our current conversationPoint.
+                resetNPCFace();  
+                
+                prepStrings();
+            }
+            else//If it's just a question, immediately activate our Ask Box buddy.
+            {
+                disableBox();
+                askQuestion(currentNode);
+            }
         }
 	}
+    
+    //Set the face to the current NPC's face, or disabled if null
+    public void resetNPCFace() {
+        if (currentNode.NPCFace) 
+        {
+            //RectTransform rect = textStartPoint.RectTransform;
+            NPCFace.sprite = currentNode.NPCFace;
+            NPCFace.enabled = true;
+        }
+        else 
+        {
+            NPCFace.enabled = false;
+            //textStartPoint.RectTransform.anchoredPosition.x = -70;
+        }
+    }
 
 	//Initialize after the program has started
 	public void reInit()
 	{
 		text.text = "";
+        resetNPCFace();
 		tinyTimer = resetTimer;
 		textSpeed = resetTextSpeed;
 		conversationPoint = 0;
@@ -129,6 +148,7 @@ public class textBoxScript : MonoBehaviour {
                 showBox = true;
                 textbox.enabled = true;
                 text.enabled = true;
+                //NPCFace.enabled = true;
                 reInit();
             }
             else
@@ -175,6 +195,7 @@ public class textBoxScript : MonoBehaviour {
 	{
 		textbox.enabled = true;
 		text.enabled = true;
+        //NPCFace.enabled = true;
         showBox = true;
 	}
 
@@ -182,6 +203,7 @@ public class textBoxScript : MonoBehaviour {
 	{
 		textbox.enabled = false;
 		text.enabled = false;
+        NPCFace.enabled = false;
         showBox = false;
 	}
 
