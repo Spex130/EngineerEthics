@@ -2821,6 +2821,10 @@ Prefab:
       propertyPath: m_AnchoredPosition.x
       value: -57
       objectReference: {fileID: 0}
+    - target: {fileID: 11483698, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
+      propertyPath: textStartPointRect
+      value: 
+      objectReference: {fileID: 834371975}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
   m_IsPrefabParent: 0
@@ -2999,6 +3003,11 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
+--- !u!224 &834371975 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 22491994, guid: a039eee5c8758d648a8f179742eebeaf,
+    type: 2}
+  m_PrefabInternal: {fileID: 758048773}
 --- !u!1 &845456289
 GameObject:
   m_ObjectHideFlags: 0
@@ -4328,7 +4337,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 430986, guid: 94970da532d248e4daba407c3bb3a56e, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 430986, guid: 94970da532d248e4daba407c3bb3a56e, type: 2}
       propertyPath: m_LocalScale.x

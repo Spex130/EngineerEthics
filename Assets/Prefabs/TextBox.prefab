@@ -115,6 +115,7 @@ MonoBehaviour:
   textbox: {fileID: 11414198}
   text: {fileID: 11498948}
   NPCFace: {fileID: 11451990}
+  textStartPointRect: {fileID: 22447466}
 --- !u!114 &11414198
 MonoBehaviour:
   m_ObjectHideFlags: 1

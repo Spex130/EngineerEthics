@@ -58,6 +58,10 @@ public class textBoxScript : MonoBehaviour {
 	public Text text;
     //NPC Face that we show during conversation
     public Image NPCFace;
+    public RectTransform textStartPointRect;
+    private Vector2 textPos1 = new Vector2(-57f, 10f);
+    private Vector2 textPos2 = new Vector2(-70f, 10f);
+    
     
 	// Use this for initialization
 	void Start () {
@@ -110,14 +114,18 @@ public class textBoxScript : MonoBehaviour {
     public void resetNPCFace() {
         if (currentNode.NPCFace) 
         {
-            //RectTransform rect = textStartPoint.RectTransform;
+            //Vector2 tempPos = textStartPoint.getComponent<RectTransform>();
+            //tempPos = textPos1;
+            textStartPointRect.anchoredPosition = textPos1;
             NPCFace.sprite = currentNode.NPCFace;
             NPCFace.enabled = true;
         }
         else 
         {
             NPCFace.enabled = false;
-            //textStartPoint.RectTransform.anchoredPosition.x = -70;
+            //Vector2 tempPos = textStartPoint.getComponent<RectTransform>();
+            //tempPos = textPos2;
+            textStartPointRect.anchoredPosition = textPos2;
         }
     }
 
