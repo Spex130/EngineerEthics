@@ -238,6 +238,7 @@ public class askBoxScript : MonoBehaviour {
             if (!(currentNode.endEventArray[choiceID] == null))//If there's an event to load in the chosen slot...
             {
                 sceneEventTracker.loadEvent(currentNode.endEventArray[choiceID]);//Load the Event!
+
             }
         }
 
@@ -245,6 +246,7 @@ public class askBoxScript : MonoBehaviour {
         if (currentNode.hasEndEvent)
         {
             sceneEventTracker.loadEvent(currentNode.endEvent);
+
         }
 
         //Part 3: Check the node to see if any nodes come after it and respond accordingly.
@@ -276,8 +278,11 @@ public class askBoxScript : MonoBehaviour {
         }
         else {
             //print("disableBox");
+
             disableBox();
         }
+		Debug.Log(question);
+		PlayerPrefs.SetInt(question, choiceID);
 	}
 
 	public void deleteText(){

@@ -3187,6 +3187,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 2.0682323
       objectReference: {fileID: 0}
+    - target: {fileID: 11433488, guid: f4c2e47654e6a6047be302e238151aaf, type: 2}
+      propertyPath: sceneName
+      value: EndScreen
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f4c2e47654e6a6047be302e238151aaf, type: 2}
   m_IsPrefabParent: 0
@@ -5273,7 +5277,7 @@ MonoBehaviour:
     the project you were working on. '
   - 'Becky: Ohh! Um-m w-well what do you need from me?'
   - "\u2642Scott: ...She sounds somewhat panicky."
-  question: What should I do?
+  question: What should I say?
   choiceIndex: 0
   endAnswerArray:
   - Ask her directly if she falsified information on the project
