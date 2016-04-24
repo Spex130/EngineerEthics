@@ -10,7 +10,8 @@ public class convoNodeTests {
         //Arrange
 		GameObject aNode = new GameObject();
 		convoNode theConvoNode =  aNode.AddComponent<convoNode>();
-		theConvoNode.endAnswerArray = new string[4];
+		theConvoNode.endAnswerArray = new string[1];
+		theConvoNode.endEventArray = new eventScript[1];
         //Act
         //Try to rename the GameObject
 		string tryToadd = "blah";
@@ -19,21 +20,22 @@ public class convoNodeTests {
 
         //Assert
         //The object has a new name
-		Assert.AreEqual(theConvoNode.endAnswerArray[0], tryToadd);
+		Assert.AreEqual(theConvoNode.endAnswerArray[1], tryToadd);
     }
 	[Test]
 	public void TestWithEventScript()
 	{
 		GameObject aNode = new GameObject();
 		convoNode theConvoNode =  aNode.AddComponent<convoNode>();
-		theConvoNode.endAnswerArray = new string[4];
+		theConvoNode.endAnswerArray = new string[1];
 		eventScript theScript = aNode.AddComponent<eventScript> ();
+		theConvoNode.endEventArray = new eventScript[1];
 
 		string tryToadd = "blah";
 
 		theConvoNode.addQuestion (tryToadd, theScript);
 
-		Assert.AreEqual(theConvoNode.endAnswerArray[0], tryToadd);
+		Assert.AreEqual(theConvoNode.endAnswerArray[1], tryToadd);
 
 	}
 	[Test]

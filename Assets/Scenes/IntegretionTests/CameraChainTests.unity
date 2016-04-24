@@ -196,6 +196,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 94970da532d248e4daba407c3bb3a56e, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &408946224 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11495572, guid: a039eee5c8758d648a8f179742eebeaf,
+    type: 2}
+  m_PrefabInternal: {fileID: 758048773}
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!114 &655619766 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11491834, guid: a039eee5c8758d648a8f179742eebeaf,
@@ -311,9 +317,22 @@ Prefab:
       propertyPath: vSpace
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 11483698, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
+      propertyPath: NPCFace
+      value: 
+      objectReference: {fileID: 408946224}
+    - target: {fileID: 11483698, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
+      propertyPath: textStartPointRect
+      value: 
+      objectReference: {fileID: 832308649}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
   m_IsPrefabParent: 0
+--- !u!224 &832308649 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 22491994, guid: a039eee5c8758d648a8f179742eebeaf,
+    type: 2}
+  m_PrefabInternal: {fileID: 758048773}
 --- !u!114 &966956548 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11483698, guid: a039eee5c8758d648a8f179742eebeaf,
