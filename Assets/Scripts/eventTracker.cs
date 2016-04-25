@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Okay, the long and short of it is that this class listens for "Events"
@@ -91,6 +92,11 @@ public class eventTracker : MonoBehaviour {
                 if (newEvent.Multi_TimerEvent) { doTimerEvent(newEvent); }
 
                 break;
+
+            case eventNodeType.EndEvent:
+                SceneManager.LoadScene("EndScreen", LoadSceneMode.Single);
+                break;
+
             default:
 
             break;

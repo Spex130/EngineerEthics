@@ -6195,14 +6195,12 @@ MonoBehaviour:
   - Rework current proposal to be acceptable
   - Convince client to extend deadline
   - Abandon project and have the company take the hit
-  - 
   hasNext: 0
   nextNodeArray: []
   endEventArray:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1933847619}
+  - {fileID: 1933847619}
+  - {fileID: 1933847619}
   hasEndEvent: 0
   endEvent: {fileID: 0}
   NPCFace: {fileID: 21300000, guid: 37df695915e9b4049b09676780acec4d, type: 3}

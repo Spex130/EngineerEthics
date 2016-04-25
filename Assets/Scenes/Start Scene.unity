@@ -507,7 +507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffad6a0a87c4fc643986348186688cf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Larry'sTestScene
+  sceneName: Office
 --- !u!1 &700860784
 GameObject:
   m_ObjectHideFlags: 0
