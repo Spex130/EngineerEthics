@@ -49,6 +49,7 @@ public class playerChar : MonoBehaviour {
 		moveCheck();
 		interactCheck();
 		directionCheck();
+		myAnim.SetInteger("SkinColor", PlayerPrefs.GetInt("Skin Color"));
 	}
 
     //Checks whether or not we are moving left or right. Or moving at all.
