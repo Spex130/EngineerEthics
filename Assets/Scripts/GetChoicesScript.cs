@@ -20,10 +20,10 @@ public class GetChoicesScript : MonoBehaviour {
 		}
 		int ourSecondPick = (PlayerPrefs.GetInt ("Response?"));
 		if (ourSecondPick == 0) {
-			secondOne.text = ("Ignored Boss");
+			secondOne.text = ("Ignored your Boss and left the Office");
 		}
 		else if (ourSecondPick == 1) {
-			secondOne.text = ("Turned Becky in");
+			secondOne.text = ("Turned Becky in to the Boss");
 		}
 		else if (ourSecondPick == 2) {
 			secondOne.text = ("Covered for Becky");
