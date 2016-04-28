@@ -152,6 +152,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1813775123}
   m_Script: {fileID: 11500000, guid: 87d6987e0b875f14d8f585ed07db21f1, type: 3}
+--- !u!114 &289879438 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11495572, guid: a039eee5c8758d648a8f179742eebeaf,
+    type: 2}
+  m_PrefabInternal: {fileID: 758048773}
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &291298785
 Prefab:
   m_ObjectHideFlags: 0
@@ -202,6 +208,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 94970da532d248e4daba407c3bb3a56e, type: 2}
   m_IsPrefabParent: 0
+--- !u!224 &587267501 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 22491994, guid: a039eee5c8758d648a8f179742eebeaf,
+    type: 2}
+  m_PrefabInternal: {fileID: 758048773}
 --- !u!114 &655619766 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11491834, guid: a039eee5c8758d648a8f179742eebeaf,
@@ -317,6 +328,22 @@ Prefab:
       propertyPath: vSpace
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 11483698, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
+      propertyPath: sceneEventTracker
+      value: 
+      objectReference: {fileID: 1773515441}
+    - target: {fileID: 11483698, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 253598585}
+    - target: {fileID: 11483698, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
+      propertyPath: NPCFace
+      value: 
+      objectReference: {fileID: 289879438}
+    - target: {fileID: 11483698, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
+      propertyPath: textStartPointRect
+      value: 
+      objectReference: {fileID: 587267501}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
   m_IsPrefabParent: 0
@@ -326,6 +353,52 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 758048773}
   m_Script: {fileID: 11500000, guid: 4c8c6dc1e343db64eb37360c75ddff26, type: 3}
+--- !u!1001 &1007053309
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 11490842, guid: 0c71ca6c8b8356b439eba485a76acb5a, type: 2}
+      propertyPath: sceneInteractables.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 451794, guid: 0c71ca6c8b8356b439eba485a76acb5a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.8616648
+      objectReference: {fileID: 0}
+    - target: {fileID: 451794, guid: 0c71ca6c8b8356b439eba485a76acb5a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.6235287
+      objectReference: {fileID: 0}
+    - target: {fileID: 451794, guid: 0c71ca6c8b8356b439eba485a76acb5a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 451794, guid: 0c71ca6c8b8356b439eba485a76acb5a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 451794, guid: 0c71ca6c8b8356b439eba485a76acb5a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 451794, guid: 0c71ca6c8b8356b439eba485a76acb5a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 451794, guid: 0c71ca6c8b8356b439eba485a76acb5a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 451794, guid: 0c71ca6c8b8356b439eba485a76acb5a, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0c71ca6c8b8356b439eba485a76acb5a, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1079469101
 Prefab:
   m_ObjectHideFlags: 0
@@ -530,6 +603,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 94970da532d248e4daba407c3bb3a56e, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1773515441 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11490842, guid: 0c71ca6c8b8356b439eba485a76acb5a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1007053309}
+  m_Script: {fileID: 11500000, guid: 6ce7a4c403b3b4445a6cf7992e00a85f, type: 3}
 --- !u!1001 &1813775123
 Prefab:
   m_ObjectHideFlags: 0

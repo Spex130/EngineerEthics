@@ -41,7 +41,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oneShotCheck: 0
   myType: 0
-  convoTextArray: []
+  convoTextArray:
+  - 2
+  - 3
+  - 4
   question: null
   choiceIndex: 0
   endAnswerArray: []
@@ -50,6 +53,7 @@ MonoBehaviour:
   endEventArray: []
   hasEndEvent: 0
   endEvent: {fileID: 0}
+  NPCFace: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
