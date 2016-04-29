@@ -818,7 +818,7 @@ MonoBehaviour:
   partner: {fileID: 0}
   transPoint: {fileID: 0}
   player: {fileID: 0}
-  sceneName: Larry'sTestScene
+  sceneName: Office
 --- !u!212 &21201292
 SpriteRenderer:
   m_ObjectHideFlags: 1
