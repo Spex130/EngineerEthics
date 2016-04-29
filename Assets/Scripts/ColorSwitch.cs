@@ -22,8 +22,8 @@ public class ColorSwitch : MonoBehaviour {
 			foreach (Texture2D texture in theTextures) {
 				Texture2D newTexture = ChangeTexture (texture);
 				theTextures [i] = newTexture;
-			//	byte[] bytes = newTexture.EncodeToPNG ();
-			//  File.WriteAllBytes (Application.dataPath + "/Saved" +i+".png", bytes);
+				//byte[] bytes = newTexture.EncodeToPNG ();
+			  //  File.WriteAllBytes (Application.dataPath + "/Saved" +i+".png", bytes);
 				i++;
 			}
 			//Switches to prebuilt animation

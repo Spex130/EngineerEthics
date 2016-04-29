@@ -50,6 +50,7 @@ public class playerChar : MonoBehaviour {
 		interactCheck();
 		directionCheck();
 		myAnim.SetInteger("SkinColor", PlayerPrefs.GetInt("Skin Color"));
+		myAnim.SetInteger ("Gender", PlayerPrefs.GetInt ("Sex"));
 	}
 
     //Checks whether or not we are moving left or right. Or moving at all.

@@ -16,7 +16,10 @@ public class MainMenuScript : MonoBehaviour {
 	}
 	public void ChangeSkinColor(){
 		PlayerPrefs.SetInt ("Skin Color", SkinColor);
+	}
+	public void ChangeGender(){
 		PlayerPrefs.SetInt ("Sex", Sex);
+
 	}
 	// Update is called once per frame
 	void Update () {
