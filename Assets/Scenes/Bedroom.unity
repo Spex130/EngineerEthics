@@ -191,16 +191,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[1]
-      value: "Scott: Once again, I\u2019m really sorry. Just take it slowly, and I\u2019m
+      value: "You: Once again, I\u2019m really sorry. Just take it slowly, and I\u2019m
         sure you\u2019ll be fine. Take care!"
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[2]
-      value: 'Janice: Goodbye Scott, have a nice day at work.'
+      value: 'Janice: Goodbye, have a nice day at work.'
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[3]
-      value: 'Scott: Thanks Janice, see you later.'
+      value: 'You: Thanks Janice, see you later.'
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: hasEndEvent
@@ -266,7 +266,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[0]
-      value: 'Scott: Not here. Guh, bread is starting to get a bit moldy too.'
+      value: 'You: Not here. Guh, bread is starting to get a bit moldy too.'
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: myType
@@ -456,7 +456,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: question
-      value: 'Scott: Where did I put those coffee grounds...'
+      value: 'You: Where did I put those coffee grounds...'
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: myType
@@ -1583,7 +1583,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[0]
-      value: 'Scott: Bless the life giving grains of brown happiness.'
+      value: 'You: Bless the life giving grains of brown happiness.'
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: myType
@@ -1798,15 +1798,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[0]
-      value: 'Scott: I hate mornings...'
+      value: 'You: I hate mornings...'
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[1]
-      value: "Scott: ... but I don\u2019t have a choice do I."
+      value: "You: ... but I don\u2019t have a choice do I."
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[2]
-      value: "\u2642Scott: I need coffee. Mornings don\u2019t begin until then."
+      value: "\u2642You: I need coffee. Mornings don\u2019t begin until then."
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[3]
@@ -2073,15 +2073,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[0]
-      value: "Scott: Guh\u2026need to get up."
+      value: "You: Guh\u2026need to get up."
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[1]
-      value: 'Scott: Need to be an adult.'
+      value: 'You: Need to be an adult.'
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[2]
-      value: "\u2642Scott: I need coffee. Mornings don\u2019t begin until then."
+      value: "\u2642You: I need coffee. Mornings don\u2019t begin until then."
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[3]
@@ -2344,7 +2344,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[0]
-      value: "Scott: Empty again\u2026wait what\u2019s that? Oh God! Closing the door,
+      value: "You: Empty again\u2026wait what\u2019s that? Oh God! Closing the door,
         the closing the door!"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3958,7 +3958,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: question
-      value: 'Scott:'
+      value: 'You:'
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: endAnswerArray.Array.data[0]
@@ -4061,11 +4061,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[0]
-      value: 'Janice: Goodbye and see you later Scott!'
+      value: 'Janice: Goodbye and see you later!'
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[1]
-      value: 'Scott: See you later Janice.'
+      value: 'You: See you later Janice.'
       objectReference: {fileID: 0}
     - target: {fileID: 115324, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: m_Name
@@ -4139,11 +4139,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[0]
-      value: "Scott: Crud\u2026where did I put the grounds?"
+      value: "You: Crud\u2026where did I put the grounds?"
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[1]
-      value: 'Scott: It has to be somewhere around here.'
+      value: 'You: It has to be somewhere around here.'
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: hasNext
@@ -4404,7 +4404,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[1]
-      value: 'Scott: Heh, anytime Janice.'
+      value: 'You: Heh, anytime Janice.'
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[2]
@@ -4417,12 +4417,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[4]
-      value: "Janice: Thank you very much Scott. You should be going now though. I
-        don\u2019t want you to be late  for work."
+      value: "Janice: Thank you very much. You should be going now though. I don\u2019t
+        want you to be late  for work."
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[5]
-      value: 'Scott: Right, take care Janice.'
+      value: 'You: Right, take care Janice.'
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: hasEndEvent
@@ -4756,8 +4756,8 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[0]
-      value: 'Janice: Ohhhh Scott, could you please help me bring my groceries in?
-        I think I hurt my back a bit carrying  the milk.'
+      value: 'Janice: Ohhhh, could you please help me bring my groceries in? I think
+        I hurt my back a bit carrying  the milk.'
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: question
@@ -5401,8 +5401,8 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[1]
-      value: "Scott: Sure thing. I\u2019ll grab as much as I can to make it easier
-        on you."
+      value: "You: Sure thing. I\u2019ll grab as much as I can to make it easier on
+        you."
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[2]
@@ -5410,7 +5410,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[3]
-      value: 'Scott: Okay, I need to get going now Janice. Will you be okay?'
+      value: 'You: Okay, I need to get going now Janice. Will you be okay?'
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[4]
@@ -5656,7 +5656,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[1]
-      value: 'Scott: *sip* Ah. Much better.'
+      value: 'You: *sip* Ah. Much better.'
       objectReference: {fileID: 0}
     - target: {fileID: 11427526, guid: 792fb463a6a978648860e81f5d32fba1, type: 2}
       propertyPath: convoTextArray.Array.data[2]

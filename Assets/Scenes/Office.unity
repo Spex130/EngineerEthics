@@ -116,11 +116,11 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 0
   convoTextArray:
-  - "\u2642Scott: I\u2019ll take a look at Becky\u2019s notes later. I have three
-    days, and I have other work I need to take care of for now. Shouldn\u2019t take
-    me too long to finish Becky\u2019s project though."
-  - "\u2642Scott: Though, I could probably check with her before she leaves, just
-    as a formality. I should call her at some point. "
+  - "\u2642You: I\u2019ll take a look at Becky\u2019s notes later. I have three days,
+    and I have other work I need to take care of for now. Shouldn\u2019t take me too
+    long to finish Becky\u2019s project though."
+  - "\u2642You: Though, I could probably check with her before she leaves, just as
+    a formality. I should call her at some point. "
   question: Response?
   choiceIndex: 0
   endAnswerArray:
@@ -308,14 +308,14 @@ MonoBehaviour:
   myType: 0
   convoTextArray:
   - 'Thomas: What do you mean?'
-  - 'Scott: Panicky? Nervous? Anything?'
+  - 'You: Panicky? Nervous? Anything?'
   - "Thomas: Well she\u2019s been a bit panicky over the project you inherited. She
     didn\u2019t know how to keep it within budget, but she seemed to have fixed that
     before she left on her trip."
-  - 'Scott: Yea, any idea why she took that trip with the project deadline so near?'
+  - 'You: Yea, any idea why she took that trip with the project deadline so near?'
   - "Thomas: Don\u2019t know. She really wanted it though. Almost begging to be sent.
     She seemed really relieved to get it."
-  - 'Scott: Right. I see, thanks.'
+  - 'You: Right. I see, thanks.'
   question: What should I ask?
   choiceIndex: 0
   endAnswerArray:
@@ -381,18 +381,18 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 2
   convoTextArray:
-  - 'Scott: Did you falsify the info on the waste treatment project?'
+  - 'You: Did you falsify the info on the waste treatment project?'
   - 'Becky: W-what are you saying!? Are you accusing me of something!?'
-  - "Scott: Yes, I\u2019ve looked at your notes and found evidence that you intentionally
+  - "You: Yes, I\u2019ve looked at your notes and found evidence that you intentionally
     promised an undeliverable system for your own benefit and gain."
   - "Becky: I-I\u2019ve done nothing of the sort! How could you say I\u2019ve done
     something that ridiculous!? The boss will hear that you\u2019re harassing me!"
   question: Alright, how should I handle this?
   choiceIndex: 0
   endAnswerArray:
-  - "Scott: Don\u2019t you dare unless you want everyone else to know what you\u2019ve
+  - "You: Don\u2019t you dare unless you want everyone else to know what you\u2019ve
     been doing."
-  - "Scott: Look, I just want to understand why you\u2019re doing this."
+  - "You: Look, I just want to understand why you\u2019re doing this."
   hasNext: 0
   nextNodeArray:
   - {fileID: 277048280}
@@ -505,7 +505,7 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 0
   convoTextArray:
-  - 'Scott: I was just wondering if you could help clarify some parts of your project.'
+  - 'You: I was just wondering if you could help clarify some parts of your project.'
   - 'Becky: O-Oh. Uh, sure! I can do that.'
   question: What should I ask?
   choiceIndex: 0
@@ -562,12 +562,12 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 0
   convoTextArray:
-  - 'Scott: Look, we have about three days to try and salvage this situation. Do you
+  - 'You: Look, we have about three days to try and salvage this situation. Do you
     have anything that would actually work for the project?'
   - "Becky: W-well I did have a previous design. It would work, if it weren\u2019t
     for the cost. I hid it behind my desk near the cabinets. You can take a look."
-  - "Scott: Alright, that\u2019ll have to do for now. I\u2019ll keep you updated Becky."
-  - "Becky: O-okay. Thank you Scott. I\u2019m sorry you got caught up in this."
+  - "You: Alright, that\u2019ll have to do for now. I\u2019ll keep you updated Becky."
+  - "Becky: O-okay. Thank you. I\u2019m sorry you got caught up in this."
   question: This isn't a question?
   choiceIndex: 0
   endAnswerArray:
@@ -692,7 +692,7 @@ MonoBehaviour:
   convoTextArray:
   - "Thomas: What? I don\u2019t know. Maybe one of those weird guys who have been
     coming around talked to her?"
-  - 'Scott: What weird guys?'
+  - 'You: What weird guys?'
   - 'Thomas: Rumor has it some random businessmen have been talking to our guys at
     the company, offering ludicrous propositions. '
   - "Thomas: Haven\u2019t seen them myself, but it comes up often enough it might
@@ -743,11 +743,11 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 0
   convoTextArray:
-  - "\u25D9Scott: Just wanted to let you know everything is going smoothly. No problems
+  - "\u25D9You: Just wanted to let you know everything is going smoothly. No problems
     whatsoever, and everything should be approved by tomorrow."
   - "Becky: O-Oh that\u2019s really good! Fantastic! I can\u2019t wait to come back
     and see. Thanks Scott!"
-  - 'Scott: Anytime! Have a good trip! '
+  - 'You: Anytime! Have a good trip! '
   question: What should I ask?
   choiceIndex: 0
   endAnswerArray:
@@ -1145,6 +1145,20 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: d5639f31ad3b379469401a800bbd2f2d,
         type: 3}
+    - target: {fileID: 11482624, guid: 544a21cc41be48347b433566352ad48d, type: 2}
+      propertyPath: convoTextArray.Array.data[0]
+      value: 'Thomas: Hey, did you hear about what''s been going on?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472450, guid: 544a21cc41be48347b433566352ad48d, type: 2}
+      propertyPath: convoTextArray.Array.data[0]
+      value: "You: Nope, but I don\u2019t have time right now. Gotta get to work on
+        Becky\u2019s project. Boss passed it off to me."
+      objectReference: {fileID: 0}
+    - target: {fileID: 11484856, guid: 544a21cc41be48347b433566352ad48d, type: 2}
+      propertyPath: convoTextArray.Array.data[0]
+      value: "You: I\u2019ve only heard snippets here and there. Couple names being
+        thrown around but didn\u2019t pay too much attention."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 544a21cc41be48347b433566352ad48d, type: 2}
   m_IsPrefabParent: 0
@@ -1164,12 +1178,12 @@ MonoBehaviour:
   myType: 0
   convoTextArray:
   - "Becky: W-wait, I mean I don\u2019t understand what you\u2019re talking about."
-  - "Scott: Becky, let\u2019s not play this game. You should know I have evidence.
-    What I do with it is up to you."
+  - "You: Becky, let\u2019s not play this game. You should know I have evidence. What
+    I do with it is up to you."
   - 'Becky: Okay, fine what do you want?'
-  - "\u2640Scott: Answers. I\u2019ll decide from there. "
+  - "\u2640You: Answers. I\u2019ll decide from there. "
   - "\u25D9Becky: Hey, wai-*Click*"
-  - "\u2642Scott: Yeah, this is bad. I need to talk to Boss."
+  - "\u2642You: Yeah, this is bad. I need to talk to Boss."
   question: What should I ask?
   choiceIndex: 0
   endAnswerArray:
@@ -1398,13 +1412,13 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 2
   convoTextArray:
-  - "Scott: You\u2019ve always been a hard worker so why take a shortcut this time?"
+  - "You: You\u2019ve always been a hard worker so why take a shortcut this time?"
   - "Becky: I-I haven\u2019t been doing anything."
-  - 'Scott: Becky, please. I just want to understand.'
+  - 'You: Becky, please. I just want to understand.'
   - "Becky: \u2026T-There was just too much pressure riding on this."
-  - "Becky: I-I couldn\u2019t finish the project in the constraints I was given. I
-    was over budget, didn\u2019t have enough time, no one else was really working
-    with me\u2026 then I got the offer."
+  - "You: I-I couldn\u2019t finish the project in the constraints I was given. I was
+    over budget, didn\u2019t have enough time, no one else was really working with
+    me\u2026 then I got the offer."
   question: What should I ask?
   choiceIndex: 0
   endAnswerArray:
@@ -1522,12 +1536,12 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 0
   convoTextArray:
-  - 'Scott: Look, we have about three days to try and salvage this situation. Do you
+  - 'You: Look, we have about three days to try and salvage this situation. Do you
     have anything that would actually work for the project?'
   - "Becky: W-well I did have a previous design. It would work, if it weren\u2019t
     for the cost. I hid it behind my desk near the cabinets. You can take a look."
-  - "Scott: Alright, that\u2019ll have to do for now. I\u2019ll keep you updated Becky."
-  - "Becky: O-okay. Thank you Scott. I\u2019m sorry you got caught up in this."
+  - "You: Alright, that\u2019ll have to do for now. I\u2019ll keep you updated Becky."
+  - "Becky: O-okay. Thank you. I\u2019m sorry you got caught up in this."
   question: null
   choiceIndex: 0
   endAnswerArray:
@@ -2474,7 +2488,7 @@ MonoBehaviour:
   convoTextArray:
   - "Becky: What!? H-how dare you blatantly lie to the boss like that!? I\u2019m coming
     back right now to deal with this! *call ends*"
-  - "\u2640Scott: Great, well it doesn\u2019t matter. The boss has already seen the
+  - "\u2640You: Great, well it doesn\u2019t matter. The boss has already seen the
     evidence and is trying to figure out a solution. She\u2019ll probably be here
     in a day, so I\u2019ll have to look forward to dealing with that. Lovely."
   question: 
@@ -2545,11 +2559,11 @@ MonoBehaviour:
     salary for a much less stressful job.'
   - "Becky: I-I\u2019m sorry, I just didn\u2019t know what to do. I figured if I waited,
     the problem would just go away for me."
-  - "Scott: Becky, you have to understand that you can\u2019t just leave something
-    like this unresolved. This is a huge project for the company. I\u2019ll talk to
-    you when you get back alright?"
+  - "You: Becky, you have to understand that you can\u2019t just leave something like
+    this unresolved. This is a huge project for the company. I\u2019ll talk to you
+    when you get back alright?"
   - 'Becky: Okay, fine what do you want?'
-  - "ecky: O-okay\u2026good luck. I\u2019m sorry."
+  - "Becky: O-okay\u2026good luck. I\u2019m sorry."
   question: What should I ask?
   choiceIndex: 0
   endAnswerArray:
@@ -3051,9 +3065,9 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 0
   convoTextArray:
-  - "Scott: I know I shouldn\u2019t\u2026but this is a prime opportunity to learn
-    more about her. No one will ever know\u2026 "
-  - "\u2642Scott: Desk drawer, oh little puppy dog keychain. Animal lover, so cute.
+  - "You: I know I shouldn\u2019t\u2026but this is a prime opportunity to learn more
+    about her. No one will ever know\u2026 "
+  - "\u2642You: Desk drawer, oh little puppy dog keychain. Animal lover, so cute.
     Let\u2019s see what else is here. Poetry book, business cards, password info?
     Huh guess she can\u2019t remember the new password standards."
   question: Response?
@@ -3296,7 +3310,7 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 2
   convoTextArray:
-  - 'Scott: I was just wondering if you could help clarify some parts of your project.'
+  - 'You: I was just wondering if you could help clarify some parts of your project.'
   - 'Becky: O-Oh. Uh, sure! I can do that.'
   question: What should I ask?
   choiceIndex: 0
@@ -3358,18 +3372,18 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 0
   convoTextArray:
-  - "Scott: Listen, you\u2019re going to take full responsibility for this. This is
+  - "You: Listen, you\u2019re going to take full responsibility for this. This is
     your project, and your screw up is going to cost the company big time."
   - "Becky: W-What, I-I won\u2019t let you just clai-"
-  - 'Scott: Look, I have the emails between you and your new job. '
-  - "\u2642Scott: At least, I have her list of passwords. Same difference."
-  - "\u25D9Scott:  If you don\u2019t, then think about it. Everyone: friends, co-workers,
+  - 'You: Look, I have the emails between you and your new job. '
+  - "\u2642You: At least, I have her list of passwords. Same difference."
+  - "\u25D9You:  If you don\u2019t, then think about it. Everyone: friends, co-workers,
     future employers knowing about how you went behind the company\u2019s back to
     sabotage your project."
-  - "Scott You\u2019ll deal with whatever fallout occurs. I\u2019m going to try and
+  - "You: You\u2019ll deal with whatever fallout occurs. I\u2019m going to try and
     fix this, but if anything goes wrong it\u2019s on your head. Understood?"
   - 'Becky: Y-yes.'
-  - 'Scott: Good. Now then, I have some people to talk to. Don''t do anything stupid.'
+  - 'You: Good. Now then, I have some people to talk to. Don''t do anything stupid.'
   question: null
   choiceIndex: 0
   endAnswerArray:
@@ -3468,12 +3482,12 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 2
   convoTextArray:
-  - "\u2642Scott: I need to talk to Becky. *calls*"
+  - "\u2642You: I need to talk to Becky. *calls*"
   - "Becky: Hello, this is Becky speaking. May I ask who\u2019s calling?"
-  - 'Scott: Hey Becky, this is Scott from work. I was calling to talk to you about
-    the project you were working on. '
+  - 'You: Hey Becky, this is from work. I was calling to talk to you about the project
+    you were working on. '
   - 'Becky: Ohh! Um-m w-well what do you need from me?'
-  - "\u2642Scott: ...She sounds somewhat panicky."
+  - "\u2642You: ...She sounds somewhat panicky."
   question: What should I do?
   choiceIndex: 0
   endAnswerArray:
@@ -3696,11 +3710,11 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 0
   convoTextArray:
-  - "\u25D9Scott: Just wanted to let you know everything is going smoothly. No problems
+  - "\u25D9You: Just wanted to let you know everything is going smoothly. No problems
     whatsoever, and everything should be approved by tomorrow."
   - "Becky: O-Oh that\u2019s really good! Fantastic! I can\u2019t wait to come back
     and see. Thanks Scott!"
-  - 'Scott: Anytime! Have a good trip! '
+  - 'You: Anytime! Have a good trip! '
   question: null
   choiceIndex: 0
   endAnswerArray:
@@ -3940,20 +3954,19 @@ MonoBehaviour:
   myType: 2
   convoTextArray:
   - "Thomas: What!? Explain right now, because I\u2019m lost."
-  - "Scott: The project she\u2019s been working on, pretty much a sham. She\u2019s
-    claiming she\u2019s using some new revolutionary breakthrough to improve the current
-    system. "
-  - "Scott: Really, she\u2019s promising a non-existent system to the client."
+  - "You: The project she\u2019s been working on, pretty much a sham. She\u2019s claiming
+    she\u2019s using some new revolutionary breakthrough to improve the current system. "
+  - "You: Really, she\u2019s promising a non-existent system to the client."
   - "Thomas: But why? There\u2019s no real incentive to do so. The client will figure
     it out soon enough!"
-  - "Scott: Well it won\u2019t matter for her. She\u2019s already got a kickback and
+  - "You: Well it won\u2019t matter for her. She\u2019s already got a kickback and
     a new job lined up apparently. We\u2019ll have to deal with the fallout."
   question: 'Thomas: That''s bad. What are you going to do?'
   choiceIndex: 0
   endAnswerArray:
-  - 'Scott: Watch her crash and burn.'
-  - "Scott: I\u2019m going to fix this mess before our reputation is tainted forever."
-  - "cott: Don\u2019t know, don\u2019t care. It\u2019s the boss\u2019 problem now."
+  - 'You: Watch her crash and burn.'
+  - "You: I\u2019m going to fix this mess before our reputation is tainted forever."
+  - "You: Don\u2019t know, don\u2019t care. It\u2019s the boss\u2019 problem now."
   hasNext: 1
   nextNodeArray:
   - {fileID: 1032751239}
@@ -4691,8 +4704,8 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 2
   convoTextArray:
-  - "Scott: Sorry don\u2019t care about that right now. Any idea what Becky\u2019s
-    been up to lately?"
+  - "You: Sorry don\u2019t care about that right now. Any idea what Becky\u2019s been
+    up to lately?"
   - 'Thomas: Huh, what are you talking about?'
   question: What should I ask?
   choiceIndex: 0
@@ -4790,8 +4803,8 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 0
   convoTextArray:
-  - "Scott: Alright boss. I checked around, and we\u2019re on schedule with the project."
-  - 'Boss: Perfect, Scott. Make sure to keep up the good work.'
+  - "You: Alright boss. I checked around, and we\u2019re on schedule with the project."
+  - 'Boss: Perfect. Make sure to keep up the good work.'
   question: null
   choiceIndex: 0
   endAnswerArray:
@@ -4970,15 +4983,15 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 0
   convoTextArray:
-  - "\u2642Scott: Alright, I have Becky\u2019s notes. Let\u2019s see what she\u2019s
+  - "\u2642You: Alright, I have Becky\u2019s notes. Let\u2019s see what she\u2019s
     done"
-  - "\u2642Scott: \u2026huh that\u2019s an interesting approach. Excess metals are
-    one of the most common problems in waste disposal, but she\u2019s proposing that
-    it won\u2019t be a concern with the latest revolutionary process. "
-  - "\u2642Scott: \u2026I haven\u2019t heard anything about any new breakthroughs
-    in treatment processes. Something like that would have made news in the community
+  - "\u2642You: \u2026huh that\u2019s an interesting approach. Excess metals are one
+    of the most common problems in waste disposal, but she\u2019s proposing that it
+    won\u2019t be a concern with the latest revolutionary process. "
+  - "\u2642You: \u2026I haven\u2019t heard anything about any new breakthroughs in
+    treatment processes. Something like that would have made news in the community
     at least. Where did she get this from?"
-  - "\u2642Scott: All of this literally can\u2019t be true. These results don\u2019t
+  - "\u2642You: All of this literally can\u2019t be true. These results don\u2019t
     make sense! Becky\u2019s been faking it! Maybe I can check with her on this before
     she can\u2019t be reached? Maybe I can talk to someone else in the office?"
   question: Response?
@@ -5208,7 +5221,7 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 0
   convoTextArray:
-  - "Scott: We can\u2019t afford to lose Becky right now, that\u2019s all."
+  - "You: We can\u2019t afford to lose Becky right now, that\u2019s all."
   - 'Thomas: Ah, that makes sense. You had me thinking there was something bigger
     going on. Well, I gotta run and get my own work done. See you later Scott.'
   question: null
@@ -5271,12 +5284,12 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 2
   convoTextArray:
-  - "\u2642Scott: I need to talk to Becky. *calls*"
+  - "\u2642You: I need to talk to Becky. *calls*"
   - "Becky: Hello, this is Becky speaking. May I ask who\u2019s calling?"
-  - 'Scott: Hey Becky, this is Scott from work. I was calling to talk to you about
-    the project you were working on. '
+  - 'Scott: Hey Becky, this is from work. I was calling to talk to you about the project
+    you were working on. '
   - 'Becky: Ohh! Um-m w-well what do you need from me?'
-  - "\u2642Scott: ...She sounds somewhat panicky."
+  - "\u2642You: ...She sounds somewhat panicky."
   question: What should I say?
   choiceIndex: 0
   endAnswerArray:
@@ -5356,6 +5369,10 @@ Prefab:
       value: 
       objectReference: {fileID: 12800000, guid: b9d116e8bfaa20c45b74149d4bc332d7,
         type: 3}
+    - target: {fileID: 11400052, guid: d1f4ef7c8cc842e42af367e2b11d4b0c, type: 2}
+      propertyPath: m_Text
+      value: Your Desk
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d1f4ef7c8cc842e42af367e2b11d4b0c, type: 2}
   m_IsPrefabParent: 0
@@ -5406,14 +5423,14 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 0
   convoTextArray:
-  - "Scott: Okay, look. I can understand where you\u2019re coming from. This project
+  - "You: Okay, look. I can understand where you\u2019re coming from. This project
     is a lot of pressure, and an opportunity appeared in front of you. I can\u2019t
     blame you for grabbing it, so let me help you out."
   - "Becky: R-really!? T-thank you! I understand what risk you\u2019re taking here,
     and I appreciate it."
-  - "Scott: Don\u2019t worry, can\u2019t blame you for seizing an opportunity. I\u2019ll
+  - "You: Don\u2019t worry, can\u2019t blame you for seizing an opportunity. I\u2019ll
     take care of it."
-  - "Becky: O-okay. Thank you Scott. I\u2019m sorry you got caught up in this."
+  - "Becky: O-okay. Thank you. I\u2019m sorry you got caught up in this."
   question: null
   choiceIndex: 0
   endAnswerArray:
@@ -5541,14 +5558,14 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 0
   convoTextArray:
-  - "Scott: Okay, look. I can understand where you\u2019re coming from. This project
+  - "You: Okay, look. I can understand where you\u2019re coming from. This project
     is a lot of pressure, and an opportunity appeared in front of you. I can\u2019t
     blame you for grabbing it, so let me help you out."
   - "Becky: R-really!? T-thank you! I understand what risk you\u2019re taking here,
     and I appreciate it."
-  - "Scott: Don\u2019t worry, can\u2019t blame you for seizing an opportunity. I\u2019ll
+  - "You: Don\u2019t worry, can\u2019t blame you for seizing an opportunity. I\u2019ll
     take care of it."
-  - "Becky: O-okay. Thank you Scott. I\u2019m sorry you got caught up in this."
+  - "Becky: O-okay. Thank you. I\u2019m sorry you got caught up in this."
   question: null
   choiceIndex: 0
   endAnswerArray:
@@ -6118,14 +6135,14 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 0
   convoTextArray:
-  - "Scott: Look, I\u2019ll try to smooth things over with the boss. He\u2019ll be
-    upset, but I can probably mitigate most of the damage."
+  - "You: Look, I\u2019ll try to smooth things over with the boss. He\u2019ll be upset,
+    but I can probably mitigate most of the damage."
   - "Becky: R-really? I would really a-appreciate that. I didn\u2019t mean to cause
     any trouble. I just got really stressed out."
-  - "Scott: I understand, but it\u2019s the boss who needs to. I\u2019ll keep you
-    updated alright?"
-  - "Scott: I understand, but it\u2019s the boss who needs to. I\u2019ll keep you
-    updated alright? Becky: O-Okay, thanks Scott! I mean it."
+  - "You: I understand, but it\u2019s the boss who needs to. I\u2019ll keep you updated
+    alright?"
+  - "You: I understand, but it\u2019s the boss who needs to. I\u2019ll keep you updated
+    alright? Becky: O-Okay, thanks Scott! I mean it."
   question: null
   choiceIndex: 0
   endAnswerArray:
@@ -6181,12 +6198,12 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 2
   convoTextArray:
-  - "Scott: Becky\u2019s project, the one you assigned me to, is a complete failure."
+  - "ScYou: Becky\u2019s project, the one you assigned me to, is a complete failure."
   - "Boss: \u2026explain. Right now."
-  - "Scott: I picked up the project notes, as you had described, and took a look through
+  - "You: I picked up the project notes, as you had described, and took a look through
     them. I found some aspects to be strange, so I did some research on Becky\u2019s
     proposed plans."
-  - "Scott: To summarize, she can\u2019t deliver what she\u2019s promised and might
+  - "You: To summarize, she can\u2019t deliver what she\u2019s promised and might
     be switching companies as soon as her project is approved."
   - 'Boss: WHAT!? Show me her notes right now!'
   - 'Boss: ...'
@@ -6256,7 +6273,7 @@ MonoBehaviour:
   - "Becky: I-it\u2019s functional for the most part, but I couldn\u2019t get the
     costs to work. No one else knew how to either, so I just hid them, hoping no one
     would comment."
-  - "Scott: I understand. Thank you Becky. I\u2019ll try to smooth things over here
+  - "You: I understand. Thank you Becky. I\u2019ll try to smooth things over here
     alright. We\u2019ll talk when you get back."
   question: What should I ask?
   choiceIndex: 0
@@ -6508,7 +6525,7 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 0
   convoTextArray:
-  - 'Scott: I was just wondering if you could help clarify some parts of your project.'
+  - 'You: I was just wondering if you could help clarify some parts of your project.'
   - 'Becky: O-Oh. Uh, sure! I can do that.'
   question: What should I ask?
   choiceIndex: 0
