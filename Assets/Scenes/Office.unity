@@ -400,7 +400,7 @@ MonoBehaviour:
   endEventArray:
   - {fileID: 0}
   - {fileID: 0}
-  hasEndEvent: 1
+  hasEndEvent: 0
   endEvent: {fileID: 1662985134}
   NPCFace: {fileID: 0}
 --- !u!1 &46682047
@@ -505,8 +505,10 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 0
   convoTextArray:
-  - 'You: I was just wondering if you could help clarify some parts of your project.'
-  - 'Becky: O-Oh. Uh, sure! I can do that.'
+  - "You: Could you explain the whole \u201Crevolutionary\u201D process?"
+  - "Becky: Oh, uh, that\u2019s part of this brand new technique they found recently.
+    It basically uses, uh, new filtration systems to increase the efficiency of processing."
+  - 'You: Uh-huh...'
   question: What should I ask?
   choiceIndex: 0
   endAnswerArray:
@@ -6525,8 +6527,10 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 0
   convoTextArray:
-  - 'You: I was just wondering if you could help clarify some parts of your project.'
-  - 'Becky: O-Oh. Uh, sure! I can do that.'
+  - 'You: ow did you manage to get the costs so low?'
+  - 'Becky: Oh you know. Revolutionary process and all that. Cheaper parts, less material
+    needed, the usual.'
+  - 'You: Oh. That''s interesting...'
   question: What should I ask?
   choiceIndex: 0
   endAnswerArray:
