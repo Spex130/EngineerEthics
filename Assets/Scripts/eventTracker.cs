@@ -147,10 +147,12 @@ public class eventTracker : MonoBehaviour {
                     if (newEvent.eventsToAdd[i] == null) //If there's not a corresponding event to our answer, just add the answer.
                     {
                         tempNPC.myConvo.addQuestion(newEvent.answersToAdd[i], newEvent.eventsToAdd[i], newEvent.nextNodesToAdd[i]);
+                        tempNPC.myConvo.hasNext = true;
                     }
                     else
                     {
-                        tempNPC.myConvo.addQuestion(newEvent.answersToAdd[i], newEvent.eventsToAdd[i]);//Otherwise add the answer and the event.
+                        tempNPC.myConvo.addQuestion(newEvent.answersToAdd[i], newEvent.eventsToAdd[i], newEvent.nextNodesToAdd[i]);//Otherwise add the answer and the event.
+                        tempNPC.myConvo.hasNext = true;
                     }
                     hashList[newEvent.keyList[i]] = tempNPC;//Then we make sure to put the tempNode back where it came from.
                 }
@@ -180,11 +182,13 @@ public class eventTracker : MonoBehaviour {
                     tempNPC = (NPC)(hashList[newEvent.keyList[i]]);//Make a TempNPC so we can edit it.
                     if (newEvent.eventsToAdd[i] == null) //If there's not a corresponding event to our answer, just add the answer.
                     {
-                        tempNPC.myConvo.addQuestion(newEvent.answersToAdd[i]);
+                        tempNPC.myConvo.addQuestion(newEvent.answersToAdd[i], newEvent.eventsToAdd[i], newEvent.nextNodesToAdd[i]);
+                        tempNPC.myConvo.hasNext = true;
                     }
                     else
                     {
-                        tempNPC.myConvo.addQuestion(newEvent.answersToAdd[i], newEvent.eventsToAdd[i]);//Otherwise add the answer and the event.
+                        tempNPC.myConvo.addQuestion(newEvent.answersToAdd[i], newEvent.eventsToAdd[i], newEvent.nextNodesToAdd[i]);//Otherwise add the answer and the event.
+                        tempNPC.myConvo.hasNext = true;
                     }
                     hashList[newEvent.keyList[i]] = tempNPC;//Then we make sure to put the tempNode back where it came from.
                 }

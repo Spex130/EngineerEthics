@@ -393,7 +393,7 @@ MonoBehaviour:
   - "You: Don\u2019t you dare unless you want everyone else to know what you\u2019ve
     been doing."
   - "You: Look, I just want to understand why you\u2019re doing this."
-  hasNext: 0
+  hasNext: 1
   nextNodeArray:
   - {fileID: 277048280}
   - {fileID: 320522353}
@@ -2775,7 +2775,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11483698, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
       propertyPath: showBox
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11483698, guid: a039eee5c8758d648a8f179742eebeaf, type: 2}
       propertyPath: currentNode
@@ -3141,7 +3141,7 @@ MonoBehaviour:
   eventsToAdd:
   - {fileID: 0}
   nextNodesToAdd:
-  - {fileID: 0}
+  - {fileID: 1645147475}
   Multi_NPCEvent: 0
   Multi_TimerEvent: 0
   Multi_AddQuestionEvent: 0
@@ -3319,13 +3319,11 @@ MonoBehaviour:
   endAnswerArray:
   - "Could you explain the whole \u201Crevolutionary\u201D process?"
   - How did you manage to get the costs so low?
-  hasNext: 0
+  hasNext: 1
   nextNodeArray:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 53206174}
+  - {fileID: 2119988485}
   endEventArray:
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   hasEndEvent: 0
@@ -3527,7 +3525,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11486950, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
       propertyPath: nextNodeArray.Array.size
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11486950, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
+      propertyPath: endEventArray.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 485750, guid: d51cf23f31f3e154693e78d0c040cd3c, type: 2}
       propertyPath: m_LocalPosition.x
@@ -5633,7 +5635,7 @@ MonoBehaviour:
   eventsToAdd:
   - {fileID: 0}
   nextNodesToAdd:
-  - {fileID: 0}
+  - {fileID: 2040125197}
   Multi_NPCEvent: 0
   Multi_TimerEvent: 0
   Multi_AddQuestionEvent: 0
@@ -6527,7 +6529,7 @@ MonoBehaviour:
   oneShotCheck: 0
   myType: 0
   convoTextArray:
-  - 'You: ow did you manage to get the costs so low?'
+  - 'You: How did you manage to get the costs so low?'
   - 'Becky: Oh you know. Revolutionary process and all that. Cheaper parts, less material
     needed, the usual.'
   - 'You: Oh. That''s interesting...'
